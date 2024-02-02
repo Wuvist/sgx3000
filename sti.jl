@@ -20,3 +20,10 @@ bar(x1, autocor(sti, lags), ; bar_style..., label="STI ACF", color=:grey, ylim=(
 bar!(pacf(sti, lags), ; bar_style..., label="STI PACF")
 hline!([sti_ci, -sti_ci], color=:black, linestyle=:dash, label="95% CI")
 savefig("STI_pacf.png")
+
+sti_return = pct_change2(df."Adj Close")
+
+bar(x1, autocor(sti_return, lags), ; bar_style..., label="STI Return ACF", color=:grey, ylim=(-0.1, 0.1), size=(1280, 720))
+bar!(pacf(sti_return, lags), ; bar_style..., label="STI Return PACF")
+hline!([sti_ci, -sti_ci], color=:black, linestyle=:dash, label="95% CI")
+savefig("STI_return_pacf.png")
