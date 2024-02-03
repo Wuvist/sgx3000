@@ -12,18 +12,18 @@ savefig("STI.png")
 lags = 1:50
 bar_width = 0.4
 x1 = lags .- bar_width
-bar_style = Dict(:linewidth => 0, :bar_width => bar_width)
+fig_style = Dict(:linewidth => 0, :bar_width => bar_width, :size => (1280, 720))
 sti = values(df."Adj Close")
 sti_ci = 1.96 / sqrt(length(sti))
 
-bar(x1, autocor(sti, lags), ; bar_style..., label="STI ACF", color=:grey, ylim=(-1, 1), size=(1280, 720))
-bar!(pacf(sti, lags), ; bar_style..., label="STI PACF")
+bar(x1, autocor(sti, lags); label="STI ACF", color=:grey, ylim=(-1, 1), fig_style...)
+bar!(pacf(sti, lags); label="STI PACF", fig_style...)
 hline!([sti_ci, -sti_ci], color=:black, linestyle=:dash, label="95% CI")
 savefig("STI_pacf.png")
 
 sti_return = pct_change2(df."Adj Close")
 
-bar(x1, autocor(sti_return, lags), ; bar_style..., label="STI Return ACF", color=:grey, ylim=(-0.1, 0.1), size=(1280, 720))
-bar!(pacf(sti_return, lags), ; bar_style..., label="STI Return PACF")
+bar(x1, autocor(sti_return, lags); label="STI Return ACF", color=:grey, ylim=(-0.1, 0.1), fig_style...)
+bar!(pacf(sti_return, lags); label="STI Return PACF", fig_style...)
 hline!([sti_ci, -sti_ci], color=:black, linestyle=:dash, label="95% CI")
 savefig("STI_return_pacf.png")
