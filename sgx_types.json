@@ -1,0 +1,58 @@
+[
+  {
+    "type": "adrs",
+    "count": 11
+  },
+  {
+    "type": "businesstrusts",
+    "count": 14
+  },
+  {
+    "type": "companywarrants",
+    "count": 18
+  },
+  {
+    "type": "dlcertificates",
+    "count": 397
+  },
+  {
+    "type": "etfs",
+    "count": 69
+  },
+  {
+    "type": "liprod",
+    "count": 4
+  },
+  {
+    "type": "listedcertificates",
+    "count": 9
+  },
+  {
+    "type": "others",
+    "count": 9
+  },
+  {
+    "type": "reits",
+    "count": 35
+  },
+  {
+    "type": "retailbonds",
+    "count": 14
+  },
+  {
+    "type": "retailpreferenceshares",
+    "count": 2
+  },
+  {
+    "type": "sgsbonds",
+    "count": 20
+  },
+  {
+    "type": "stocks",
+    "count": 587
+  },
+  {
+    "type": "structuredwarrants",
+    "count": 195
+  }
+]
