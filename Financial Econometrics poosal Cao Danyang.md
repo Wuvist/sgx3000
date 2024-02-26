@@ -26,12 +26,6 @@ Our team aims at the following research question about Singapore equity market:
 
 ### 5. Simulated investment in Singapore equity market. Analysis the results.
 
-| REITs          | own and manage                   | Revenues            |
-| -------------- | -------------------------------- | ------------------- |
-| Equity REITs   | income-producing real estate     | rents               |
-| Mortgage REITs | Holds mortgages on real property | net interest margin |
-| Hybrid REITs   | 1                                | 1                   |
-
 # 2. Overall introduction
 
 ## 2.1 Data Needed
@@ -65,11 +59,12 @@ The function of REITs is similar to stock. They pool the capital of numerous inv
 REITs invest in most real estate property types, including apartment buildings, cell towers, data centers, hotels, medical facilities, offices, retail centers, and warehouses. In other words, REITs is flexible in invest in commercial, public and residential property at period. In contrast, the physical real estate investments may not achieve this diversification.
 
 Types of REITs:
-| REITs | own and manage | Revenues |
+
+| REITs          | own and manage                   | Revenues            |
 | -------------- | -------------------------------- | ------------------- |
-| Equity REITs | income-producing real estate | rents |
+| Equity REITs   | income-producing real estate     | rents               |
 | Mortgage REITs | Holds mortgages on real property | net interest margin |
-| Hybrid REITs | 1 | 1 |
+| Hybrid REITs   | 1                                | 1                   |
 
 ###### (1.2) S-REITs
 
