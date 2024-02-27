@@ -4,17 +4,9 @@
 
 # 1. Research Question and Motivation
 
-We start with brainstorming:
+When Chinese market are fighting the defense battle of 3000 points once again, we are also amazed by the Singapore stock market: StraitsTime Index - STI also have stayed around 3000 points for almost 20 years. Does investors in Singapore also fight for defense battle of 3000 points? We are curious and decide to find out.
 
-As foreigner students, why you chose Singapore as your destination ?
-
-I believe one of reason is that Singapore is a wealthy country. Singapore's economy is often referred to as a "miracle" due to its rapid transformation from a developing country to a developed, high-income economy in a relatively short period of time.
-
-The second question is that you want to be wealthy in Singapore ? How would you do to achieve this goal?
-
-There is a option - invest in Singapore equity market.
-
-How do you know about the Singapore equity market? While the Singapore stock market may not be as exciting as its US counterpart, it is known for its stability and high dividends.
+Singapore is small, so does Singapore Stock Exchange SGX. It's possible to cycled around Singapore island within one day. We also wanted to challenge ourselves, to see if we could investigate everything you need to know about Singapore equity market within a term project.
 
 Our team aims at the following research question about Singapore equity market:
 
@@ -26,9 +18,21 @@ Our team aims at the following research question about Singapore equity market:
 
 # 2. Overall introduction
 
+SGX was formed on 1 December 1999 as a holding company. The share capital of some former exchange companies, namely Stock Exchange of Singapore (SES), Singapore International Monetary Exchange (SIMEX) that was founded in 1984 and Securities Clearing and Computer Services Pte Ltd (SCCS). SGX is ASEAN's second largest market capitalization after Indonesia Stock Exchange at US$585.97 billion as of September 2023.
+
+Fun fact: SGX has one of the longest trading hours - 09:00am - 12:00pm 01:00pm - 05:00pm
+
+Currently, there are 1384 securities tranding on SGX, including 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts).
+
+We managed to crawl price history of 712 securities from Yahoo Finance up to 2000-01-01.
+
 # 3. The characterizes of Singapore equity market
 
+* List different type of securities on SGX, and their brief introduction
+
 ## 3.1 High Dividends
+
+SGX gives significant dividends to investor. We could re-estimate STI if no dividends are given like NASDAQ(Most tech firms don't give dividends).
 
 ## 3.2 Accessibility and Connection (DY)
 
@@ -164,4 +168,30 @@ Approach:
 
 # 4.The development path of Singapore equity market.
 
+Major events of SGX in chronical order:
+- S Chip 龙筹股 China-concept stocks on SGX
+    - 2010, 153 S Chip stocks
+- Peak at Oct 2007
+- Asian Finacial Crisis
+- Global Financial Crisis
+- 2015–2016 Chinese stock market turbulence
+- Covid-19
+- 2023 Top financial centre in APAC
+
 # 5. Simulated investment in Singapore equity market
+
+* Select only active securities (set daily trading volumns threshold)
+* Re-adjust prices by adding back dividends
+* Set risk free interest rate to be 2.5% (interest rate of CPF ordinary account)
+* Recalculate alpha / beta
+* Find from past data(Last 1/2/5/10/20 year):
+      * Best performing stock
+            * High alpha
+            * High beta
+            * etc
+      * Porfolio with lowest risk
+      * Find correlation among stocks
+        * 1 day lag
+        * 1 week lag
+* Manually evaluate results and propose different trading strategy
+* Back test with 2024 data
