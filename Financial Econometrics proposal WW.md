@@ -101,7 +101,7 @@ The function of REITs is similar to stock. They pool the capital of numerous inv
 REITs invest in most real estate property types, including apartment buildings, cell towers, data centers, hotels, medical facilities, offices, retail centers, and warehouses. In other words, REITs is flexible in invest in commercial, public and residential property at period.
 
 In contrast, the physical real estate investments may not achieve this diversification.
-
+<div style="page-break-after: always;"></div>
 Types of REITs:
 
 | REITs          | own and manage                   | Revenues            |
@@ -185,13 +185,13 @@ Major events of SGX in chronical order:
 * Set risk free interest rate to be 2.5% (interest rate of CPF ordinary account)
 * Recalculate alpha / beta
 * Find from past data(Last 1/2/5/10/20 year):
-      * Best performing stock
-            * High alpha
-            * High beta
-            * etc
-      * Porfolio with lowest risk
-      * Find correlation among stocks
-        * 1 day lag
+   * Best performing stock
+       * High alpha
+        * High beta
+        * etc
+    * Porfolio with lowest risk
+    * Find correlation among stocks
+      * 1 day lag
         * 1 week lag
 * Manually evaluate results and propose different trading strategy
 * Back test with 2024 data
