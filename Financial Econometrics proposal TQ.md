@@ -44,8 +44,7 @@ Low liquidity stocks tend to exhibit low risk during stable market conditions. T
 
 ### Plans Based on Preliminary Results:
 * Case Study: Select specific cases of low liquidity stocks to analyze their performance under different macroeconomic conditions and the unique risks and opportunities investors may face.
-
-Strategy Recommendation: Based on the analysis results, provide investors with investment strategy recommendations for low liquidity stocks under different market conditions.
+* Strategy Recommendation: Based on the analysis results, provide investors with investment strategy recommendations for low liquidity stocks under different market conditions.
 
 ## The 3000-Point Defense Battle
 * Research Question: What impact does maintaining the SGX above 3000 points have on market confidence?
