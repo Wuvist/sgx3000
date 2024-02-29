@@ -235,26 +235,26 @@ We would performance event analysis of Covid-19 to see how it impact SG equity m
 
 # 5. Simulated investment in SG equity market
 
-[todo] refine wording & more detailed analysis method WW
+We would analysis all 712 SGX securities's price history available from Yahoo Finance between 2000-01-01 and 2024-02-29. We evaluate analysis result from price history before 2024-01-01 and come out with few trading strategies. And then back test these strategies with data between 2024-01-01 and 2024-02-29.
 
-Analysis on all available stocks
-
-* Select only active securities (set daily trading volumns threshold)
-* Re-adjust prices by adding back dividends
-  * EPS?
-* Set risk free interest rate to be 2.5% (interest rate of CPF ordinary account)
-* Recalculate alpha / beta
-* Find from past data(Last 1/2/5/10/20 year):
-   * Best performing stock (CAPM)
-       * What's the market risk?
-       * High alpha?
-    * Find correlation among stocks
-      * 1 day lag
-      * 1 week lag
-    * Porfolio with lowest risk
-* Manually evaluate results and propose different trading strategy
-  * DBS + reits
+Steps for price history analysis:
+* Re-adjust history prices by adding back dividends
+* Group securities into industries
+* Analyse data of past 1/2/5/10/20 year:
+  * Recalculate alpha & beta in CAPM model for each security/industry
+    * Risk free yield: 2.5% (interest rate of CPF ordinary account)
+    * Market yield: SPDR Straits Times Index ETF(ES3)
+  * Find correlation among securities: 1 days/ 5days(i.e. 1 week) lag
+* Manually evaluate the result
+* Propose different trading strategies:
+  * Highest Jensen's alpha
+  * Highest Sharpe ratio / Treynor index
+  * Porfolio with lowest risk
+  * Buy & sell following major stocks, like DBS
+  * Forecast major stock using AR model
 * Back test with 2024 data
+
+All our data & analyse code are open sourced at: https://github.com/Wuvist/sgx3000
 
 # Conclusion
 
