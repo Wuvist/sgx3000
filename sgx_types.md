@@ -16,3 +16,8 @@
 | structuredwarrants     | 195   |
 
 businesstrusts: XZL J85 LIW Q5T ACV HMU
+dlcertificates: Daily Leverage certificates
+
+
+Todo:
+[ ] QL find out what's dlcertificate/structuredwarrants
