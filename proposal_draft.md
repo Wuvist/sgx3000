@@ -206,22 +206,21 @@ Analysis for trading volumne, like VS HK & SPY
 
 TQ / LH
 
-# 4.The development path of SG equity market.
-[todo] refine wording WW
-Major events of SGX in chronical order:
-- S Chip 龙筹股 China-concept stocks on SGX
-    - 2010, 153 S Chip stocks
-- Peak at Oct 2007
-- Asian Finacial Crisis
-- Global Financial Crisis
-- Bottom at Mar 2009
-- 2015–2016 Chinese stock market turbulence
-- Covid-19
-  - Event analysis
-  - STI did bounch back
-- 2023 Top financial centre in APAC
+# 4.The development path of SG equity market
 
-Compare beta with GDP growth
+SGX was formed on 1 December 1999 as a holding company, as a merge of three former exchange companies.
+
+Since then, the major events in SG equity market are:
+- S Chip(龙筹股) China-concept stocks on SGX
+  - 2010, 153 S Chip stocks
+- Oct 2007: STI'shistorical peak at 3805.07
+- 2007-2008 Global Financial Crisis 
+- Feb 2009: STI's 20 year low at 1594.87 
+- 2015–2016 Chinese stock market turbulence
+- Dec 2019-Mar 2021: Covid-19
+- 2023: SG overtake HK become Top 1 financial centre in APAC
+
+We would performance event analysis of Covid-19 to see how it impact SG equity market, and recovered with comparison to HANG SENG INDEX (HSI) and SPX.
 
 # 5. Simulated investment in SG equity market
 
