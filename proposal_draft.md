@@ -204,7 +204,18 @@ STI 30 index yield VS other market.
 
 Analysis for trading volumne, like VS HK & SPY
 
-TQ / LH
+LH
+
+Compare the daily trading volume and market depth of SGX, Hong Kong market, and SPY to evaluate SGX's liquidity status.
+
+Compare the historical returns of the STI 30 index with other major markets and analyze the attractiveness of the SGX market.
+
+Collect data from Yahoo Finance, including the STI 30 index, Hong Kong Stock Exchange index, as well as trading volume and yield data for returns and SPY.
+
+Calculate liquidity indicators, returns, and trading volume, compare SGX with other markets, and conduct correlation analysis between liquidity and returns.
+
+Preliminary findings indicate that SGX's liquidity and yield are lower than those of the Hong Kong Stock Exchange and SPY, and there is a correlation between its liquidity and yield. Therefore, SGX with relatively low risk is more suitable for risk averse investors to invest.
+
 
 # 4.The development path of SG equity market
 
