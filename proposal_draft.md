@@ -91,7 +91,7 @@ The dividends above fist four REITs paid in past two years.
 
 The CSOP iEdge S-REIT Leaders Index ETF (the "Sub-Fund") is a sub-fund of the CSOP SG ETF Series I. The Index is concentrated in REITs which are listed on the SGX-ST.SGD Counter Stock Code: SRT, USD Counter Stock Code: SRU
 
-**The Straits Times Index (STI)** Currency in SGD
+**SPDR Straits Times Index ETF (ES3.SI)** Currency in SGD
 SG market indicator
 
 **SPDR S&P 500 ETF Trust (SPY)** Currency in USD
