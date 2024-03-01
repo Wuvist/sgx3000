@@ -1,4 +1,5 @@
 # Making money in SGX
+
 ## Everything you need to know about SG equity market
 
 # Motivation
@@ -12,18 +13,18 @@ Our team aims at the following research question about Singapore's equity market
 1. The overview of SG equity market.
 1. The characteristics of SG equity market.
 1. The development path of SG equity market.
-1. Based on above analysis, give the conclusion of the worthiness of investing in Singapore - quity market and some suggestion of investment.
+1. Based on above analysis, give the conclusion of the worthiness of investing in Singapore - equity market and some suggestion of investment.
 1. Simulated investment in SG equity market. Analysis the results.
 
 # Overview of SG equity market
 
-By displaying the by sector map, we adress the current situation of the SGX equity market.
+By displaying the by sector map, we address the current situation of the SGX equity market.
 
 ## Market Capitalization
 
 SGX hosts a diverse range of companies from various industries. The total market capitalization of companies listed on SGX is a significant indicator of SG's economic importance.
 
-Currently, there are 1384 securities tranding on SGX, including 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts).
+Currently, there are 1384 securities trading on SGX, including 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts).
 
 SGX is ASEAN's second largest market capitalization after Indonesia Stock Exchange at US$585.97 billion as of September 2023. As of February 2024 Singapore Exchange has a market cap of $7.62 Billion.
 
@@ -37,7 +38,7 @@ SGX is more than a securities exchange; it's a cornerstone of Singapore's financ
 
 ## Trading Volume and Liquidity
 
-The trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, *underscores* its role in providing liquidity to the market. SGX's derivatives market is particularly notable for its size and diversity, including commodities, currencies, and indices, attracting international traders, currently have 643 companies listed in it.
+The trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, _underscores_ its role in providing liquidity to the market. SGX's derivatives market is particularly notable for its size and diversity, including commodities, currencies, and indices, attracting international traders, currently have 643 companies listed in it.
 
 # The characteristics of SG equity market
 
@@ -63,24 +64,22 @@ In this section, We will use REITs market to analysis the accessibility and conn
 
 The 41 REITs listed on SG exchange currently. We select the following for REITs analysis:
 
-* Sabana REIT (SGX: M1GU)
-* Keppel Pacific Oak US REIT (SGX: CMOU)
-* Frasers Logistics & Commercial Trust (SGX: BUOU)
-* Mapletree Logistics Trust (SGX: M44U)
+- Sabana REIT (SGX: M1GU)
+- Keppel Pacific Oak US REIT (SGX: CMOU)
+- Frasers Logistics & Commercial Trust (SGX: BUOU)
+- Mapletree Logistics Trust (SGX: M44U)
 
 We select the following securites for market analysis:
 
-* CSOP iEdge S-REIT Leaders Index ETF (SRT) 
-* CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)
-* SPDR Straits Times Index ETF (ES3.SI)
-* SPDR S&P 500 ETF Trust (SPY)
-* Dow Jones Global Index (^W1DOW)
+- CSOP iEdge S-REIT Leaders Index ETF (SRT)
+- CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)
+- SPDR Straits Times Index ETF (ES3.SI)
+- SPDR S&P 500 ETF Trust (SPY)
+- Dow Jones Global Index (^W1DOW)
 
 Finally, we select as other asset for analysis:
 
-* ABF Singapore Bond Index Fd (A35.SI)
-
-## Analysis:
+- ABF Singapore Bond Index Fd (A35.SI)
 
 ### (1) The Real Estate Investment Trust (REIT)
 
@@ -88,7 +87,7 @@ A real estate investment trust (REIT) is a company that owns, operates, or finan
 
 Singapore REITs are an important component of Singapore’s stock market, and it's the largest REIT market in Asia ex-Japan: https://www.reitas.sg/singapore-reits/overview-of-the-s-reit-industry/
 
-### (2) Characteritics of REITs
+### (2) Characteristics of REITs
 
 #### (2.1) High dividends
 
@@ -111,9 +110,10 @@ Approach:
 1. Tabulate the Correlation Matrix Between SREITs and other assets in different market.
 
 US market maybe most relevent:
-* Linkage of USD & SGD
-* Morgage rate linkdage between US & SG
-* Free Trade Agreement
+
+- Linkage of USD & SGD
+- Morgage rate linkdage between US & SG
+- Free Trade Agreement
 
 #### (3) Long-term investment
 
@@ -146,7 +146,7 @@ Approach:
 
 ## 3.3 Low liquidity and risk
 
-We could consider index ETF in SGX(ES3) and US(SPY). Assuming they are representive of their market.
+We could consider index ETF in SGX(ES3) and US(SPY). Assuming they are representative of their market.
 
 Alternatively, we could also look at bank stocks (DBS for SGX and HSBC for HSI) as they are major stocks in many market.
 
@@ -157,11 +157,12 @@ By comparing liquidity indicators: returns, trading volume and bid/ask spread; w
 SGX was formed on 1 December 1999 as a holding company, as a merge of three former exchange companies.
 
 Since then, the major events in SG equity market are:
+
 - S Chip(龙筹股) China-concept stocks on SGX
   - 2010, 153 S Chip stocks
-- Oct 2007: STI'shistorical peak at 3805.07
+- Oct 2007: STI's historical peak at 3805.07
 - 2007-2008 Global Financial Crisis
-- Feb 2009: STI's 20 year low at 1594.87 
+- Feb 2009: STI's 20 year low at 1594.87
 - 2015–2016 Chinese stock market turbulence
 - Dec 2019-Mar 2021: Covid-19
 - 2023: SG overtake HK become Top 1 financial centre in APAC
@@ -173,24 +174,25 @@ We would performance event analysis of Covid-19 to see how it impact SG equity m
 We would analysis all 712 SGX securities's price history available from Yahoo Finance between 2000-01-01 and 2024-02-29. We evaluate analysis result from price history before 2024-01-01 and come out with few trading strategies. And then back test these strategies with data between 2024-01-01 and 2024-02-29.
 
 Steps for price history analysis:
-* Re-adjust history prices by adding back dividends
-* Group securities into industries
-* Analyse data of past 1/2/5/10/20 year:
-  * Recalculate alpha & beta in CAPM model for each security/industry
-    * Risk free yield: 2.5% (interest rate of CPF ordinary account)
-    * Market yield: SPDR Straits Times Index ETF(ES3)
-  * Find correlation among securities: 1 days/ 5days(i.e. 1 week) lag
-* Manually evaluate the result
-* Propose different trading strategies:
-  * Highest Jensen's alpha
-  * Highest Sharpe ratio / Treynor index
-  * Porfolio with lowest risk
-  * Buy & sell following major stocks, like DBS
-  * Forecast major stock using AR model
-* Back test with 2024 data
 
-All our data & analyse code are open sourced at: https://github.com/Wuvist/sgx3000
+- Re-adjust history prices by adding back dividends
+- Group securities into industries
+- Analyze data of past 1/2/5/10/20 year:
+  - Recalculate alpha & beta in CAPM model for each security/industry
+    - Risk free yield: 2.5% (interest rate of CPF ordinary account)
+    - Market yield: SPDR Straits Times Index ETF(ES3)
+  - Find correlation among securities: 1 days/ 5days(i.e. 1 week) lag
+- Manually evaluate the result
+- Propose different trading strategies:
+  - Highest Jensen's alpha
+  - Highest Sharpe ratio / Treynor index
+  - Portfolio with lowest risk
+  - Buy & sell following major stocks, like DBS
+  - Forecast major stock using AR model
+- Back test with 2024 data
+
+All our data & analyze code are open sourced at: https://github.com/Wuvist/sgx3000
 
 # Conclusion
 
-Not for investment advise, our analysis shows that SGX could be an diversifiying option for investors.
+Not for investment advise, our analysis shows that SGX could be an diversifying option for investors.
