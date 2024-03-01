@@ -17,27 +17,27 @@ Our team aims at the following research question about Singapore's equity market
 
 # Overview of SG equity market
 
-[todo] Heatmap - QL
+By displaying the by sector map, we adress the current situation of the SGX equity market.
 
-1. *Market Capitalization*: SGX hosts a diverse range of companies from various industries. The total market capitalization of companies listed on SGX is a significant indicator of SG's economic importance.
+## Market Capitalization
+
+SGX hosts a diverse range of companies from various industries. The total market capitalization of companies listed on SGX is a significant indicator of SG's economic importance.
 
 Currently, there are 1384 securities tranding on SGX, including 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts).
 
 SGX is ASEAN's second largest market capitalization after Indonesia Stock Exchange at US$585.97 billion as of September 2023. As of February 2024 Singapore Exchange has a market cap of $7.62 Billion.
 
-Fun fact: SGX has one of the longest trading hours - 09:00am - 12:00pm 01:00pm - 05:00pm
+## International Listings
 
-2. *International Listings*: SGX is known for its international appeal, with numerous foreign companies choosing to list there, such as CapitaLand China Trust (CLCT), Hutchison Port Holdings Trust (HPHT), NIO.This not only brings in capital from abroad but also enhances Singapore's status as a global financial center. The presence of international companies contributes to the cross-border flow of funds, investment diversification, and economic resilience.
+SGX is known for its international appeal, with numerous foreign companies choosing to list there, such as CapitaLand China Trust (CLCT), Hutchison Port Holdings Trust (HPHT), NIO, Prudential PLC, Alita Resource Limited. This not only brings in capital from abroad but also enhances Singapore's status as a global financial center. The presence of international companies contributes to the cross-border flow of funds, investment diversification, and economic resilience.
 
-[todo] QL add other foreign companies.
+## SGX's role in the Financial Landscape
 
-3. *Financial Services Ecosystem*: Beyond its function as a securities exchange, SGX is central to Singapore's broader financial services ecosystem. It supports a wide range of activities, including banking, asset management, and fintech. The financial services sector is a key pillar of Singapore's economy, and SGX plays a critical role in its health and growth.
+SGX is more than a securities exchange; it's a cornerstone of Singapore's financial sector, supporting banking, asset management, and fintech. As a crucial economic pillar, SGX, alongside MAS, ensures strong corporate governance and regulatory standards, safeguarding investors and making the Singapore appealing to global entities. This synergy fosters Singapore's economic stability and growth.
 
-*Regulatory Framework and Corporate Governance*: SGX, in collaboration with the Monetary Authority of Singapore (MAS), upholds high standards of corporate governance and regulatory practices. This not only protects investors but also enhances the market's attractiveness to both local and international companies and investors, contributing to the overall stability and growth of Singapore's economy.
+## Trading Volume and Liquidity
 
-Summarize and simplified.
-
-4. *Trading Volume and Liquidity*: The trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, *underscores* its role in providing liquidity to the market. SGX's derivatives market is particularly notable for its size and diversity, including commodities, currencies, and indices, attracting international traders, currently have 643 companies listed in it.
+The trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, *underscores* its role in providing liquidity to the market. SGX's derivatives market is particularly notable for its size and diversity, including commodities, currencies, and indices, attracting international traders, currently have 643 companies listed in it.
 
 # The characteristics of SG equity market
 
@@ -61,89 +61,36 @@ Calculate their stock price if dividends are used for buyback shares
 
 In this section, We will use REITs market to analysis the accessibility and connection of Singapore equity market.
 
-### Specific REITs:
+The 41 REITs listed on SG exchange currently. We select the following for REITs analysis:
 
-The 41 REITs listed on SG exchange currently. Selecting following REITs:
+* Sabana REIT (SGX: M1GU)
+* Keppel Pacific Oak US REIT (SGX: CMOU)
+* Frasers Logistics & Commercial Trust (SGX: BUOU)
+* Mapletree Logistics Trust (SGX: M44U)
 
-#### Sabana REIT (SGX: M1GU)
+We select the following securites for market analysis:
 
-An industrial REIT with a portfolio of 18 properties in Singapore covering high-tech industrial, warehouse and logistics, and general industrial sectors.
+* CSOP iEdge S-REIT Leaders Index ETF (SRT) 
+* CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)
+* SPDR Straits Times Index ETF (ES3.SI)
+* SPDR S&P 500 ETF Trust (SPY)
+* Dow Jones Global Index (^W1DOW)
 
-#### Keppel Pacific Oak US REIT (SGX: CMOU)
+Finally, we select as other asset for analysis:
 
-An office REIT with 13 freehold office buildings and business campuses across eight markets in the US.
+* ABF Singapore Bond Index Fd (A35.SI)
 
-#### Frasers Logistics & Commercial Trust (SGX: BUOU)
+## Analysis:
 
-A diversified portfolio of 108 properties across Singapore, the UK, Australia, the netherlands and Germany.
-
-#### Mapletree Logistics Trust (SGX: M44U)
-
-An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
-
-
-The dividends above fist four REITs paid in past two years.
-
-### Market analysis
-
-**CSOP iEdge S-REIT Leaders Index ETF S$ (SRT)** Currency in SGD
-**CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)** Currency in USD
-
-The CSOP iEdge S-REIT Leaders Index ETF (the "Sub-Fund") is a sub-fund of the CSOP SG ETF Series I. The Index is concentrated in REITs which are listed on the SGX-ST.SGD Counter Stock Code: SRT, USD Counter Stock Code: SRU
-
-**SPDR Straits Times Index ETF (ES3.SI)** Currency in SGD
-SG market indicator
-
-**SPDR S&P 500 ETF Trust (SPY)** Currency in USD
-American market indicator
-
-**Dow Jones Global Index (^W1DOW)"**
-Global market indicator
-
-above index price over past one year.
-
-#### Other asset
-
-**ABF Singapore Bond Index Fd (A35.SI)**
-
-The price of SG bond index over past five year.
-
-### Analysis:
-
-#### (1) The Real Estate Investment Trust (REIT)
-
-##### (1.1) What is REITs
+### (1) The Real Estate Investment Trust (REIT)
 
 A real estate investment trust (REIT) is a company that owns, operates, or finances income-generating real estate. They package these real estate as mutual funds and put into equity market.
 
-The function of REITs is similar to stock. They pool the capital of numerous investors. This makes it possible for individual investors to earn dividends from real estate investments without having to buy, manage, or finance any properties themselves. Compared with physical real estate investments, REITs is more accessible and liquid.
+Singapore REITs are an important component of Singapore’s stock market, and it's the largest REIT market in Asia ex-Japan: https://www.reitas.sg/singapore-reits/overview-of-the-s-reit-industry/
 
-REITs invest in most real estate property types, including apartment buildings, cell towers, data centers, hotels, medical facilities, offices, retail centers, and warehouses. In other words, REITs is flexible in invest in commercial, public and residential property at period.
+### (2) Characteritics of REITs
 
-In contrast, the physical real estate investments may not achieve this diversification.
-
-Analysis between high dividend & low transaction/votality? The stablility of the revenue:
-* No capital appreciation
-* Revenue only come from the operational profit of the property assets
-
-Types of REITs:
-
-| REITs          | own and manage                   | Revenues            |
-| -------------- | -------------------------------- | ------------------- |
-| Equity REITs   | income-producing real estate     | rents               |
-| Mortgage REITs | Holds mortgages on real property | net interest margin |
-| Hybrid REITs   | Combine above two                | Combine above two   |
-
-##### (1.2) S-REITs
-Singapore REITs are an important component of Singapore’s stock market
-
-Largest REIT market in Asia ex-Japan.
-https://www.reitas.sg/singapore-reits/overview-of-the-s-reit-industry/
-
-
-#### (2) characterizes of REITs
-
-##### (2.1) High dividends
+#### (2.1) High dividends
 
 By law and IRS regulation, REITs must pay out 90% or more of their taxable profits to shareholders in the form of dividends. As a result, REIT companies are often exempt from most corporate income tax.
 
@@ -154,7 +101,7 @@ Approach:
 1. Plot the REITs yield rate and average yield in stock (such as DBS Group Holdings Ltd, Singtel and etc.), compare the return from REITs sector to the average return from other sector.
 2. Plot the SREITs yields vs other Asset Classes (such as STI and bonds)
 
-##### (2.2) Exposure to global real estate
+#### (2.2) Exposure to global real estate
 
 Over 90% of S-REITS own properties outside Singapore. Which market the REITs suffer most risk?
 
@@ -180,8 +127,9 @@ Approach:
 
 Benchmark with 2.5% risk free investment CPF ordinary account.
 
-**(4) Mitigate economic cycle risk**
-Combining assets that exhibit low performance correlation can play an important role in reducing portfolio risk without sacrificing return potential. REITs is a good portfolio diversifier.
+#### (4) Mitigate economic cycle risk
+
+Combining assets that exhibit low performance correlation can play an important role in reducing portfolio risk without sacrificing return potential. Our analysis could find out if REITs is a good portfolio diversifier.
 
 Approach:
 
@@ -198,24 +146,11 @@ Approach:
 
 ## 3.3 Low liquidity and risk
 
-SGX is low liquidity vs other market.
+We could consider index ETF in SGX(ES3) and US(SPY). Assuming they are representive of their market.
 
-STI 30 index yield VS other market.
+Alternatively, we could also look at bank stocks (DBS for SGX and HSBC for HSI) as they are major stocks in many market.
 
-Analysis for trading volumne, like VS HK & SPY
-
-LH
-
-Compare the daily trading volume and market depth of SGX, Hong Kong market, and SPY to evaluate SGX's liquidity status.
-
-Compare the historical returns of the STI 30 index with other major markets and analyze the attractiveness of the SGX market.
-
-Collect data from Yahoo Finance, including the STI 30 index, Hong Kong Stock Exchange index, as well as trading volume and yield data for returns and SPY.
-
-Calculate liquidity indicators, returns, and trading volume, compare SGX with other markets, and conduct correlation analysis between liquidity and returns.
-
-Preliminary findings indicate that SGX's liquidity and yield are lower than those of the Hong Kong Stock Exchange and SPY, and there is a correlation between its liquidity and yield. Therefore, SGX with relatively low risk is more suitable for risk averse investors to invest.
-
+By comparing liquidity indicators: returns, trading volume and bid/ask spread; we could conduct correlation analysis between liquidity and risk. Thus, find out how's SGX's low liquidity impact its risk comparing with other markets.
 
 # 4.The development path of SG equity market
 
@@ -225,7 +160,7 @@ Since then, the major events in SG equity market are:
 - S Chip(龙筹股) China-concept stocks on SGX
   - 2010, 153 S Chip stocks
 - Oct 2007: STI'shistorical peak at 3805.07
-- 2007-2008 Global Financial Crisis 
+- 2007-2008 Global Financial Crisis
 - Feb 2009: STI's 20 year low at 1594.87 
 - 2015–2016 Chinese stock market turbulence
 - Dec 2019-Mar 2021: Covid-19
