@@ -7,7 +7,6 @@ Group 2: WENG Wei, CAO Danyang, MA Tianqi, LUO Hao
 , LIU Qinglin
 
 = Motivation
-
 When Chinese market are fighting the defense battle of 3000 points once again, we are also amazed by the Singapore stock market: StraitsTime Index - STI also have stayed around 3000 points for almost 20 years. Does investors in Singapore also fight for defense battle of 3000 points? Are investors able to make money in Singapore Stock Exchange SGX? We are curious and decide to find out.
 
 Singapore is small, so does SGX. It's possible to cycled around Singapore island within one day. We also wanted to challenge ourselves, to see if we could investigate everything you need to know about Singapore equity market within a term project.
@@ -21,11 +20,9 @@ Our team aims at the following research question about Singapore's equity market
 5. Based on above analysis, give the conclusion of the worthiness of investing in Singapore - equity market and some suggestion of investment.
 
 = Overview of SG equity market
-
 By displaying the by sector map, we address the current situation of the SGX equity market.
 
 == Market Capitalization
-
 SGX hosts a diverse range of companies from various industries. The total market capitalization of companies listed on SGX is a significant indicator of SG's economic importance.
 
 Currently, there are 1384 securities trading on SGX, including 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts).
@@ -33,35 +30,27 @@ Currently, there are 1384 securities trading on SGX, including 587 stocks, 69 ET
 SGX is ASEAN's second largest market capitalization after Indonesia Stock Exchange at US\$585.97 billion as of September 2023. As of February 2024, SGX has a market cap of \$7.62 Billion.
 
 == International Listings
-
 SGX is known for its international appeal, with numerous foreign companies choosing to list there, such as CapitaLand China Trust (CLCT), Hutchison Port Holdings Trust (HPHT), NIO, Prudential PLC, Alita Resource Limited. This not only brings in capital from abroad but also enhances Singapore's status as a global financial center. The presence of international companies contributes to the cross-border flow of funds, investment diversification, and economic resilience.
 
 == SGX's role in the Financial Landscape
-
 SGX is more than a securities exchange; it's a cornerstone of Singapore's financial sector, supporting banking, asset management, and fintech. As a crucial economic pillar, SGX, alongside MAS, ensures strong corporate governance and regulatory standards, safeguarding investors and making the Singapore appealing to global entities. This synergy fosters Singapore's economic stability and growth.
 
 == Trading Volume and Liquidity
-
 The trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, _underscores_ its role in providing liquidity to the market. SGX's derivatives market is particularly notable for its diversity, including commodities, currencies, and indices, attracting international traders, currently have 643 companies listed in it.
 
 = The characteristics of SG equity market
-
 == High dividends
-
-=== The heigh dividends market
-
+=== The high dividends market
 The Straits Times Index (STI) comprises 30 stocks representing the largest and most active publicly listed companies on the SGX. These 30 stocks are considered the main indicators of the Singapore stock market, reflecting the overall performance of the market in Singapore. The top 10 companies are from financial service, Manufacturing, Real estate, consumer goods and services and telecommunications.
 
 We focus on the three banks: DBS, OCBC and UOB because they occupy 20%, 13% and 11%(44% in total) of the STI.
 
 ==== Analysis Steps
-
 - Plot a data table of those three banks, showing their historical stock price performance and yearly dividends.
 - Compare with US banks and Chinese banks. Construct comparison with banks from other markets using scatter plot. Get the conclusion if the SG market is a heigh dividends market or not.
 - Re-estimate & compare STI if theres three banks doesn't give dividends.
 
 == Accessibility and Connection via REITs
-
 In this section, We will use REITs market to analysis the accessibility and connection of Singapore equity market.
 
 There are 41 REITs listed on SG exchange currently. We select the following securities for analysis:
@@ -80,13 +69,11 @@ There are 41 REITs listed on SG exchange currently. We select the following secu
   - ABF Singapore Bond Index Fd (A35.SI)
 
 === REIT: Real Estate Investment Trust
-
 A real estate investment trust (REIT) is a company that owns, operates, or finances income-generating real estate. They package these real estate as mutual funds and put into equity market.
 
 Singapore REITs are an important component of Singapore's stock market, and it's the largest REIT market in Asia ex-Japan: https://www.reitas.sg/singapore-reits/overview-of-the-s-reit-industry/
 
 === Characteristics of REITs
-
 ==== High dividends
 By law and IRS regulation, REITs must pay out 90% or more of their taxable profits to shareholders in the form of dividends. As a result, REIT companies are often exempt from most corporate income tax.
 
@@ -180,5 +167,4 @@ Steps for price history analysis:
 All our data & analyze code are open sourced at: https://github.com/Wuvist/sgx3000
 
 = Conclusion
-
 Not for investment advise, our analysis shows that SGX could be an diversifying option for investors.
