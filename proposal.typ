@@ -15,10 +15,10 @@ Singapore is small, so does SGX. It's possible to cycled around Singapore island
 Our team aims at the following research question about Singapore's equity market:
 
 1. The overview of SG equity market.
-1. The characteristics of SG equity market.
-1. The development path of SG equity market.
-1. Simulated investment in SG equity market. Analysis the results.
-1. Based on above analysis, give the conclusion of the worthiness of investing in Singapore - equity market and some suggestion of investment.
+2. The characteristics of SG equity market.
+3. The development path of SG equity market.
+4. Simulated investment in SG equity market. Analysis the results.
+5. Based on above analysis, give the conclusion of the worthiness of investing in Singapore - equity market and some suggestion of investment.
 
 = Overview of SG equity market
 
@@ -101,7 +101,7 @@ Over 90% of S-REITS own properties outside Singapore. Which market the REITs suf
 
 Approach:
 1. Regress these REITs on three different market (SG, US and global market index), identify the foreigner market contributor of the price of REITs.
-1. Tabulate the Correlation Matrix Between S-REITs and other assets in different market.
+2. Tabulate the Correlation Matrix Between S-REITs and other assets in different market.
 
 US market maybe the most relevant:
 - Linkage of USD & SGD
@@ -113,8 +113,8 @@ REITs offer a strong, stable annual dividend and the potential for long-term cap
 
 Approach:
 1. Using the average annual total returns in CSOP iEdge S-REIT Leaders Index ETF to generate the yield curve from 1 year to 5 years.
-1. In contrast, plot the yield curve in stock index, bonds of SG market, combined with U.S. stocks and U.S. Market index.
-1. Compare the long term return of each financial assets, to analysis the connection of REITs and other equity and identify the long-term advantage of REITs.
+2. In contrast, plot the yield curve in stock index, bonds of SG market, combined with U.S. stocks and U.S. Market index.
+3. Compare the long term return of each financial assets, to analysis the connection of REITs and other equity and identify the long-term advantage of REITs.
 
 Benchmark with 2.5% yield of CPF ordinary account - a risk free investment.
 
