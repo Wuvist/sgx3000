@@ -15,5 +15,7 @@ for ticker in tickers:
         continue
     print(ticker)
 
+
+data = {k:info[k] for k in info if len(info[k])>1}
 with open('data/info.json', 'w', encoding='utf-8') as f:
-    json.dump(info, f, ensure_ascii=False, indent=4)
+    json.dump(data, f, ensure_ascii=False, indent=4)
