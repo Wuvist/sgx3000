@@ -3964,15 +3964,6 @@
         "financialCurrency": "MYR",
         "trailingPegRatio": null
     },
-    "1M8W": {
-        "trailingPegRatio": null
-    },
-    "1O0W": {
-        "trailingPegRatio": null
-    },
-    "1Q8W": {
-        "trailingPegRatio": null
-    },
     "1R6": {
         "address1": "19A Serangoon North Avenue 5",
         "city": "Singapore",
@@ -4286,12 +4277,6 @@
         "ebitdaMargins": 0.02794,
         "operatingMargins": -0.08245,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "1V5W": {
-        "trailingPegRatio": null
-    },
-    "1X5W": {
         "trailingPegRatio": null
     },
     "1Y1": {
@@ -8308,21 +8293,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "43SW": {
-        "trailingPegRatio": null
-    },
-    "44RW": {
-        "trailingPegRatio": null
-    },
-    "44TW": {
-        "trailingPegRatio": null
-    },
-    "45IW": {
-        "trailingPegRatio": null
-    },
-    "47GW": {
-        "trailingPegRatio": null
-    },
     "49B": {
         "address1": "156 Gul Circle",
         "city": "Singapore",
@@ -9109,9 +9079,6 @@
         "ebitdaMargins": -0.24747999,
         "operatingMargins": -0.39401,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "510": {
         "trailingPegRatio": null
     },
     "528": {
@@ -11147,9 +11114,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "56DW": {
-        "trailingPegRatio": null
-    },
     "570": {
         "address1": "No.07-09 Orion @ Paya Lebar",
         "address2": "160 Paya Lebar Road",
@@ -12274,9 +12238,6 @@
         "ebitdaMargins": -0.27203,
         "operatingMargins": -0.19923,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "58UW": {
         "trailingPegRatio": null
     },
     "594": {
@@ -15317,9 +15278,6 @@
         "ebitdaMargins": 0.11350001,
         "operatingMargins": 0.091120005,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "5EC": {
         "trailingPegRatio": null
     },
     "5EF": {
@@ -19623,9 +19581,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "5L7W": {
-        "trailingPegRatio": null
-    },
     "5LE": {
         "address1": "15 Hillview Terrace",
         "city": "Singapore",
@@ -20810,9 +20765,6 @@
         "ebitdaMargins": 0.10288999,
         "operatingMargins": 0.06061,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "5O9W": {
         "trailingPegRatio": null
     },
     "5OC": {
@@ -26637,9 +26589,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "5XAW": {
-        "trailingPegRatio": null
-    },
     "600": {
         "maxAge": 86400,
         "priceHint": 4,
@@ -27161,15 +27110,6 @@
         "maxAge": 86400,
         "trailingPegRatio": null
     },
-    "8P1W": {
-        "trailingPegRatio": null
-    },
-    "8R7W": {
-        "trailingPegRatio": null
-    },
-    "8R9W": {
-        "trailingPegRatio": null
-    },
     "8U7U": {
         "address1": "1 Wallich Street",
         "address2": "#15-03 Guoco Tower",
@@ -27298,12 +27238,6 @@
         "grossMargins": 0.70877,
         "operatingMargins": 0.63496,
         "financialCurrency": "EUR",
-        "trailingPegRatio": null
-    },
-    "8Y2W": {
-        "trailingPegRatio": null
-    },
-    "8YIW": {
         "trailingPegRatio": null
     },
     "8YLS": {
@@ -27449,15 +27383,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "92FW": {
-        "trailingPegRatio": null
-    },
-    "92NW": {
-        "trailingPegRatio": null
-    },
-    "933W": {
-        "trailingPegRatio": null
-    },
     "96DW": {
         "quoteType": "NONE",
         "symbol": "96DW.SI",
@@ -27465,12 +27390,6 @@
         "uuid": "0f67ee3b-96f1-349a-855b-45f1f6639027",
         "messageBoardId": "finmb_878824",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "97XW": {
-        "trailingPegRatio": null
-    },
-    "99RW": {
         "trailingPegRatio": null
     },
     "9CI": {
@@ -27688,12 +27607,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": 0.6815
     },
-    "9CXW": {
-        "trailingPegRatio": null
-    },
-    "9D2W": {
-        "trailingPegRatio": null
-    },
     "9E9W": {
         "quoteType": "NONE",
         "symbol": "9E9W.SI",
@@ -27701,27 +27614,6 @@
         "uuid": "e16d2093-a03a-343f-9d9e-9ee6a8a31e38",
         "messageBoardId": "finmb_247571281",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "9ERW": {
-        "trailingPegRatio": null
-    },
-    "9GBW": {
-        "trailingPegRatio": null
-    },
-    "9GUW": {
-        "trailingPegRatio": null
-    },
-    "9HHW": {
-        "trailingPegRatio": null
-    },
-    "9HNW": {
-        "trailingPegRatio": null
-    },
-    "9J2W": {
-        "trailingPegRatio": null
-    },
-    "9JIW": {
         "trailingPegRatio": null
     },
     "9KPR": {
@@ -27751,21 +27643,6 @@
         "timeZoneShortName": "SGT",
         "messageBoardId": "finmb_276598934",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "9LEW": {
-        "trailingPegRatio": null
-    },
-    "9MSW": {
-        "trailingPegRatio": null
-    },
-    "9NDW": {
-        "trailingPegRatio": null
-    },
-    "9PPW": {
-        "trailingPegRatio": null
-    },
-    "9QEW": {
         "trailingPegRatio": null
     },
     "9QX": {
@@ -27903,27 +27780,6 @@
         "ebitdaMargins": -0.13033,
         "operatingMargins": -0.41119,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "9SAW": {
-        "trailingPegRatio": null
-    },
-    "9VUW": {
-        "trailingPegRatio": null
-    },
-    "9W2W": {
-        "trailingPegRatio": null
-    },
-    "9WIW": {
-        "trailingPegRatio": null
-    },
-    "9Y3W": {
-        "trailingPegRatio": null
-    },
-    "9YVW": {
-        "trailingPegRatio": null
-    },
-    "9ZIW": {
         "trailingPegRatio": null
     },
     "A04": {
@@ -31753,9 +31609,6 @@
         "ebitdaMargins": 0.61732,
         "operatingMargins": 0.58877,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "AVM": {
         "trailingPegRatio": null
     },
     "AVX": {
@@ -51712,72 +51565,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "CUEW": {
-        "trailingPegRatio": null
-    },
-    "CUFW": {
-        "trailingPegRatio": null
-    },
-    "CUGW": {
-        "trailingPegRatio": null
-    },
-    "CUJW": {
-        "trailingPegRatio": null
-    },
-    "CUMW": {
-        "trailingPegRatio": null
-    },
-    "CUNW": {
-        "trailingPegRatio": null
-    },
-    "CUPW": {
-        "trailingPegRatio": null
-    },
-    "CUQW": {
-        "trailingPegRatio": null
-    },
-    "CURW": {
-        "trailingPegRatio": null
-    },
-    "CUTW": {
-        "trailingPegRatio": null
-    },
-    "CUXW": {
-        "trailingPegRatio": null
-    },
-    "CVAW": {
-        "trailingPegRatio": null
-    },
-    "CVDW": {
-        "trailingPegRatio": null
-    },
-    "CVEW": {
-        "trailingPegRatio": null
-    },
-    "CVFW": {
-        "trailingPegRatio": null
-    },
-    "CVGW": {
-        "trailingPegRatio": null
-    },
-    "CVIW": {
-        "trailingPegRatio": null
-    },
-    "CVJW": {
-        "trailingPegRatio": null
-    },
-    "CVKW": {
-        "trailingPegRatio": null
-    },
-    "CVMW": {
-        "trailingPegRatio": null
-    },
-    "CVRW": {
-        "trailingPegRatio": null
-    },
-    "CVYW": {
-        "trailingPegRatio": null
-    },
     "CWBU": {
         "address1": "50 Collyer Quay",
         "address2": "Suite 07-02; OUE Bayfront",
@@ -52097,72 +51884,6 @@
         "financialCurrency": "EUR",
         "trailingPegRatio": null
     },
-    "CWFW": {
-        "trailingPegRatio": null
-    },
-    "CWGW": {
-        "trailingPegRatio": null
-    },
-    "CWHW": {
-        "trailingPegRatio": null
-    },
-    "CWIW": {
-        "trailingPegRatio": null
-    },
-    "CWKW": {
-        "trailingPegRatio": null
-    },
-    "CWLW": {
-        "trailingPegRatio": null
-    },
-    "CWMW": {
-        "trailingPegRatio": null
-    },
-    "CWPW": {
-        "trailingPegRatio": null
-    },
-    "CWQW": {
-        "trailingPegRatio": null
-    },
-    "CWRW": {
-        "trailingPegRatio": null
-    },
-    "CWUW": {
-        "trailingPegRatio": null
-    },
-    "CWXW": {
-        "trailingPegRatio": null
-    },
-    "CXBW": {
-        "trailingPegRatio": null
-    },
-    "CXCW": {
-        "trailingPegRatio": null
-    },
-    "CXEW": {
-        "trailingPegRatio": null
-    },
-    "CXGW": {
-        "trailingPegRatio": null
-    },
-    "CXIW": {
-        "trailingPegRatio": null
-    },
-    "CXJW": {
-        "trailingPegRatio": null
-    },
-    "CXKW": {
-        "trailingPegRatio": null
-    },
-    "CXLW": {
-        "trailingPegRatio": null
-    },
-    "CXMW": {
-        "trailingPegRatio": null
-    },
-    "CXPW": {
-        "trailingPegRatio": null
-    },
     "CXS": {
         "maxAge": 86400,
         "priceHint": 4,
@@ -52231,15 +51952,6 @@
         "uuid": "6d6f5c97-b4b3-32e9-944e-9eb9f385cb97",
         "messageBoardId": "finmb_1813537266",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "CXVW": {
-        "trailingPegRatio": null
-    },
-    "CXXW": {
-        "trailingPegRatio": null
-    },
-    "CXZW": {
         "trailingPegRatio": null
     },
     "CY6U": {
@@ -52404,9 +52116,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "CYAW": {
-        "trailingPegRatio": null
-    },
     "CYB": {
         "maxAge": 86400,
         "priceHint": 2,
@@ -52491,36 +52200,6 @@
         "uuid": "ac2403b1-6882-3334-910c-55707266065c",
         "messageBoardId": "finmb_682869287",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "CYDW": {
-        "trailingPegRatio": null
-    },
-    "CYEW": {
-        "trailingPegRatio": null
-    },
-    "CYGW": {
-        "trailingPegRatio": null
-    },
-    "CYIW": {
-        "trailingPegRatio": null
-    },
-    "CYJW": {
-        "trailingPegRatio": null
-    },
-    "CYMW": {
-        "trailingPegRatio": null
-    },
-    "CYNW": {
-        "trailingPegRatio": null
-    },
-    "CYOW": {
-        "trailingPegRatio": null
-    },
-    "CYPW": {
-        "trailingPegRatio": null
-    },
-    "CYSW": {
         "trailingPegRatio": null
     },
     "CYW": {
@@ -52706,45 +52385,6 @@
         "uuid": "d1cbbd96-9386-382d-a1e9-f31e5f7e181f",
         "messageBoardId": "finmb_1802568610",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "CYZW": {
-        "trailingPegRatio": null
-    },
-    "CZEW": {
-        "trailingPegRatio": null
-    },
-    "CZFW": {
-        "trailingPegRatio": null
-    },
-    "CZGW": {
-        "trailingPegRatio": null
-    },
-    "CZHW": {
-        "trailingPegRatio": null
-    },
-    "CZIW": {
-        "trailingPegRatio": null
-    },
-    "CZJW": {
-        "trailingPegRatio": null
-    },
-    "CZLW": {
-        "trailingPegRatio": null
-    },
-    "CZMW": {
-        "trailingPegRatio": null
-    },
-    "CZNW": {
-        "trailingPegRatio": null
-    },
-    "CZOW": {
-        "trailingPegRatio": null
-    },
-    "CZRW": {
-        "trailingPegRatio": null
-    },
-    "CZZW": {
         "trailingPegRatio": null
     },
     "D01": {
@@ -53731,27 +53371,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "DAIW": {
-        "trailingPegRatio": null
-    },
-    "DAKW": {
-        "trailingPegRatio": null
-    },
-    "DAMW": {
-        "trailingPegRatio": null
-    },
-    "DBIW": {
-        "trailingPegRatio": null
-    },
-    "DBPW": {
-        "trailingPegRatio": null
-    },
-    "DCGW": {
-        "trailingPegRatio": null
-    },
-    "DCQW": {
-        "trailingPegRatio": null
-    },
     "DCRU": {
         "address1": "10 Collyer Quay",
         "address2": "No. 42-06, Ocean Financial Centre",
@@ -53898,96 +53517,6 @@
         "grossMargins": 0.32957,
         "operatingMargins": 0.99748003,
         "financialCurrency": "USD",
-        "trailingPegRatio": null
-    },
-    "DCUW": {
-        "trailingPegRatio": null
-    },
-    "DCVW": {
-        "trailingPegRatio": null
-    },
-    "DCXW": {
-        "trailingPegRatio": null
-    },
-    "DCZW": {
-        "trailingPegRatio": null
-    },
-    "DDPW": {
-        "trailingPegRatio": null
-    },
-    "DDSW": {
-        "trailingPegRatio": null
-    },
-    "DEEW": {
-        "trailingPegRatio": null
-    },
-    "DEFW": {
-        "trailingPegRatio": null
-    },
-    "DELW": {
-        "trailingPegRatio": null
-    },
-    "DENW": {
-        "trailingPegRatio": null
-    },
-    "DEOW": {
-        "trailingPegRatio": null
-    },
-    "DEPW": {
-        "trailingPegRatio": null
-    },
-    "DEQW": {
-        "trailingPegRatio": null
-    },
-    "DETW": {
-        "trailingPegRatio": null
-    },
-    "DEVW": {
-        "trailingPegRatio": null
-    },
-    "DEWW": {
-        "trailingPegRatio": null
-    },
-    "DFIW": {
-        "trailingPegRatio": null
-    },
-    "DFKW": {
-        "trailingPegRatio": null
-    },
-    "DFRW": {
-        "trailingPegRatio": null
-    },
-    "DFTW": {
-        "trailingPegRatio": null
-    },
-    "DFUW": {
-        "trailingPegRatio": null
-    },
-    "DFWW": {
-        "trailingPegRatio": null
-    },
-    "DFXW": {
-        "trailingPegRatio": null
-    },
-    "DFZW": {
-        "trailingPegRatio": null
-    },
-    "DGJW": {
-        "trailingPegRatio": null
-    },
-    "DGKW": {
-        "trailingPegRatio": null
-    },
-    "DGMW": {
-        "trailingPegRatio": null
-    },
-    "DGWW": {
-        "trailingPegRatio": null
-    },
-    "DGYW": {
-        "trailingPegRatio": null
-    },
-    "DHHW": {
         "trailingPegRatio": null
     },
     "DHLU": {
@@ -54143,93 +53672,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "DHNW": {
-        "trailingPegRatio": null
-    },
-    "DHQW": {
-        "trailingPegRatio": null
-    },
-    "DHWW": {
-        "trailingPegRatio": null
-    },
-    "DHXW": {
-        "trailingPegRatio": null
-    },
-    "DIFW": {
-        "trailingPegRatio": null
-    },
-    "DIGW": {
-        "trailingPegRatio": null
-    },
-    "DIKW": {
-        "trailingPegRatio": null
-    },
-    "DIMW": {
-        "trailingPegRatio": null
-    },
-    "DIOW": {
-        "trailingPegRatio": null
-    },
-    "DIPW": {
-        "trailingPegRatio": null
-    },
-    "DISW": {
-        "trailingPegRatio": null
-    },
-    "DJLW": {
-        "trailingPegRatio": null
-    },
-    "DJPW": {
-        "trailingPegRatio": null
-    },
-    "DJSW": {
-        "trailingPegRatio": null
-    },
-    "DJVW": {
-        "trailingPegRatio": null
-    },
-    "DJYW": {
-        "trailingPegRatio": null
-    },
-    "DJZW": {
-        "trailingPegRatio": null
-    },
-    "DKAW": {
-        "trailingPegRatio": null
-    },
-    "DKBW": {
-        "trailingPegRatio": null
-    },
-    "DKOW": {
-        "trailingPegRatio": null
-    },
-    "DKPW": {
-        "trailingPegRatio": null
-    },
-    "DKQW": {
-        "trailingPegRatio": null
-    },
-    "DKRW": {
-        "trailingPegRatio": null
-    },
-    "DKVW": {
-        "trailingPegRatio": null
-    },
-    "DKZW": {
-        "trailingPegRatio": null
-    },
-    "DLDW": {
-        "trailingPegRatio": null
-    },
-    "DLHW": {
-        "trailingPegRatio": null
-    },
-    "DLTW": {
-        "trailingPegRatio": null
-    },
-    "DLZW": {
-        "trailingPegRatio": null
-    },
     "DM0": {
         "address1": "348 Jalan Boon Lay",
         "city": "Singapore",
@@ -54383,93 +53825,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "DMFW": {
-        "trailingPegRatio": null
-    },
-    "DNWW": {
-        "trailingPegRatio": null
-    },
-    "DOCW": {
-        "trailingPegRatio": null
-    },
-    "DOGW": {
-        "trailingPegRatio": null
-    },
-    "DPBW": {
-        "trailingPegRatio": null
-    },
-    "DPGW": {
-        "trailingPegRatio": null
-    },
-    "DPNW": {
-        "trailingPegRatio": null
-    },
-    "DPPW": {
-        "trailingPegRatio": null
-    },
-    "DPRW": {
-        "trailingPegRatio": null
-    },
-    "DPTW": {
-        "trailingPegRatio": null
-    },
-    "DPZW": {
-        "trailingPegRatio": null
-    },
-    "DQCW": {
-        "trailingPegRatio": null
-    },
-    "DQGW": {
-        "trailingPegRatio": null
-    },
-    "DQKW": {
-        "trailingPegRatio": null
-    },
-    "DQUW": {
-        "trailingPegRatio": null
-    },
-    "DQVW": {
-        "trailingPegRatio": null
-    },
-    "DQXW": {
-        "trailingPegRatio": null
-    },
-    "DQYW": {
-        "trailingPegRatio": null
-    },
-    "DQZW": {
-        "trailingPegRatio": null
-    },
-    "DRBW": {
-        "trailingPegRatio": null
-    },
-    "DRHW": {
-        "trailingPegRatio": null
-    },
-    "DRJW": {
-        "trailingPegRatio": null
-    },
-    "DRKW": {
-        "trailingPegRatio": null
-    },
-    "DROW": {
-        "trailingPegRatio": null
-    },
-    "DRPW": {
-        "trailingPegRatio": null
-    },
-    "DRQW": {
-        "trailingPegRatio": null
-    },
-    "DRRW": {
-        "trailingPegRatio": null
-    },
-    "DRSW": {
-        "trailingPegRatio": null
-    },
-    "DRVW": {
-        "trailingPegRatio": null
-    },
     "DRX": {
         "address1": "120 Turner Street",
         "address2": "Port Melbourne",
@@ -54596,30 +53951,6 @@
         "ebitdaMargins": 0.07374,
         "operatingMargins": 0.0498,
         "financialCurrency": "AUD",
-        "trailingPegRatio": null
-    },
-    "DRZW": {
-        "trailingPegRatio": null
-    },
-    "DSMW": {
-        "trailingPegRatio": null
-    },
-    "DSQW": {
-        "trailingPegRatio": null
-    },
-    "DSRW": {
-        "trailingPegRatio": null
-    },
-    "DSWW": {
-        "trailingPegRatio": null
-    },
-    "DSZW": {
-        "trailingPegRatio": null
-    },
-    "DTIW": {
-        "trailingPegRatio": null
-    },
-    "DTMW": {
         "trailingPegRatio": null
     },
     "DU4": {
@@ -54760,144 +54091,6 @@
         "ebitdaMargins": 0.13811,
         "operatingMargins": 0.09882,
         "financialCurrency": "THB",
-        "trailingPegRatio": null
-    },
-    "DUHW": {
-        "trailingPegRatio": null
-    },
-    "DUKW": {
-        "trailingPegRatio": null
-    },
-    "DUMW": {
-        "trailingPegRatio": null
-    },
-    "DUNW": {
-        "trailingPegRatio": null
-    },
-    "DUPW": {
-        "trailingPegRatio": null
-    },
-    "DURW": {
-        "trailingPegRatio": null
-    },
-    "DUTW": {
-        "trailingPegRatio": null
-    },
-    "DUWW": {
-        "trailingPegRatio": null
-    },
-    "DUXW": {
-        "trailingPegRatio": null
-    },
-    "DUYW": {
-        "trailingPegRatio": null
-    },
-    "DVAW": {
-        "trailingPegRatio": null
-    },
-    "DVFW": {
-        "trailingPegRatio": null
-    },
-    "DVKW": {
-        "trailingPegRatio": null
-    },
-    "DVLW": {
-        "trailingPegRatio": null
-    },
-    "DVMW": {
-        "trailingPegRatio": null
-    },
-    "DVNW": {
-        "trailingPegRatio": null
-    },
-    "DVSW": {
-        "trailingPegRatio": null
-    },
-    "DVWW": {
-        "trailingPegRatio": null
-    },
-    "DVXW": {
-        "trailingPegRatio": null
-    },
-    "DVZW": {
-        "trailingPegRatio": null
-    },
-    "DWCW": {
-        "trailingPegRatio": null
-    },
-    "DWEW": {
-        "trailingPegRatio": null
-    },
-    "DWFW": {
-        "trailingPegRatio": null
-    },
-    "DWGW": {
-        "trailingPegRatio": null
-    },
-    "DWIW": {
-        "trailingPegRatio": null
-    },
-    "DWMW": {
-        "trailingPegRatio": null
-    },
-    "DWOW": {
-        "trailingPegRatio": null
-    },
-    "DWYW": {
-        "trailingPegRatio": null
-    },
-    "DXOW": {
-        "trailingPegRatio": null
-    },
-    "DXQW": {
-        "trailingPegRatio": null
-    },
-    "DXVW": {
-        "trailingPegRatio": null
-    },
-    "DYEW": {
-        "trailingPegRatio": null
-    },
-    "DYFW": {
-        "trailingPegRatio": null
-    },
-    "DYGW": {
-        "trailingPegRatio": null
-    },
-    "DYHW": {
-        "trailingPegRatio": null
-    },
-    "DYIW": {
-        "trailingPegRatio": null
-    },
-    "DYLW": {
-        "trailingPegRatio": null
-    },
-    "DYNW": {
-        "trailingPegRatio": null
-    },
-    "DYSW": {
-        "trailingPegRatio": null
-    },
-    "DYTW": {
-        "trailingPegRatio": null
-    },
-    "DYWW": {
-        "trailingPegRatio": null
-    },
-    "DYYW": {
-        "trailingPegRatio": null
-    },
-    "DZSW": {
-        "trailingPegRatio": null
-    },
-    "DZTW": {
-        "trailingPegRatio": null
-    },
-    "DZUW": {
-        "trailingPegRatio": null
-    },
-    "DZVW": {
         "trailingPegRatio": null
     },
     "E27": {
@@ -55834,9 +55027,6 @@
         "financialCurrency": "HKD",
         "trailingPegRatio": null
     },
-    "EAPS": {
-        "trailingPegRatio": null
-    },
     "EB5": {
         "address1": "No. 24-01 Suntec Tower One",
         "address2": "7 Temasek Boulevard",
@@ -56080,21 +55270,6 @@
         "ebitdaMargins": -2.8739402,
         "operatingMargins": -25.85,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "EBEW": {
-        "trailingPegRatio": null
-    },
-    "EBSW": {
-        "trailingPegRatio": null
-    },
-    "ECAW": {
-        "trailingPegRatio": null
-    },
-    "ECSW": {
-        "trailingPegRatio": null
-    },
-    "EEHW": {
         "trailingPegRatio": null
     },
     "EG0": {
@@ -56447,26 +55622,11 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "EHNW": {
-        "trailingPegRatio": null
-    },
-    "EHPW": {
-        "trailingPegRatio": null
-    },
-    "EHUW": {
-        "trailingPegRatio": null
-    },
     "EHZB": {
         "quoteType": "NONE",
         "symbol": "EHZB.SI",
         "underlyingSymbol": "EHZB.SI",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "EJUS": {
-        "trailingPegRatio": null
-    },
-    "ELQW": {
         "trailingPegRatio": null
     },
     "EMI": {
@@ -56787,12 +55947,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "EOIW": {
-        "trailingPegRatio": null
-    },
-    "EPVW": {
-        "trailingPegRatio": null
-    },
     "ER0": {
         "address1": "36 Senoko Road",
         "city": "Singapore",
@@ -56986,9 +56140,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "ESFW": {
-        "trailingPegRatio": null
-    },
     "ESG": {
         "maxAge": 86400,
         "priceHint": 4,
@@ -57097,9 +56248,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "EVMW": {
-        "trailingPegRatio": null
-    },
     "EVS": {
         "phone": "65-6535-8025",
         "maxAge": 86400,
@@ -57142,21 +56290,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "1a68ede0-d834-3cbb-905c-887114af5636",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "EXFW": {
-        "trailingPegRatio": null
-    },
-    "EXWW": {
-        "trailingPegRatio": null
-    },
-    "EYBW": {
-        "trailingPegRatio": null
-    },
-    "EYFW": {
-        "trailingPegRatio": null
-    },
-    "EZUW": {
         "trailingPegRatio": null
     },
     "F03": {
@@ -58756,36 +57889,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "FBXW": {
-        "trailingPegRatio": null
-    },
-    "FDDW": {
-        "trailingPegRatio": null
-    },
-    "FDWW": {
-        "trailingPegRatio": null
-    },
-    "FFAW": {
-        "trailingPegRatio": null
-    },
-    "FGIW": {
-        "trailingPegRatio": null
-    },
-    "FIMW": {
-        "trailingPegRatio": null
-    },
-    "FIOW": {
-        "trailingPegRatio": null
-    },
-    "FKBW": {
-        "trailingPegRatio": null
-    },
-    "FOFW": {
-        "trailingPegRatio": null
-    },
-    "FPKW": {
-        "trailingPegRatio": null
-    },
     "FQ7": {
         "address1": "No. 27-00, 10 Collyer Quay",
         "city": "Singapore",
@@ -58887,12 +57990,6 @@
         "freeCashflow": -818625,
         "operatingCashflow": -538000,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "FRGW": {
-        "trailingPegRatio": null
-    },
-    "FRLW": {
         "trailingPegRatio": null
     },
     "FRQ": {
@@ -59032,15 +58129,6 @@
         "ebitdaMargins": 0.07755,
         "operatingMargins": 0.12652001,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "FTMW": {
-        "trailingPegRatio": null
-    },
-    "FWQW": {
-        "trailingPegRatio": null
-    },
-    "FXRW": {
         "trailingPegRatio": null
     },
     "G07": {
@@ -60182,18 +59270,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "GDVW": {
-        "trailingPegRatio": null
-    },
-    "GHCW": {
-        "trailingPegRatio": null
-    },
-    "GPSW": {
-        "trailingPegRatio": null
-    },
-    "GQYW": {
-        "trailingPegRatio": null
-    },
     "GRE": {
         "phone": "+65 65327988",
         "maxAge": 86400,
@@ -60484,9 +59560,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "GRVW": {
-        "trailingPegRatio": null
-    },
     "GSD": {
         "longBusinessSummary": "The Trust holds gold bars and from time to time, issues Baskets in exchange for deposits of gold and distributes gold in connection with redemptions of Baskets. The investment objective of the Trust is for the Shares to reflect the performance of the price of gold bullion, less the Trust’s expenses. The Sponsor believes that, for many investors, the Shares represent a cost-effective investment in gold.",
         "maxAge": 86400,
@@ -60528,12 +59601,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "f546bd0a-9199-37ca-8adb-e45474ac9f22",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "GSPW": {
-        "trailingPegRatio": null
-    },
-    "GTRW": {
         "trailingPegRatio": null
     },
     "GU5": {
@@ -60654,18 +59721,6 @@
         "ebitdaMargins": -0.23396,
         "operatingMargins": -0.34328,
         "financialCurrency": "HKD",
-        "trailingPegRatio": null
-    },
-    "GUDW": {
-        "trailingPegRatio": null
-    },
-    "GUTW": {
-        "trailingPegRatio": null
-    },
-    "GUVW": {
-        "trailingPegRatio": null
-    },
-    "GZTW": {
         "trailingPegRatio": null
     },
     "H02": {
@@ -62340,21 +61395,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": 0.2056
     },
-    "HAOW": {
-        "trailingPegRatio": null
-    },
-    "HBWW": {
-        "trailingPegRatio": null
-    },
-    "HBYW": {
-        "trailingPegRatio": null
-    },
-    "HCLW": {
-        "trailingPegRatio": null
-    },
-    "HCTW": {
-        "trailingPegRatio": null
-    },
     "HD9": {
         "phone": "2203-8888",
         "maxAge": 86400,
@@ -62395,21 +61435,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "1209bd33-2059-3217-ab1b-0498d7c02c3f",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "HDTW": {
-        "trailingPegRatio": null
-    },
-    "HFQW": {
-        "trailingPegRatio": null
-    },
-    "HGOW": {
-        "trailingPegRatio": null
-    },
-    "HHHW": {
-        "trailingPegRatio": null
-    },
-    "HIEW": {
         "trailingPegRatio": null
     },
     "HKB": {
@@ -62562,12 +61587,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "HKCW": {
-        "trailingPegRatio": null
-    },
-    "HLKW": {
-        "trailingPegRatio": null
-    },
     "HMN": {
         "address1": "168 Robinson Road",
         "address2": "#30-01 Capital Tower",
@@ -62715,15 +61734,6 @@
         "operatingMargins": 0.36269,
         "financialCurrency": "SGD",
         "trailingPegRatio": 5.8829
-    },
-    "HNVW": {
-        "trailingPegRatio": null
-    },
-    "HOHW": {
-        "trailingPegRatio": null
-    },
-    "HQLW": {
-        "trailingPegRatio": null
     },
     "HQU": {
         "address1": "Jalan Pasaran 23/5",
@@ -62877,12 +61887,6 @@
         "financialCurrency": "MYR",
         "trailingPegRatio": null
     },
-    "HQWW": {
-        "trailingPegRatio": null
-    },
-    "HSKW": {
-        "trailingPegRatio": null
-    },
     "HSS": {
         "phone": "+65 64176900",
         "maxAge": 86400,
@@ -62964,12 +61968,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "ac82f050-f556-3c23-9167-b889a2e45758",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "HUTW": {
-        "trailingPegRatio": null
-    },
-    "HYGW": {
         "trailingPegRatio": null
     },
     "I98": {
@@ -63089,63 +62087,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "6628b505-eaa7-3ce5-bbe7-7269c9666fcd",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "IDBW": {
-        "trailingPegRatio": null
-    },
-    "IFAW": {
-        "trailingPegRatio": null
-    },
-    "IFDW": {
-        "trailingPegRatio": null
-    },
-    "IFHW": {
-        "trailingPegRatio": null
-    },
-    "IFUW": {
-        "trailingPegRatio": null
-    },
-    "IHHW": {
-        "trailingPegRatio": null
-    },
-    "IHSW": {
-        "trailingPegRatio": null
-    },
-    "IIIW": {
-        "trailingPegRatio": null
-    },
-    "ILKW": {
-        "trailingPegRatio": null
-    },
-    "IMWW": {
-        "trailingPegRatio": null
-    },
-    "IOCW": {
-        "trailingPegRatio": null
-    },
-    "IOKW": {
-        "trailingPegRatio": null
-    },
-    "IQQW": {
-        "trailingPegRatio": null
-    },
-    "ISFW": {
-        "trailingPegRatio": null
-    },
-    "ISPW": {
-        "trailingPegRatio": null
-    },
-    "ISTW": {
-        "trailingPegRatio": null
-    },
-    "ITQW": {
-        "trailingPegRatio": null
-    },
-    "ITRW": {
-        "trailingPegRatio": null
-    },
-    "ITXW": {
         "trailingPegRatio": null
     },
     "IW5": {
@@ -63332,9 +62273,6 @@
         "ebitdaMargins": 0.04631,
         "operatingMargins": 0.03342,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "IYBW": {
         "trailingPegRatio": null
     },
     "IZGW": {
@@ -64319,24 +63257,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": 2.1479
     },
-    "JAFW": {
-        "trailingPegRatio": null
-    },
-    "JDLW": {
-        "trailingPegRatio": null
-    },
-    "JEGW": {
-        "trailingPegRatio": null
-    },
-    "JFSW": {
-        "trailingPegRatio": null
-    },
-    "JGQW": {
-        "trailingPegRatio": null
-    },
-    "JHXW": {
-        "trailingPegRatio": null
-    },
     "JK8": {
         "phone": "+65 65327988",
         "maxAge": 86400,
@@ -64552,27 +63472,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "JLXW": {
-        "trailingPegRatio": null
-    },
-    "JMBW": {
-        "trailingPegRatio": null
-    },
-    "JMFW": {
-        "trailingPegRatio": null
-    },
-    "JQAW": {
-        "trailingPegRatio": null
-    },
-    "JRTW": {
-        "trailingPegRatio": null
-    },
-    "JUIW": {
-        "trailingPegRatio": null
-    },
-    "JVEW": {
-        "trailingPegRatio": null
-    },
     "JYEU": {
         "address1": "2 Tanjong Katong Road, #05-01",
         "address2": "Paya Lebar Quarter",
@@ -64739,9 +63638,6 @@
         "ebitdaMargins": 0.66019,
         "operatingMargins": 0.68197,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "JYOW": {
         "trailingPegRatio": null
     },
     "K03": {
@@ -65673,18 +64569,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "KBDW": {
-        "trailingPegRatio": null
-    },
-    "KEQW": {
-        "trailingPegRatio": null
-    },
-    "KGRW": {
-        "trailingPegRatio": null
-    },
-    "KHWW": {
-        "trailingPegRatio": null
-    },
     "KJ5": {
         "address1": "BBR Building",
         "address2": "50 Changi South Street 1",
@@ -65886,9 +64770,6 @@
         "underlyingSymbol": "KJZW.SI",
         "uuid": "d35396f8-16ee-3e5d-bf61-47f6b9e3019c",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "KNXW": {
         "trailingPegRatio": null
     },
     "KUH": {
@@ -67077,18 +65958,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "L5I": {
-        "trailingPegRatio": null
-    },
-    "LAXW": {
-        "trailingPegRatio": null
-    },
-    "LBPW": {
-        "trailingPegRatio": null
-    },
-    "LBXW": {
-        "trailingPegRatio": null
-    },
     "LCS": {
         "maxAge": 86400,
         "priceHint": 4,
@@ -67160,9 +66029,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "b6c69e66-c494-3634-9be3-59b17706d577",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "LDGW": {
         "trailingPegRatio": null
     },
     "LG9": {
@@ -67442,15 +66308,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "LLYW": {
-        "trailingPegRatio": null
-    },
-    "LMKW": {
-        "trailingPegRatio": null
-    },
-    "LMOW": {
-        "trailingPegRatio": null
-    },
     "LMS": {
         "address1": "16 Lengkok Kikik 1",
         "address2": "Taman Inderawasih Penang",
@@ -67620,12 +66477,6 @@
         "financialCurrency": "MYR",
         "trailingPegRatio": null
     },
-    "LQRW": {
-        "trailingPegRatio": null
-    },
-    "LRBW": {
-        "trailingPegRatio": null
-    },
     "LS9": {
         "address1": "No. 04-11, 41 Science Park Road",
         "address2": "The Gemini",
@@ -67787,9 +66638,6 @@
         "ebitdaMargins": -1.6133299,
         "operatingMargins": -1.369,
         "financialCurrency": "CNY",
-        "trailingPegRatio": null
-    },
-    "LSHS": {
         "trailingPegRatio": null
     },
     "LSS": {
@@ -68101,12 +66949,6 @@
         "ebitdaMargins": 0.06586,
         "operatingMargins": -0.65470004,
         "financialCurrency": "USD",
-        "trailingPegRatio": null
-    },
-    "LXDW": {
-        "trailingPegRatio": null
-    },
-    "LYRW": {
         "trailingPegRatio": null
     },
     "LYY": {
@@ -69415,9 +68257,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "M1Z": {
-        "trailingPegRatio": null
-    },
     "M44U": {
         "address1": "10 Pasir Panjang Road",
         "address2": "#13-01 Mapletree Business City",
@@ -69702,9 +68541,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "MCZW": {
-        "trailingPegRatio": null
-    },
     "ME8U": {
         "address1": "10 Pasir Panjang Road",
         "address2": "#13-01 Mapletree Business City",
@@ -69898,9 +68734,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": 0.8414
     },
-    "MEAW": {
-        "trailingPegRatio": null
-    },
     "MF6": {
         "address1": "26 Gul Way",
         "city": "Singapore",
@@ -70066,9 +68899,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "MGCW": {
-        "trailingPegRatio": null
-    },
     "MIJ": {
         "address1": "No. 07-12 The Elitis",
         "address2": "25 Bukit Batok Crescent",
@@ -70227,9 +69057,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "MJHW": {
-        "trailingPegRatio": null
-    },
     "MMS": {
         "phone": "+65 65336001",
         "maxAge": 86400,
@@ -70314,20 +69141,11 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "MNCW": {
-        "trailingPegRatio": null
-    },
-    "MNSW": {
-        "trailingPegRatio": null
-    },
     "MOFB": {
         "quoteType": "NONE",
         "symbol": "MOFB.SI",
         "underlyingSymbol": "MOFB.SI",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "MPQW": {
         "trailingPegRatio": null
     },
     "MR7": {
@@ -70728,12 +69546,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "MVKW": {
-        "trailingPegRatio": null
-    },
-    "MVLW": {
-        "trailingPegRatio": null
-    },
     "MXNU": {
         "address1": "No. 17-01, Suntec Tower 2",
         "address2": "9 Temasek Boulevard",
@@ -70869,9 +69681,6 @@
         "grossMargins": 0.87511003,
         "operatingMargins": 0.83206004,
         "financialCurrency": "GBP",
-        "trailingPegRatio": null
-    },
-    "MYLB": {
         "trailingPegRatio": null
     },
     "MZH": {
@@ -72157,9 +70966,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "NBAW": {
-        "trailingPegRatio": null
-    },
     "NC2": {
         "address1": "10 Soi 10, Phetkasem Road",
         "city": "Hat Yai",
@@ -72362,24 +71168,12 @@
         "financialCurrency": "THB",
         "trailingPegRatio": null
     },
-    "NCAW": {
-        "trailingPegRatio": null
-    },
-    "NCMW": {
-        "trailingPegRatio": null
-    },
     "NCXW": {
         "quoteType": "NONE",
         "symbol": "NCXW.SI",
         "underlyingSymbol": "NCXW.SI",
         "uuid": "53861035-ce28-35bb-9ee7-6deb549b1c59",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "NCYW": {
-        "trailingPegRatio": null
-    },
-    "NEAW": {
         "trailingPegRatio": null
     },
     "NEX": {
@@ -72521,9 +71315,6 @@
         "ebitdaMargins": 0.16413,
         "operatingMargins": 0.06118,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "NFCW": {
         "trailingPegRatio": null
     },
     "NHD": {
@@ -72983,12 +71774,6 @@
         "financialCurrency": "MYR",
         "trailingPegRatio": null
     },
-    "NLPW": {
-        "trailingPegRatio": null
-    },
-    "NMCW": {
-        "trailingPegRatio": null
-    },
     "NO4": {
         "address1": "45 Gul Road",
         "city": "Singapore",
@@ -73152,12 +71937,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "NOMW": {
-        "trailingPegRatio": null
-    },
-    "NOYW": {
-        "trailingPegRatio": null
-    },
     "NPL": {
         "maxAge": 86400,
         "priceHint": 4,
@@ -73192,9 +71971,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "41c317c3-ecc0-336b-b5ed-4b538eaf2394",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "NPNW": {
         "trailingPegRatio": null
     },
     "NPW": {
@@ -73345,9 +72121,6 @@
         "financialCurrency": "MYR",
         "trailingPegRatio": null
     },
-    "NQEW": {
-        "trailingPegRatio": null
-    },
     "NR7": {
         "address1": "111 Somerset Road, #15-22",
         "address2": "111 Somerset",
@@ -73473,12 +72246,6 @@
         "ebitdaMargins": 0.30023,
         "operatingMargins": 0.17864001,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "NRGW": {
-        "trailingPegRatio": null
-    },
-    "NRQW": {
         "trailingPegRatio": null
     },
     "NS8U": {
@@ -73769,15 +72536,6 @@
         "maxAge": 86400,
         "trailingPegRatio": null
     },
-    "NUIW": {
-        "trailingPegRatio": null
-    },
-    "NVLW": {
-        "trailingPegRatio": null
-    },
-    "NWDW": {
-        "trailingPegRatio": null
-    },
     "NXR": {
         "address1": "Toa Payoh North",
         "address2": "No. 02-17, Block 1004",
@@ -73926,9 +72684,6 @@
         "ebitdaMargins": 0.06825,
         "operatingMargins": 0.0146,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "NYNW": {
         "trailingPegRatio": null
     },
     "O08": {
@@ -74898,9 +73653,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "OAAW": {
-        "trailingPegRatio": null
-    },
     "OAJ": {
         "address1": "9-1, Jalan PJS 8/18",
         "address2": "Dataran Mentari",
@@ -75185,15 +73937,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "OEWW": {
-        "trailingPegRatio": null
-    },
-    "OFBW": {
-        "trailingPegRatio": null
-    },
-    "OGNW": {
-        "trailingPegRatio": null
-    },
     "OL9S": {
         "exchange": "SES",
         "quoteType": "BOND",
@@ -75345,18 +74088,6 @@
         "ebitdaMargins": -0.56795,
         "operatingMargins": -0.18277,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "OMYW": {
-        "trailingPegRatio": null
-    },
-    "ONLW": {
-        "trailingPegRatio": null
-    },
-    "OOPW": {
-        "trailingPegRatio": null
-    },
-    "OOSW": {
         "trailingPegRatio": null
     },
     "OTS": {
@@ -75848,9 +74579,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "OUQW": {
-        "trailingPegRatio": null
-    },
     "OV8": {
         "address1": "6 Mandai Link",
         "city": "Singapore",
@@ -76098,12 +74826,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "OVVW": {
-        "trailingPegRatio": null
-    },
-    "OXAW": {
-        "trailingPegRatio": null
-    },
     "OXMU": {
         "address1": "1 Raffles Place",
         "address2": "#40-01 One Raffles Place",
@@ -76237,9 +74959,6 @@
         "grossMargins": 0.54526,
         "operatingMargins": 0.52483004,
         "financialCurrency": "USD",
-        "trailingPegRatio": null
-    },
-    "OXUW": {
         "trailingPegRatio": null
     },
     "OYY": {
@@ -76442,9 +75161,6 @@
         "ebitdaMargins": 0.05768,
         "operatingMargins": 0.05546,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "OZDW": {
         "trailingPegRatio": null
     },
     "P11": {
@@ -78198,18 +76914,12 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "PAIW": {
-        "trailingPegRatio": null
-    },
     "PBSW": {
         "quoteType": "NONE",
         "symbol": "PBSW.SI",
         "underlyingSymbol": "PBSW.SI",
         "uuid": "ca7bdbc9-5552-3fd8-85c6-a0a7313b3c51",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "PCYW": {
         "trailingPegRatio": null
     },
     "PGEW": {
@@ -78469,21 +77179,6 @@
         "maxAge": 86400,
         "trailingPegRatio": null
     },
-    "PHHW": {
-        "trailingPegRatio": null
-    },
-    "PISW": {
-        "trailingPegRatio": null
-    },
-    "PMGW": {
-        "trailingPegRatio": null
-    },
-    "POQW": {
-        "trailingPegRatio": null
-    },
-    "POTW": {
-        "trailingPegRatio": null
-    },
     "PPC": {
         "address1": "82 Ubi Avenue 4",
         "address2": "No. 05-04, Edward Boustead Centre",
@@ -78593,9 +77288,6 @@
         "ebitdaMargins": -0.88704,
         "operatingMargins": -6.22222,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "PQKW": {
         "trailingPegRatio": null
     },
     "PRH": {
@@ -78788,15 +77480,6 @@
         "currentPrice": 4.85,
         "recommendationKey": "none",
         "grossProfits": 49628000000,
-        "trailingPegRatio": null
-    },
-    "PXRW": {
-        "trailingPegRatio": null
-    },
-    "PYLW": {
-        "trailingPegRatio": null
-    },
-    "PZWW": {
         "trailingPegRatio": null
     },
     "Q01": {
@@ -79501,9 +78184,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "QAIW": {
-        "trailingPegRatio": null
-    },
     "QC7": {
         "address1": "No. 04-01 Logis Hub @ Clementi",
         "address2": "2 Clementi Loop",
@@ -79665,9 +78345,6 @@
         "ebitdaMargins": 0.14779,
         "operatingMargins": 0.12609,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "QDSW": {
         "trailingPegRatio": null
     },
     "QES": {
@@ -79847,18 +78524,6 @@
         "ebitdaMargins": 0.14904,
         "operatingMargins": 0.10504,
         "financialCurrency": "CNY",
-        "trailingPegRatio": null
-    },
-    "QFHW": {
-        "trailingPegRatio": null
-    },
-    "QFYW": {
-        "trailingPegRatio": null
-    },
-    "QGGW": {
-        "trailingPegRatio": null
-    },
-    "QJDW": {
         "trailingPegRatio": null
     },
     "QK9": {
@@ -80112,12 +78777,6 @@
         "ebitdaMargins": 0.056500003,
         "operatingMargins": -0.050229996,
         "financialCurrency": "MYR",
-        "trailingPegRatio": null
-    },
-    "QPCW": {
-        "trailingPegRatio": null
-    },
-    "QQQW": {
         "trailingPegRatio": null
     },
     "QR9": {
@@ -80485,12 +79144,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "QTTW": {
-        "trailingPegRatio": null
-    },
-    "QXPW": {
-        "trailingPegRatio": null
-    },
     "QZG": {
         "address1": "10 Ubi Crescent",
         "address2": "# 03-94/95/96, Ubi Techpark Lobby E",
@@ -80611,9 +79264,6 @@
         "ebitdaMargins": -0.063829996,
         "operatingMargins": -0.16799,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "QZKW": {
         "trailingPegRatio": null
     },
     "R14": {
@@ -80755,9 +79405,6 @@
         "maxAge": 86400,
         "trailingPegRatio": null
     },
-    "R28W": {
-        "trailingPegRatio": null
-    },
     "R54R": {
         "maxAge": 86400,
         "priceHint": 4,
@@ -80783,9 +79430,6 @@
         "timeZoneFullName": "Asia/Singapore",
         "timeZoneShortName": "SGT",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "R85W": {
         "trailingPegRatio": null
     },
     "RAYW": {
@@ -81239,36 +79883,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "REHW": {
-        "trailingPegRatio": null
-    },
-    "RF1U": {
-        "trailingPegRatio": null
-    },
-    "RFVW": {
-        "trailingPegRatio": null
-    },
-    "RGCW": {
-        "trailingPegRatio": null
-    },
-    "RGMW": {
-        "trailingPegRatio": null
-    },
-    "RHBW": {
-        "trailingPegRatio": null
-    },
-    "RJRW": {
-        "trailingPegRatio": null
-    },
-    "RMFW": {
-        "trailingPegRatio": null
-    },
-    "RMLW": {
-        "trailingPegRatio": null
-    },
-    "RNXW": {
-        "trailingPegRatio": null
-    },
     "RQ1": {
         "address1": "81 Pasir Ris Heights",
         "city": "Singapore",
@@ -81431,12 +80045,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "RQGW": {
-        "trailingPegRatio": null
-    },
-    "RRQW": {
-        "trailingPegRatio": null
-    },
     "RS1": {
         "address1": "Greenfield Tower, Concordia Plaza",
         "address2": "26th Floor Room 2608 No.1 Science Museum Road, Tsim Sha Tsui East",
@@ -81589,9 +80197,6 @@
         "financialCurrency": "HKD",
         "trailingPegRatio": null
     },
-    "RUZW": {
-        "trailingPegRatio": null
-    },
     "RXS": {
         "address1": "15 Pandan Road",
         "city": "Singapore",
@@ -81733,12 +80338,6 @@
         "ebitdaMargins": 0.617,
         "operatingMargins": 1.09974,
         "financialCurrency": "USD",
-        "trailingPegRatio": null
-    },
-    "RXUW": {
-        "trailingPegRatio": null
-    },
-    "RYQW": {
         "trailingPegRatio": null
     },
     "S07": {
@@ -85993,12 +84592,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "SFWW": {
-        "trailingPegRatio": null
-    },
-    "SGEW": {
-        "trailingPegRatio": null
-    },
     "SGR": {
         "address1": "11 Collyer Quay",
         "address2": "No.06-01, The Arcade",
@@ -86152,9 +84745,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "a33dcc8f-2fca-352c-86cb-ea32dbe411ed",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "SHWW": {
         "trailingPegRatio": null
     },
     "SJY": {
@@ -86499,21 +85089,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "SLVW": {
-        "trailingPegRatio": null
-    },
-    "SMIW": {
-        "trailingPegRatio": null
-    },
-    "SNEW": {
-        "trailingPegRatio": null
-    },
-    "SNSW": {
-        "trailingPegRatio": null
-    },
-    "SNVW": {
-        "trailingPegRatio": null
-    },
     "SO7": {
         "address1": "Jiangyin-Jingjiang Industry Zone",
         "address2": "1# Lianyi Road",
@@ -86673,9 +85248,6 @@
         "ebitdaMargins": 0.21874,
         "operatingMargins": 0.22982,
         "financialCurrency": "CNY",
-        "trailingPegRatio": null
-    },
-    "SPXW": {
         "trailingPegRatio": null
     },
     "SQ1B": {
@@ -86840,9 +85412,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "58414ad8-8d0c-3a7f-9db2-63350ede71a4",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "SSKW": {
         "trailingPegRatio": null
     },
     "SSS": {
@@ -87309,9 +85878,6 @@
         "ebitdaMargins": 0.08715,
         "operatingMargins": 0.0022,
         "financialCurrency": "THB",
-        "trailingPegRatio": null
-    },
-    "SYBW": {
         "trailingPegRatio": null
     },
     "SYYW": {
@@ -89105,18 +87671,6 @@
         "gmtOffSetMilliseconds": 28800000,
         "trailingPegRatio": null
     },
-    "TAYW": {
-        "trailingPegRatio": null
-    },
-    "TBEW": {
-        "trailingPegRatio": null
-    },
-    "TCCW": {
-        "trailingPegRatio": null
-    },
-    "TCHW": {
-        "trailingPegRatio": null
-    },
     "TCPD": {
         "maxAge": 86400,
         "priceHint": 4,
@@ -89151,9 +87705,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "ea0bb7a4-8c7a-33cf-bc35-0c5d8bc79564",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "TCQW": {
         "trailingPegRatio": null
     },
     "TCU": {
@@ -89336,15 +87887,6 @@
         "underlyingSymbol": "TFXW.SI",
         "uuid": "fb778f64-5ad2-30ef-b3fc-2a41e5a0429b",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "TGKW": {
-        "trailingPegRatio": null
-    },
-    "TGMW": {
-        "trailingPegRatio": null
-    },
-    "THBW": {
         "trailingPegRatio": null
     },
     "TID": {
@@ -89618,12 +88160,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "TQQW": {
-        "trailingPegRatio": null
-    },
-    "TQTW": {
-        "trailingPegRatio": null
-    },
     "TS0U": {
         "address1": "333 Orchard Road",
         "address2": "#33-01",
@@ -89780,9 +88316,6 @@
         "ebitdaMargins": 0.77268,
         "operatingMargins": 0.76856005,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "TSGW": {
         "trailingPegRatio": null
     },
     "TSH": {
@@ -89942,12 +88475,6 @@
         "financialCurrency": "MYR",
         "trailingPegRatio": null
     },
-    "TTTW": {
-        "trailingPegRatio": null
-    },
-    "TVBW": {
-        "trailingPegRatio": null
-    },
     "TVV": {
         "address1": "10 Ubi Crescent",
         "address2": "No. 03-48 Lobby C, Ubi Techpark",
@@ -90084,9 +88611,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "TWJW": {
-        "trailingPegRatio": null
-    },
     "TWL": {
         "address1": "20 Woodlands Link",
         "address2": "No. 04-30/31 Woodlands East Ind. Estate",
@@ -90210,12 +88734,6 @@
         "ebitdaMargins": 0.06266,
         "operatingMargins": 0.06894,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "TWQW": {
-        "trailingPegRatio": null
-    },
-    "TYTW": {
         "trailingPegRatio": null
     },
     "U06": {
@@ -91752,9 +90270,6 @@
         "financialCurrency": "HKD",
         "trailingPegRatio": null
     },
-    "UCHW": {
-        "trailingPegRatio": null
-    },
     "UD1U": {
         "address1": "1 Wallich Street",
         "address2": "#15-03 Guoco Tower",
@@ -92090,33 +90605,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "UDOW": {
-        "trailingPegRatio": null
-    },
-    "UFDW": {
-        "trailingPegRatio": null
-    },
-    "UFSW": {
-        "trailingPegRatio": null
-    },
-    "UGNW": {
-        "trailingPegRatio": null
-    },
-    "UIZW": {
-        "trailingPegRatio": null
-    },
-    "ULDW": {
-        "trailingPegRatio": null
-    },
-    "UORW": {
-        "trailingPegRatio": null
-    },
-    "UPRW": {
-        "trailingPegRatio": null
-    },
-    "UQOW": {
-        "trailingPegRatio": null
-    },
     "URR": {
         "address1": "No. 26-03, Oxley Tower",
         "address2": "138 Robinson Road",
@@ -92275,12 +90763,6 @@
         "ebitdaMargins": 0.25456,
         "operatingMargins": 0.26816,
         "financialCurrency": "MYR",
-        "trailingPegRatio": null
-    },
-    "USMW": {
-        "trailingPegRatio": null
-    },
-    "UUIW": {
         "trailingPegRatio": null
     },
     "UUK": {
@@ -92539,9 +91021,6 @@
         "financialCurrency": "MYR",
         "trailingPegRatio": null
     },
-    "UYIW": {
-        "trailingPegRatio": null
-    },
     "V03": {
         "address1": "5006 Ang Mo Kio Avenue 5",
         "address2": "No. 05-01/12 TECHplace II",
@@ -92723,9 +91202,6 @@
         "ebitdaMargins": 0.104399994,
         "operatingMargins": 0.06291,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "V0QW": {
         "trailingPegRatio": null
     },
     "V2Y": {
@@ -92934,9 +91410,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "V6QW": {
-        "trailingPegRatio": null
-    },
     "V7AB": {
         "quoteType": "NONE",
         "symbol": "V7AB.SI",
@@ -93076,27 +91549,12 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "V9TW": {
-        "trailingPegRatio": null
-    },
-    "VA2W": {
-        "trailingPegRatio": null
-    },
-    "VA5W": {
-        "trailingPegRatio": null
-    },
     "VAIW": {
         "quoteType": "NONE",
         "symbol": "VAIW.SI",
         "underlyingSymbol": "VAIW.SI",
         "uuid": "e2d91714-586f-3a25-9132-bc1c2ee2115e",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "VBEW": {
-        "trailingPegRatio": null
-    },
-    "VBTW": {
         "trailingPegRatio": null
     },
     "VC2": {
@@ -93287,9 +91745,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "VCZW": {
-        "trailingPegRatio": null
-    },
     "VFP": {
         "address1": "160 Robinson Road",
         "address2": "#05-08 SBF Centre",
@@ -93418,12 +91873,6 @@
         "ebitdaMargins": -0.15155,
         "operatingMargins": -0.40635,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "VHCW": {
-        "trailingPegRatio": null
-    },
-    "VHGW": {
         "trailingPegRatio": null
     },
     "VI2": {
@@ -93558,21 +92007,6 @@
         "financialCurrency": "CNY",
         "trailingPegRatio": null
     },
-    "VJ6W": {
-        "trailingPegRatio": null
-    },
-    "VJKW": {
-        "trailingPegRatio": null
-    },
-    "VJLW": {
-        "trailingPegRatio": null
-    },
-    "VLSW": {
-        "trailingPegRatio": null
-    },
-    "VNBW": {
-        "trailingPegRatio": null
-    },
     "VND": {
         "address1": "10 Marina Boulevard, #10-01",
         "address2": "Marina Bay Financial Centre",
@@ -93691,15 +92125,6 @@
         "maxAge": 86400,
         "trailingPegRatio": null
     },
-    "VT6W": {
-        "trailingPegRatio": null
-    },
-    "VTVW": {
-        "trailingPegRatio": null
-    },
-    "VUQW": {
-        "trailingPegRatio": null
-    },
     "VVL": {
         "address1": "29 Tai Seng Avenue",
         "address2": "#07-07 Natural Cool Lifestyle Hub",
@@ -93792,12 +92217,6 @@
         "ebitdaMargins": -1.10027,
         "operatingMargins": -5.7446303,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "VXJW": {
-        "trailingPegRatio": null
-    },
-    "VZVW": {
         "trailingPegRatio": null
     },
     "W05": {
@@ -93955,54 +92374,12 @@
         "maxAge": 86400,
         "trailingPegRatio": null
     },
-    "W4SW": {
-        "trailingPegRatio": null
-    },
-    "W5UB": {
-        "trailingPegRatio": null
-    },
-    "W6LW": {
-        "trailingPegRatio": null
-    },
-    "W8PW": {
-        "trailingPegRatio": null
-    },
-    "W9KW": {
-        "trailingPegRatio": null
-    },
-    "WA9W": {
-        "trailingPegRatio": null
-    },
-    "WB3W": {
-        "trailingPegRatio": null
-    },
-    "WBQW": {
-        "trailingPegRatio": null
-    },
-    "WCLW": {
-        "trailingPegRatio": null
-    },
-    "WCQW": {
-        "trailingPegRatio": null
-    },
-    "WDYW": {
-        "trailingPegRatio": null
-    },
     "WG2W": {
         "quoteType": "NONE",
         "symbol": "WG2W.SI",
         "underlyingSymbol": "WG2W.SI",
         "uuid": "bf246e5b-9eea-3e83-a21b-9bd761c5ff35",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "WG4W": {
-        "trailingPegRatio": null
-    },
-    "WGX": {
-        "trailingPegRatio": null
-    },
-    "WIIW": {
         "trailingPegRatio": null
     },
     "WJP": {
@@ -94310,21 +92687,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "WL2W": {
-        "trailingPegRatio": null
-    },
-    "WL9W": {
-        "trailingPegRatio": null
-    },
-    "WNLW": {
-        "trailingPegRatio": null
-    },
-    "WOJW": {
-        "trailingPegRatio": null
-    },
-    "WPBW": {
-        "trailingPegRatio": null
-    },
     "WPC": {
         "address1": "1 Harbourfront Avenue",
         "address2": "No. 06-08 Keppel Bay Tower",
@@ -94483,24 +92845,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "WQBW": {
-        "trailingPegRatio": null
-    },
-    "WRNW": {
-        "trailingPegRatio": null
-    },
-    "WRYW": {
-        "trailingPegRatio": null
-    },
-    "WTNW": {
-        "trailingPegRatio": null
-    },
-    "WTZW": {
-        "trailingPegRatio": null
-    },
-    "WV5W": {
-        "trailingPegRatio": null
-    },
     "WVJ": {
         "address1": "SIS Building",
         "address2": "No. 06-04, 4 Leng Kee Road",
@@ -94630,39 +92974,12 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "WWHW": {
-        "trailingPegRatio": null
-    },
-    "WXGW": {
-        "trailingPegRatio": null
-    },
-    "WYBW": {
-        "trailingPegRatio": null
-    },
     "WZ2W": {
         "quoteType": "NONE",
         "symbol": "WZ2W.SI",
         "underlyingSymbol": "WZ2W.SI",
         "uuid": "8eb0bebb-dbcd-33d4-bd34-2315efae3c4d",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "X5HW": {
-        "trailingPegRatio": null
-    },
-    "X8AW": {
-        "trailingPegRatio": null
-    },
-    "XBFW": {
-        "trailingPegRatio": null
-    },
-    "XBJW": {
-        "trailingPegRatio": null
-    },
-    "XBNW": {
-        "trailingPegRatio": null
-    },
-    "XC2W": {
         "trailingPegRatio": null
     },
     "XCF": {
@@ -94804,12 +93121,6 @@
         "ebitdaMargins": -0.0018799999,
         "operatingMargins": -0.022349998,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "XEWW": {
-        "trailingPegRatio": null
-    },
-    "XIRW": {
         "trailingPegRatio": null
     },
     "XJB": {
@@ -94963,21 +93274,6 @@
         "ebitdaMargins": -0.111219995,
         "operatingMargins": -0.27519,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "XKJW": {
-        "trailingPegRatio": null
-    },
-    "XMDW": {
-        "trailingPegRatio": null
-    },
-    "XOHW": {
-        "trailingPegRatio": null
-    },
-    "XPCW": {
-        "trailingPegRatio": null
-    },
-    "XR6W": {
         "trailingPegRatio": null
     },
     "XVG": {
@@ -95286,15 +93582,6 @@
         "ebitdaMargins": 0.11115,
         "operatingMargins": 0.35654,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "XWEW": {
-        "trailingPegRatio": null
-    },
-    "XXIW": {
-        "trailingPegRatio": null
-    },
-    "XYUW": {
         "trailingPegRatio": null
     },
     "XZL": {
@@ -95707,9 +93994,6 @@
         "financialCurrency": "CNY",
         "trailingPegRatio": null
     },
-    "Y1WW": {
-        "trailingPegRatio": null
-    },
     "Y35": {
         "address1": "No. 17-12, International Plaza",
         "address2": "10 Anson Road",
@@ -96115,12 +94399,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "Y5AW": {
-        "trailingPegRatio": null
-    },
-    "Y6OB": {
-        "trailingPegRatio": null
-    },
     "Y8E": {
         "address1": "No. 6, Jalan Dato Yunus 1",
         "address2": "Kawasan Perindustria Dato Yunus Sulaiman Lima Kedai",
@@ -96460,12 +94738,6 @@
         "financialCurrency": "THB",
         "trailingPegRatio": null
     },
-    "YB5W": {
-        "trailingPegRatio": null
-    },
-    "YCPW": {
-        "trailingPegRatio": null
-    },
     "YF8": {
         "address1": "9 Raffles Place",
         "address2": "No. 54-01 Republic Plaza",
@@ -96638,15 +94910,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "YIHW": {
-        "trailingPegRatio": null
-    },
-    "YIQW": {
-        "trailingPegRatio": null
-    },
-    "YJZW": {
-        "trailingPegRatio": null
-    },
     "YK9": {
         "address1": "32 Woodlands Terrace",
         "city": "Singapore",
@@ -96800,29 +95063,11 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "YM4W": {
-        "trailingPegRatio": null
-    },
-    "YMAW": {
-        "trailingPegRatio": null
-    },
     "YQ7B": {
         "quoteType": "NONE",
         "symbol": "YQ7B.SI",
         "underlyingSymbol": "YQ7B.SI",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "YRCW": {
-        "trailingPegRatio": null
-    },
-    "YS5W": {
-        "trailingPegRatio": null
-    },
-    "YT4W": {
-        "trailingPegRatio": null
-    },
-    "YTTW": {
         "trailingPegRatio": null
     },
     "YYB": {
@@ -97140,9 +95385,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "892758ba-16f3-3147-bc5e-dc380db099d7",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "YZEW": {
         "trailingPegRatio": null
     },
     "Z25": {
@@ -97648,9 +95890,6 @@
         "financialCurrency": "USD",
         "trailingPegRatio": null
     },
-    "Z5MW": {
-        "trailingPegRatio": null
-    },
     "Z74": {
         "address1": "31 Exeter Road",
         "address2": "No. 19-00 Comcentre",
@@ -98044,18 +96283,6 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": 0.6573
     },
-    "ZA7W": {
-        "trailingPegRatio": null
-    },
-    "ZCIW": {
-        "trailingPegRatio": null
-    },
-    "ZCLW": {
-        "trailingPegRatio": null
-    },
-    "ZE9W": {
-        "trailingPegRatio": null
-    },
     "ZFGS": {
         "quoteType": "NONE",
         "symbol": "ZFGS.SI",
@@ -98144,9 +96371,6 @@
         "timeZoneShortName": "SGT",
         "uuid": "5d8c97d7-d794-30d9-b997-81836577c443",
         "gmtOffSetMilliseconds": 28800000,
-        "trailingPegRatio": null
-    },
-    "ZHXW": {
         "trailingPegRatio": null
     },
     "ZHY": {
@@ -98316,26 +96540,11 @@
         "financialCurrency": "SGD",
         "trailingPegRatio": null
     },
-    "ZL1W": {
-        "trailingPegRatio": null
-    },
     "ZL8S": {
         "quoteType": "NONE",
         "symbol": "ZL8S.SI",
         "underlyingSymbol": "ZL8S.SI",
         "maxAge": 86400,
-        "trailingPegRatio": null
-    },
-    "ZS6W": {
-        "trailingPegRatio": null
-    },
-    "ZSZW": {
-        "trailingPegRatio": null
-    },
-    "ZTQW": {
-        "trailingPegRatio": null
-    },
-    "ZWAW": {
         "trailingPegRatio": null
     },
     "ZXY": {
@@ -98468,9 +96677,6 @@
         "ebitdaMargins": 0.01358,
         "operatingMargins": -0.01998,
         "financialCurrency": "SGD",
-        "trailingPegRatio": null
-    },
-    "ZYLW": {
         "trailingPegRatio": null
     },
     "i06": {
