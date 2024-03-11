@@ -41,6 +41,16 @@ def industry_in_sector():
 
     print(json.dumps(industries, ensure_ascii=False, indent=4))
 
+def fetch():
+    ticker = sys.argv[2].upper()
+    try:
+        data = info[ticker]
+    except KeyError:
+        print("{}")
+        return
+
+    print(json.dumps(data, ensure_ascii=False, indent=4))
+
 # python info_stat.py industry | save industries.json
 # python info_stat.py sector | save sectors.json
 
@@ -56,3 +66,5 @@ match cmd:
         industry()
     case "industry_in_sector":
         industry_in_sector()
+    case "fetch":
+        fetch()
