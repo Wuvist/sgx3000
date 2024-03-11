@@ -1,14 +1,14 @@
 {
-    "Consumer Cyclical": 90,
-    "Industrials": 152,
-    "Communication Services": 18,
-    "Healthcare": 35,
-    "Real Estate": 100,
-    "Basic Materials": 38,
-    "Technology": 57,
     "None": 165,
+    "Industrials": 152,
+    "Real Estate": 100,
+    "Consumer Cyclical": 90,
+    "Technology": 57,
+    "Consumer Defensive": 43,
+    "Basic Materials": 38,
+    "Healthcare": 35,
     "Energy": 28,
     "Financial Services": 27,
-    "Consumer Defensive": 43,
+    "Communication Services": 18,
     "Utilities": 11
 }

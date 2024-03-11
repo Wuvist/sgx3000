@@ -41,9 +41,13 @@ def industry_in_sector():
 
     print(json.dumps(industries, ensure_ascii=False, indent=4))
 
-
 # python info_stat.py industry | save industries.json
 # python info_stat.py sector | save sectors.json
+
+"""
+python info_stat.py industry | save -f industries.json
+python info_stat.py sector | save -f sectors.json
+"""
 
 match cmd:
     case "sector":
