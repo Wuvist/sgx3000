@@ -122,5 +122,24 @@
     "ebitdaMargins": -0.16746001,
     "operatingMargins": -0.18658,
     "financialCurrency": "USD",
-    "trailingPegRatio": null
+    "trailingPegRatio": null,
+    "qoute": {
+        "1y Target Est": NaN,
+        "52 Week Range": "1.1000 - 1.9900",
+        "Ask": "1.3000 x 0",
+        "Avg. Volume": 12386.0,
+        "Beta (5Y Monthly)": 0.83,
+        "Bid": "1.2500 x 0",
+        "Day's Range": "1.2200 - 1.3000",
+        "EPS (TTM)": -0.2,
+        "Earnings Date": "Feb 07, 2024",
+        "Ex-Dividend Date": "Nov 11, 2014",
+        "Forward Dividend & Yield": "N/A (N/A)",
+        "Market Cap": "91.516M",
+        "Open": 1.22,
+        "PE Ratio (TTM)": NaN,
+        "Previous Close": 1.3,
+        "Quote Price": 1.2999999523162842,
+        "Volume": 8550.0
+    }
 }

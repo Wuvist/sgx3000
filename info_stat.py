@@ -7,6 +7,10 @@ info = None
 with open('data/info.json') as f:
     info = json.load(f)
 
+qt = None
+with open('data/quote_table.json') as f:
+    qt = json.load(f)
+
 def sector():
     sectors = count_item_by_key(info, 'sector')
     print(json.dumps(sectors, ensure_ascii=False, indent=4))
@@ -45,6 +49,7 @@ def fetch():
     ticker = sys.argv[2].upper()
     try:
         data = info[ticker]
+        data['qoute'] = qt[ticker]
     except KeyError:
         print("{}")
         return
@@ -57,6 +62,8 @@ def fetch():
 """
 python info_stat.py industry | save -f industries.json
 python info_stat.py sector | save -f sectors.json
+python info_stat.py fetch d05 | save -f D05.json
+python info_stat.py fetch c76 | save -f C76.json
 """
 
 match cmd:

@@ -203,5 +203,24 @@
     "revenueGrowth": 0.087,
     "operatingMargins": 0.4966,
     "financialCurrency": "SGD",
-    "trailingPegRatio": 1.5453
+    "trailingPegRatio": 1.5453,
+    "qoute": {
+        "1y Target Est": 36.55,
+        "52 Week Range": "30.30 - 34.55",
+        "Ask": "33.63 x 0",
+        "Avg. Volume": 4040317.0,
+        "Beta (5Y Monthly)": 0.83,
+        "Bid": "33.62 x 0",
+        "Day's Range": "33.55 - 33.90",
+        "EPS (TTM)": 3.85,
+        "Earnings Date": "May 02, 2024",
+        "Ex-Dividend Date": "Apr 05, 2024",
+        "Forward Dividend & Yield": "2.16 (6.40%)",
+        "Market Cap": "86.921B",
+        "Open": 33.89,
+        "PE Ratio (TTM)": 8.73,
+        "Previous Close": 33.75,
+        "Quote Price": 33.619998931884766,
+        "Volume": 2134200.0
+    }
 }
