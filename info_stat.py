@@ -8,36 +8,16 @@ with open('data/info.json') as f:
     info = json.load(f)
 
 def sector():
-    sectors = dict()
-    for key, v in info.items():
-        try:
-            sector = v['sector']
-        except KeyError:
-            sector = "None"
-        if sector in sectors:
-            sectors[sector] = sectors[sector] + 1
-        else:
-            sectors[sector] = 1
-
+    sectors = count_item_by_key(info, 'sector')
     print(json.dumps(sectors, ensure_ascii=False, indent=4))
 
 def industry():
-    industries = dict()
-    for key, v in info.items():
-        try:
-            industry = v['industry']
-        except KeyError:
-            industry = "None"
-        if industry in industries:
-            industries[industry] = industries[industry] + 1
-        else:
-            industries[industry] = 1
-
+    industries = count_item_by_key(info, 'industry')
     print(json.dumps(industries, ensure_ascii=False, indent=4))
 
 def count_item_by_key(data, key):
     result = dict()
-    for item in data:
+    for _, item in data.items():
         try:
             val = item[key]
         except KeyError:
@@ -47,18 +27,17 @@ def count_item_by_key(data, key):
         else:
             result[val] = 1
 
-    return result
+    return dict(sorted(result.items(), key=lambda x:x[1], reverse=True))
 
 def industry_in_sector():
     sector = sys.argv[2]
     industries = dict()
-    data = [v for key, v in info.items() if 'sector' in v and v['sector'] == sector]
+    data = {key:v for key, v in info.items() if 'sector' in v and v['sector'] == sector}
     if sector == "None":
-        data = [v for key, v in info.items() if not 'sector' in v]
+        data = {key:v for key, v in info.items() if not 'sector' in v}
 
     print("Sector: " + sector)
-    industries =count_item_by_key(data, 'industry')
-    industries = dict(sorted(industries.items(), key=lambda x:x[1], reverse=True))
+    industries = count_item_by_key(data, 'industry')
 
     print(json.dumps(industries, ensure_ascii=False, indent=4))
 
