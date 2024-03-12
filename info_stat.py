@@ -51,6 +51,28 @@ def industry_in_sector():
     print(json.dumps(industries, ensure_ascii=False, indent=4))
 
 
+def find_sector():
+    keyword = sys.argv[2].lower()
+    industry = dict()
+    data = {key: v for key, v in info.items(
+    ) if 'sector' in v and keyword in v['sector'].lower()}
+
+    print("sector: " + keyword)
+    for key, v in data.items():
+        print(key + "\t" + v['sector'])
+
+
+def find_industry():
+    keyword = sys.argv[2].lower()
+    industry = dict()
+    data = {key: v for key, v in info.items(
+    ) if 'industry' in v and keyword in v['industry'].lower()}
+
+    print("Industry: " + keyword)
+    for key, v in data.items():
+        print(key + "\t" + v['industry'])
+
+
 def fetch():
     ticker = sys.argv[2].upper()
     try:
@@ -82,3 +104,7 @@ match cmd:
         industry_in_sector()
     case "fetch":
         fetch()
+    case "find_sector":
+        find_sector()
+    case "find_industry":
+        find_industry()
