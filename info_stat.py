@@ -1,3 +1,4 @@
+import pandas as pd
 import json
 import sys
 
@@ -84,6 +85,29 @@ def fetch():
 
     print(json.dumps(data, ensure_ascii=False, indent=4))
 
+
+def cal_rclose_one(ticker):
+    fname = "data/" + ticker + ".csv"
+    df = pd.read_csv(fname)
+    size = len(df) - 1
+
+    delta = 0
+    df['RClose'] = df.Close
+    for i in range(size, -1, -1):
+        df.at[i, "RClose"] = df.iloc[i].RClose + delta
+        if df.iloc[i].Dividends > 0:
+            delta += df.iloc[i].Dividends
+    df.to_csv(fname, index=False, float_format='%.6f')
+
+
+def cal_rclose():
+    for ticker, _ in info.items():
+        try:
+            cal_rclose_one(ticker)
+        except FileNotFoundError:
+            print(ticker + " not found")
+
+
 # python info_stat.py industry | save industries.json
 # python info_stat.py sector | save sectors.json
 
@@ -108,3 +132,5 @@ match cmd:
         find_sector()
     case "find_industry":
         find_industry()
+    case "cal_rclose":
+        cal_rclose()
