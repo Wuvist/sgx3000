@@ -85,6 +85,27 @@ def fetch():
 
     print(json.dumps(data, ensure_ascii=False, indent=4))
 
+    fname = "data/" + ticker + ".csv"
+    try:
+        df = pd.read_csv(fname)
+    except FileNotFoundError:
+        print(ticker + " no transaction history")
+        return
+
+    dividends = df[df.Dividends >0]
+
+    if len(dividends) == 0:
+        print("No dividen given")
+        return
+
+    dividends.reset_index(drop=True, inplace=True)
+    dividends = dividends.drop('Stock Splits', axis=1)
+    for i in range(0, len(dividends)):
+        row = dividends.iloc[i]
+        dividends.at[i, "Date"] = row.Date[0:10]
+
+    print(dividends.to_string(index=False))
+
 
 def cal_rclose_one(ticker):
     fname = "data/" + ticker + ".csv"
