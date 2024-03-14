@@ -100,7 +100,6 @@ def cal_rclose_one(ticker):
 
         if row.Dividends > 0:
             gap = row.Dividends / (i - last_dividend)
-            print("d", row.RClose, df.at[i, "RClose"], row.Dividends, delta)
             for j in range(last_dividend + 1, i):
                 df.at[j, "RClose"] = df.iloc[j].RClose + gap*(j - last_dividend) + delta
             df.at[i, "RClose"] = row.RClose + row.Dividends + delta
@@ -111,7 +110,7 @@ def cal_rclose_one(ticker):
     if delta > 0:
         for i in range(last_dividend + 1, size):
             df.at[i, "RClose"] = df.iloc[i].RClose + delta
-            
+
     df.to_csv(fname, index=False, float_format='%.6f')
 
 
