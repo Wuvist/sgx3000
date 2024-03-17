@@ -33,31 +33,31 @@ Based on the updated data, the investment worthiness ranking, considering both t
 
 Analysis on Real Estate Shares is as follows:
 
-1.	Mapletree Logistics Trust (MLT)
+1. Mapletree Logistics Trust (MLT)
   * P/E Ratio: 13.454546
   * Market Cap: $7.283B
-2.	Mapletree Pan Asia Commercial Trust (MPACT)
+2. Mapletree Pan Asia Commercial Trust (MPACT)
   * P/E Ratio: 19.0
   * Market Cap: $6.934B
-3.	CapitaLand Integrated Commercial Trust (CICT)
+3. CapitaLand Integrated Commercial Trust (CICT)
   * P/E Ratio: 19.6
   * Market Cap: $13.077B
-4.	CapitaLand Ascendas REIT
+4. CapitaLand Ascendas REIT
   * P/E Ratio: 68.0
   * Market Cap: $11.951B
 
 Based on the P/E ratio and market cap, the ranking from most to least worthy of investment, considering these two factors only, would be:
-1.	Mapletree Logistics Trust (MLT) - Offers the lowest P/E ratio among the listed, indicating potentially better value per earnings, combined with a substantial market cap.
-2.	Mapletree Pan Asia Commercial Trust (MPACT) - Second-lowest P/E ratio, suggesting reasonable valuation, though it has the smallest market cap among the group, indicating a slightly riskier investment.
-3.	CapitaLand Integrated Commercial Trust (CICT) - Similar to MPACT in terms of P/E ratio but possesses the highest market cap, indicating a larger and possibly more stable company.
-4.	CapitaLand Ascendas REIT - Highest P/E ratio among the group, suggesting it might be overvalued compared to the others, despite having a significant market cap.
+1. Mapletree Logistics Trust (MLT) - Offers the lowest P/E ratio among the listed, indicating potentially better value per earnings, combined with a substantial market cap.
+2. Mapletree Pan Asia Commercial Trust (MPACT) - Second-lowest P/E ratio, suggesting reasonable valuation, though it has the smallest market cap among the group, indicating a slightly riskier investment.
+3. CapitaLand Integrated Commercial Trust (CICT) - Similar to MPACT in terms of P/E ratio but possesses the highest market cap, indicating a larger and possibly more stable company.
+4. CapitaLand Ascendas REIT - Highest P/E ratio among the group, suggesting it might be overvalued compared to the others, despite having a significant market cap.
 
 Analysis on Oil and Gas Company Shares is as follows:
 
-1.	Sembcorp Industries Ltd
+1. Sembcorp Industries Ltd
   * P/E Ratio: 9.9
   * Market Cap: $8.989B
-2.	Keppel Ltd.
+2. Keppel Ltd.
   * P/E Ratio: 15.26
   * Market Cap: $12.724B
 
