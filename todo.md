@@ -1,6 +1,8 @@
 # Simulation
 lh, tq, dy1, dy2, ww, ql
 
+https://docs.google.com/presentation/d/1aaE1nL5iQNZ1JU5ynkbGwoOUI-MUpjpsLuqWJ0mU5KE/edit#slide=id.g26bec46e044_0_39
+
 # QL
 * [x] Oil & Chem
 * [ ] Oil & gas
@@ -30,8 +32,8 @@ EB5，WJP，9CI，D05，H02，SJX，Z77，F9D，O39，BVA
 
 # DY
 * [x] Calculate sharp ratio of 5 stocks
-* [ ] SD & average graphs
-* [ ] Consider dividend
+* [x] SD & average graphs
+* [x] Consider dividend
 
 High P/E and market cap: M01,5DD,CC3,i07,BN4
 
@@ -76,19 +78,19 @@ A7RU has dividends 0.0096
 [-0.00749224717024272, -0.03127827981006113, -0.01897603562433092]
 
 # WW
-* [ ] Group stock by sector / industry
-  * [ ] Calculate returns / Rreturns
-  * [ ] Calculate beta of CAPM
+* [x] Group stock by sector / industry
+  * [x] Calculate returns / Rreturns
+  * [x] Calculate beta of CAPM
   * [ ] Calculate Jensen’s Alpha
-  * [ ] Calculate risk
-* [ ] Investment Strategry
-  * [ ] Based on last year
-  * [ ] Based on last 5 year
-  * [ ] Based on last 10 year
-  * [ ] Based on last 20 year
-* [ ] Evaluate with
-  * [ ] Jan 2024
-  * [ ] Feb 2024 onwards
+  * [x] Calculate risk
+* [x] Investment Strategry
+  * [x] Based on last year
+  * [x] Based on last 5 year
+  * [x] Based on last 10 year
+  * [x] Based on last 20 year
+* [x] Evaluate with
+  * [x] Jan 2024
+  * [x] Feb 2024 onwards
 
 [-0.04073332919096256, 0.00491763519168289, 0.02021827482279764]
 [-0.045493267837334234, -0.00018177085977349496, 0.018118946986878277]
