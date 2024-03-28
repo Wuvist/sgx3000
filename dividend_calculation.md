@@ -72,7 +72,7 @@ Difference in return: 86.8%
 
 
 
-# A17U (REITs)
+# C38U (REITs)
 Current(2024-04-27) price: 0.0340
 Buy (2023-103-03) adjusted price: 0.048462
 
