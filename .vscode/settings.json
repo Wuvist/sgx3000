@@ -1,8 +1,4 @@
 {
-  "cSpell.enableFiletypes": [
-    "!python"
-  ],
-  "cSpell.words": [
-    "fintech"
-  ]
+  "cSpell.enableFiletypes": ["!python"],
+  "cSpell.words": ["Agri", "BUOU", "CMOU", "fintech"]
 }
