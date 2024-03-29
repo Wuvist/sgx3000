@@ -8,7 +8,10 @@ import pandas as pd
 
 class Number(float):
     def __str__(self):
-        return f"{int(self):,}"
+        try:
+            return f"{int(self):,}"
+        except ValueError:
+            return "nan"
 
 
 @dataclass
