@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from io import StringIO
 import numpy as np
 import pandas as pd
@@ -8,23 +9,24 @@ class ADTV(float):
         return f"{int(self):,}"
 
 
+@dataclass
 class Stock:
-    def __init__(self, price: pd.DataFrame, dividend: pd.DataFrame):
-        self.price = price
-        self.dividend = dividend
+    ticker: str
+    price: pd.DataFrame
+    dividend: pd.DataFrame
 
     def get_adtv(self, start_date: str, end_date: str) -> ADTV:
-        # Average Daily Trading Volume
+        # Get Average Daily Trading Volume during the period
         df = self.price.loc[self.price["Day"] >= start_date].loc[self.price["Day"] <= end_date]
         if len(df) == 0:
             return NaN
         return ADTV(df["Close"].dot(df["Volume"]) / len(df))
 
 
+@dataclass
 class StockReturn:
-    def __init__(self, ByAdjClose: float, ByAddBackClose: float):
-        self.ByAdjClose = ByAdjClose
-        self.ByAddBackClose = ByAddBackClose
+    ByAdjClose: float
+    ByAddBackClose: float
 
     def __str__(self):
         return "ByAdjClose: {:.6f} ByAddBackClose: {:.6f}".format(self.ByAdjClose, self.ByAddBackClose)
@@ -55,7 +57,7 @@ def load_price(ticker: str):
 
 
 def load(ticker: str) -> Stock:
-    return Stock(load_price(ticker), load_dividend(ticker))
+    return Stock(ticker, load_price(ticker), load_dividend(ticker))
 
 
 def list_dividend(start_day: str, stock: Stock) -> pd.DataFrame:
