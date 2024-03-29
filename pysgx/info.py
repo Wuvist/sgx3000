@@ -18,7 +18,7 @@ def get_active():
     return data
 
 
-def get_all():
+def get_all_with_mc():
     '''return all stocks with market cap info available'''
 
     data = dict()
@@ -26,6 +26,17 @@ def get_all():
         mc = get_mc(k)
         if mc != np.nan:
             data[k] = mc
+    return data
+
+
+def get_all_avg_vol():
+    '''return all stocks with averge volumn info available'''
+
+    data = dict()
+    for k, _ in qt.items():
+        vol = get_avg_vol(k)
+        if vol != np.nan:
+            data[k] = vol
     return data
 
 
