@@ -1,4 +1,4 @@
 test.jl
 .DS_Store
 ~*
-main.ipynb
+*.pyc
