@@ -1,10 +1,12 @@
 from dataclasses import dataclass
+from . import info
 from io import StringIO
 import numpy as np
+from typing import List
 import pandas as pd
 
 
-class ADTV(float):
+class Number(float):
     def __str__(self):
         return f"{int(self):,}"
 
@@ -15,12 +17,27 @@ class Stock:
     price: pd.DataFrame
     dividend: pd.DataFrame
 
-    def get_adtv(self, start_date: str, end_date: str) -> ADTV:
+    def get_adtv(self, start_date: str, end_date: str) -> Number:
         # Get Average Daily Trading Volume during the period
         df = self.price.loc[self.price["Day"] >= start_date].loc[self.price["Day"] <= end_date]
         if len(df) == 0:
             return NaN
-        return ADTV(df["Close"].dot(df["Volume"]) / len(df))
+        return Number(df["Close"].dot(df["Volume"]) / len(df))
+
+    def get_mc(self) -> Number:
+        return Number(info.get_mc(self.ticker))
+
+    def get_sector(self) -> str:
+        return info.info[self.ticker]["sector"]
+
+    def get_industry(self) -> str:
+        return info.info[self.ticker]["industry"]
+
+    def get_pe_ratio(self) -> str:
+        return info.qt[self.ticker]["PE Ratio (TTM)"]
+
+    def __str__(self):
+        return f"| {self.ticker} | {self.get_mc()} | {self.get_pe_ratio()} | {self.get_sector()} | {self.get_industry()} |"
 
 
 @dataclass
@@ -54,6 +71,13 @@ def load_price(ticker: str):
     df['Date'] = pd.to_datetime(df['Date']).dt.date
     df["Day"] = df['Date'].apply(lambda x: x.strftime('%Y-%m-%d'))
     return df
+
+
+def loads(tickers: List[str]) -> List[Stock]:
+    result: List[Stock] = []
+    for ticker in tickers:
+        result.append(load(ticker))
+    return result
 
 
 def load(ticker: str) -> Stock:
