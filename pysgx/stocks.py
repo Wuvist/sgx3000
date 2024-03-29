@@ -74,6 +74,23 @@ def get_return_diff(r):
     return r.ByAdjClose / r.ByActual - 1
 
 
+def get_rclose(stock, start_date="", end_date=""):
+    df = stock.price[["Day", "Close", "Adj Close"]]
+    df2 = stock.dividend[["Day", "Dividends"]]
+
+    if start_date != "":
+        df = df[df['Day'] >= start_date]
+        df2 = df2[df2["Day"] > start_date]
+
+    if end_date != "":
+        df = df[df['Day'] <= end_date]
+        df2 = df2[df2['Day'] <= end_date]
+
+    col = df.apply(lambda row: row.Close + df2[row.Day > df2["Day"]].Dividends.sum(), axis=1)
+    df = df.assign(RClose=col.values)
+    return df
+
+
 def get_return(buy_day, sell_day, stock):
     # Finding the index of the buy_day and sell_day
     buy_index = stock.price[stock.price['Day'] <= buy_day].index.max()
