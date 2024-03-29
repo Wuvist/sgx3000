@@ -4,13 +4,13 @@ import pandas as pd
 
 
 class Stock:
-    def __init__(self, price, dividend):
+    def __init__(self, price: pd.DataFrame, dividend: pd.DataFrame):
         self.price = price
         self.dividend = dividend
 
 
 class StockReturn:
-    def __init__(self, ByAdjClose, ByActual):
+    def __init__(self, ByAdjClose: float, ByActual: float):
         self.ByAdjClose = ByAdjClose
         self.ByActual = ByActual
 
@@ -18,7 +18,7 @@ class StockReturn:
 NaN = np.NaN
 
 
-def load_dividend(ticker):
+def load_dividend(ticker: str):
     fname = "data/" + ticker + ".csv"
     df = pd.read_csv(fname)
     df = df[df['Dividends'] > 0]
@@ -27,7 +27,7 @@ def load_dividend(ticker):
     return df
 
 
-def load_price(ticker):
+def load_price(ticker: str):
     fname = "data_latest/" + ticker + ".csv"
     df = pd.read_csv(fname)
     df['Date'] = pd.to_datetime(df['Date']).dt.date
@@ -35,12 +35,13 @@ def load_price(ticker):
     return df
 
 
-def load(ticker):
+def load(ticker: str) -> Stock:
     return Stock(load_price(ticker), load_dividend(ticker))
 
 
-def list_dividend(backday, stock):
-    df = stock.dividend[stock.dividend["Day"] >= backday]
+def list_dividend(start_day: str, stock: Stock) -> pd.DataFrame:
+    # List dividend of the stock since given start_day like "2022-01-01"
+    df = stock.dividend[stock.dividend["Day"] >= start_day]
     print("== csv")
     print("")
 
@@ -70,11 +71,11 @@ def list_dividend(backday, stock):
     return df
 
 
-def get_return_diff(r):
+def get_return_diff(r: StockReturn) -> float:
     return r.ByAdjClose / r.ByActual - 1
 
 
-def get_addback_close(stock, start_date="", end_date=""):
+def get_addback_close(stock: Stock, start_date="", end_date="") -> pd.DataFrame:
     ''' Get stock with "Close", "Adj Close" and "AddBackClose" between start_date and end_date
     If end_date is not given, it will use up to the latest date: 2024-03-15
     If start_date is not given, it will use up earlist date possible: 2000-01-01
@@ -95,7 +96,7 @@ def get_addback_close(stock, start_date="", end_date=""):
     return df
 
 
-def get_return(buy_day, sell_day, stock):
+def get_return(buy_day: str, sell_day: str, stock: Stock) -> StockReturn:
     # Finding the index of the buy_day and sell_day
     buy_index = stock.price[stock.price['Day'] <= buy_day].index.max()
     sell_index = stock.price[stock.price['Day'] <= sell_day].index.max()
@@ -113,8 +114,7 @@ def get_return(buy_day, sell_day, stock):
     print("return: {:.2f}% ({:.6f})".format(
         ReturnByAdjClose*100, ReturnByAdjClose))
 
-    dividends = stock.dividend[(stock.dividend.Day > buy_day) & (
-        stock.dividend.Day < sell_day)].Dividends.sum()
+    dividends = stock.dividend[(stock.dividend.Day > buy_day) & (stock.dividend.Day < sell_day)].Dividends.sum()
 
     print("Total Dividend: {:.6f}\n".format(dividends))
     ByActual = (sell["Close"] + dividends) / buy["Close"] - 1
