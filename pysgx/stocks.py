@@ -10,9 +10,16 @@ class Stock:
 
 
 class StockReturn:
-    def __init__(self, ByAdjClose: float, ByActual: float):
+    def __init__(self, ByAdjClose: float, ByAddBackClose: float):
         self.ByAdjClose = ByAdjClose
-        self.ByActual = ByActual
+        self.ByAddBackClose = ByAddBackClose
+
+    def __str__(self):
+        return "ByAdjClose: {:.6f} ByAddBackClose: {:.6f}".format(self.ByAdjClose, self.ByAddBackClose)
+
+
+class StockRisk(StockReturn):
+    pass
 
 
 NaN = np.NaN
@@ -72,7 +79,7 @@ def list_dividend(start_day: str, stock: Stock) -> pd.DataFrame:
 
 
 def get_return_diff(r: StockReturn) -> float:
-    return r.ByAdjClose / r.ByActual - 1
+    return r.ByAdjClose / r.ByAddBackClose - 1
 
 
 def get_addback_close(stock: Stock, start_date="", end_date="") -> pd.DataFrame:
@@ -96,6 +103,17 @@ def get_addback_close(stock: Stock, start_date="", end_date="") -> pd.DataFrame:
     return df
 
 
+def get_risk(buy_day: str, sell_day: str, stock: Stock) -> StockRisk:
+    df = get_addback_close(stock, buy_day, sell_day)
+    if len(df) == 0:
+        return StockRisk(NaN, NaN)
+
+    risk_adj_close = df["Adj Close"].pct_change().dropna().var()
+    risk_addback_close = df["AddBackClose"].pct_change().dropna().var()
+
+    return StockRisk(risk_adj_close, risk_addback_close)
+
+
 def get_return(buy_day: str, sell_day: str, stock: Stock) -> StockReturn:
     # Finding the index of the buy_day and sell_day
     buy_index = stock.price[stock.price['Day'] <= buy_day].index.max()
@@ -117,17 +135,17 @@ def get_return(buy_day: str, sell_day: str, stock: Stock) -> StockReturn:
     dividends = stock.dividend[(stock.dividend.Day > buy_day) & (stock.dividend.Day < sell_day)].Dividends.sum()
 
     print("Total Dividend: {:.6f}\n".format(dividends))
-    ByActual = (sell["Close"] + dividends) / buy["Close"] - 1
+    ByAddBackClose = (sell["Close"] + dividends) / buy["Close"] - 1
 
     print("# Actual Return by adding back dividend")
     print("buy: {:.6f} sell: {:.6f} gain: {:.6f}".format(buy["Close"],
                                                          sell["Close"] +
                                                          dividends,
                                                          sell["Close"] + dividends - buy["Close"]))
-    print("return: {:.2f}% ({:.6f})".format(ByActual*100, ByActual))
+    print("return: {:.2f}% ({:.6f})".format(ByAddBackClose*100, ByAddBackClose))
     print("")
 
-    r = StockReturn(ReturnByAdjClose, ByActual)
+    r = StockReturn(ReturnByAdjClose, ByAddBackClose)
     print("# Return difference")
     d = get_return_diff(r)
     print("{:.2f}% ({:.6f})".format(d*100, d))
