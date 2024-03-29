@@ -119,17 +119,12 @@ The reason behind the character of high dividends and low price is the nature of
 REITs allowing analysts to more accurately forecast earnings, which helps reduce share price volatility.
 According to 15th March 2024 stock price, we tabulate the daily range and one year range of four S-REITs of above analysis.
 
-+--------------------------------------------------+-----------------+----------+-----------------+----------+
-| REITs | Daily range | spread | 52-week range | spread |
-+==================================================+=================+==========+=================+==========+
-| Sabana REIT (SGX: M1GU) | 0.3600 - 0.3650 | -0.005 | 0.3550 - 0.4900 | -0.135 |
-+--------------------------------------------------+-----------------+----------+-----------------+----------+
-| Keppel Pacific Oak US REIT (SGX: CMOU) | 0.1260 - 0.1350 | -0.009 | 0.1230 - 0.4450 | -0.322 |
-+--------------------------------------------------+-----------------+----------+-----------------+----------+
-| Frasers Logistics & Commercial Trust (SGX: BUOU) | 1.0200 - 1.0400 | -0.02 | 1.0200 - 1.0400 | -0.36 |
-+--------------------------------------------------+-----------------+----------+-----------------+----------+
-| Mapletree Logistics Trust (SGX: M44U) | 1.4300 - 1.4600 | -0.03 | 1.4300 - 1.8000 | -0.37 |
-+--------------------------------------------------+-----------------+----------+-----------------+----------+
+| REITs                                            | Daily range     | spread | 52-week range   | spread |
+| ------------------------------------------------ | --------------- | ------ | --------------- | ------ |
+| Sabana REIT (SGX: M1GU)                          | 0.3600 - 0.3650 | -0.005 | 0.3550 - 0.4900 | -0.135 |
+| Keppel Pacific Oak US REIT (SGX: CMOU)           | 0.1260 - 0.1350 | -0.009 | 0.1230 - 0.4450 | -0.322 |
+| Frasers Logistics & Commercial Trust (SGX: BUOU) | 1.0200 - 1.0400 | -0.02  | 1.0200 - 1.0400 | -0.36  |
+| Mapletree Logistics Trust (SGX: M44U)            | 1.4300 - 1.4600 | -0.03  | 1.4300 - 1.8000 | -0.37  |
 
 In contrast with other stocks, the daily range of REITs is very limited, even the 52 weeks range is not large.
 
@@ -144,23 +139,15 @@ For analysis, in this sub section, we use CSOP iEdge S-REIT Leaders Index ETF (S
 
 Top 7 Holdings of CSOP iEdge S-REIT Leaders Index ETF are list in below table. These REITs are comprise 55.04% of total assets in this ETF.
 
-+----------------------------------------+-----------+
-| REITs | %Assets |
-+========================================+===========+
-| CapitaLand Integrated Commercial Trust | 10.67% |
-+----------------------------------------+-----------+
-| Mapletree Logistics Trust | 9.17% |
-+----------------------------------------+-----------+
-| Mapletree Industrial Trust | 8.67% |
-+----------------------------------------+-----------+
-| Frasers Logistics & Commercial Trust | 7.39% |
-+----------------------------------------+-----------+
-| Keppel REIT | 6.84% |
-+----------------------------------------+-----------+
-| Keppel DC REIT | 6.34% |
-+----------------------------------------+-----------+
-| Frasers Centrepoint Trust | 5.98% |
-+----------------------------------------+-----------+
+| REITs                                  | %Assets |
+| -------------------------------------- | ------- |
+| CapitaLand Integrated Commercial Trust | 10.67%  |
+| Mapletree Logistics Trust              | 9.17%   |
+| Mapletree Industrial Trust             | 8.67%   |
+| Frasers Logistics & Commercial Trust   | 7.39%   |
+| Keppel REIT                            | 6.84%   |
+| Keppel DC REIT                         | 6.34%   |
+| Frasers Centrepoint Trust              | 5.98%   |
 
 ### Singapore market risk
 
@@ -206,16 +193,14 @@ Based on the historical adjust price 1st February to the middle of March, we com
 (5)US REITs: Prime US REIT (OXMU.SI)
 (6)Global REIT: iShares Global REIT ETF (REET)
 
-                SRU.SI    CFA.SI    N6M.SI    ^GSPC     OXMU.SI   REET
-
----
-
-SRU.SI 1.00 0.36 0.08 0.13 0.59 0.35
-CFA.SI 0.36 1.00 -0.29 0.32 -0.06 0.02
-N6M.SI 0.08 -0.29 1.00 -0.43 0.26 0.01
-^GSPC 0.13 0.32 -0.43 1.00 -0.05 0.32
-OXMU.SI 0.59 -0.06 0.26 -0.05 1.00 0.25
-REET 0.35 0.02 0.01 0.32 0.25 1.00
+|         | SRU.SI | CFA.SI | N6M.SI | ^GSPC | OXMU.SI | REET |
+| ------- | ------ | ------ | ------ | ----- | ------- | ---- |
+| SRU.SI  | 1.00   | 0.36   | 0.08   | 0.13  | 0.59    | 0.35 |
+| CFA.SI  | 0.36   | 1.00   | -0.29  | 0.32  | -0.06   | 0.02 |
+| N6M.SI  | 0.08   | -0.29  | 1.00   | -0.43 | 0.26    | 0.01 |
+| ^GSPC   | 0.13   | 0.32   | -0.43  | 1.00  | -0.05   | 0.32 |
+| OXMU.SI | 0.59   | -0.06  | 0.26   | -0.05 | 1.00    | 0.25 |
+| REET    | 0.35   | 0.02   | 0.01   | 0.32  | 0.25    | 1.00 |
 
 The highest correlation is 0.59 existing between the S-REITs and U.S REIT. That is consistent with our expectation, because that S-REITs own large share of American properties. For investors hold S-REITs can be a indirect way to invest in American real estate market, and the risk may be dilute since the correlation is positive but less than one.
 
@@ -243,19 +228,13 @@ With the weight of S-REITs increase, the annual return is decreasing. This is no
 
 It is worth to note that the portfolio 1 and portfolio 4 obtains similar annual return, while the standard deviation is different. For further analysis, we calculate the Sharpe ratio for these portfolios. As for risk free rate, we introduce the CDF interest rate 2.5%.
 
-+-------------+------------------------------------------------------+-----------------+---------------+
-| No. | Component | Sharpe ration | Rank |
-+=============+======================================================+=================+===============+
-| Portfolio 1 | 55% Market index funds + 35% Bonds + 10% REITs | 1.07 | 2 |
-+-------------+------------------------------------------------------+-----------------+---------------+
-| Portfolio 2 | 40% Market index funds + 40% Bonds + 20% REITs | 0.86 | 5 |
-+-------------+------------------------------------------------------+-----------------+---------------+
-| Portfolio 3 | 33.3% Market index funds + 33.3% Bonds + 33.3% REITs | 0.87 | 4 |
-+-------------+------------------------------------------------------+-----------------+---------------+
-| Portfolio 4 | 60% Market index funds + 40% Bonds | 1.03 | 3 |
-+-------------+------------------------------------------------------+-----------------+---------------+
-| Portfolio 5 | 80% Market index funds + 20% Bonds | 1.39 | 1 |
-+-------------+------------------------------------------------------+-----------------+---------------+
+| No.         | Component                                            | Sharpe ration | Rank |
+| ----------- | ---------------------------------------------------- | ------------- | ---- |
+| Portfolio 1 | 55% Market index funds + 35% Bonds + 10% REITs       | 1.07          | 2    |
+| Portfolio 2 | 40% Market index funds + 40% Bonds + 20% REITs       | 0.86          | 5    |
+| Portfolio 3 | 33.3% Market index funds + 33.3% Bonds + 33.3% REITs | 0.87          | 4    |
+| Portfolio 4 | 60% Market index funds + 40% Bonds                   | 1.03          | 3    |
+| Portfolio 5 | 80% Market index funds + 20% Bonds                   | 1.39          | 1    |
 
 Considering the balance of risk and returns of these portfolios, the portfolio 1 sightly beats portfolio 4. This reversal suggests that including S-REITs can efficient diversify risk for a high volatilized portfolio.
 
