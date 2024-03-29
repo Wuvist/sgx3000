@@ -17,6 +17,9 @@ class Stock:
     price: pd.DataFrame
     dividend: pd.DataFrame
 
+    def get_avg_adtv(self) -> Number:
+        return Number(info.get_avg_vol(self.ticker))
+
     def get_adtv(self, start_date: str, end_date: str) -> Number:
         # Get Average Daily Trading Volume during the period
         df = self.price.loc[self.price["Day"] >= start_date].loc[self.price["Day"] <= end_date]
@@ -37,7 +40,7 @@ class Stock:
         return info.qt[self.ticker]["PE Ratio (TTM)"]
 
     def __str__(self):
-        return f"| {self.ticker} | {self.get_mc()} | {self.get_pe_ratio()} | {self.get_sector()} | {self.get_industry()} |"
+        return f"| {self.ticker} | {self.get_mc()} | {self.get_pe_ratio()} | {self.get_sector()} | {self.get_industry()} | {self.get_avg_adtv()} |"
 
 
 @dataclass
