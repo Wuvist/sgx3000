@@ -4,7 +4,7 @@ import numpy as np
 info = None
 with open('data/info.json', encoding="utf8") as f:
     info = json.load(f)
-    for _, item in info:
+    for _, item in info.items():
         if not "sector" in item:
             item["sector"] = "None"
 
