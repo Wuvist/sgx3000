@@ -18,7 +18,7 @@ def get_active():
     return data
 
 
-def get_all_with_mc():
+def get_all_mc():
     '''return all stocks with market cap info available'''
 
     data = dict()

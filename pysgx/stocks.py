@@ -74,7 +74,11 @@ def get_return_diff(r):
     return r.ByAdjClose / r.ByActual - 1
 
 
-def get_rclose(stock, start_date="", end_date=""):
+def get_addback_close(stock, start_date="", end_date=""):
+    ''' Get stock with "Close", "Adj Close" and "AddBackClose" between start_date and end_date
+    If end_date is not given, it will use up to the latest date: 2024-03-15
+    If start_date is not given, it will use up earlist date possible: 2000-01-01
+    '''
     df = stock.price[["Day", "Close", "Adj Close"]]
     df2 = stock.dividend[["Day", "Dividends"]]
 
@@ -87,7 +91,7 @@ def get_rclose(stock, start_date="", end_date=""):
         df2 = df2[df2['Day'] <= end_date]
 
     col = df.apply(lambda row: row.Close + df2[row.Day > df2["Day"]].Dividends.sum(), axis=1)
-    df = df.assign(RClose=col.values)
+    df = df.assign(AddBackClose=col.values)
     return df
 
 
