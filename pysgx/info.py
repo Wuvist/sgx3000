@@ -4,6 +4,12 @@ import numpy as np
 info = None
 with open('data/info.json', encoding="utf8") as f:
     info = json.load(f)
+    for _, item in info:
+        if not "sector" in item:
+            item["sector"] = "None"
+
+        if not "industry" in item:
+            item["industry"] = "None"
 
 qt = None
 with open('data/quote_table.json', encoding="utf8") as f:
@@ -73,10 +79,7 @@ def industry():
 def count_item_by_key(data, key):
     result = dict()
     for _, item in data.items():
-        try:
-            val = item[key]
-        except KeyError:
-            val = "None"
+        val = item[key]
         if val in result:
             result[val] = result[val] + 1
         else:
@@ -99,18 +102,16 @@ def industry_in_sector(sector):
 
 
 def find_sector(keyword):
-    industry = dict()
-    data = {key: v for key, v in info.items(
+    return {key: v for key, v in info.items(
     ) if 'sector' in v and keyword in v['sector'].lower()}
-
-    return data
 
 
 def find_industry(keyword):
-    industry = dict()
     data = {key: v for key, v in info.items(
     ) if 'industry' in v and keyword in v['industry'].lower()}
 
     print("Industry: " + keyword)
     for key, v in data.items():
         print(key + "\t" + v['industry'])
+
+    return data
