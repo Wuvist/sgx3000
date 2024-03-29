@@ -69,7 +69,7 @@ end
 
 function get_return(buy_day, sell_day::String, stock::Stock)::StockReturn
     i = findlast(x -> x <= buy_day, stock.Price.Day)
-    if i == nothing
+    if i === nothing
         return StockReturn(NaN, NaN)
     end
 
