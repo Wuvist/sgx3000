@@ -1,4 +1,5 @@
 import json
+import numpy as np
 
 info = None
 with open('data/info.json', encoding="utf8") as f:
@@ -7,6 +8,34 @@ with open('data/info.json', encoding="utf8") as f:
 qt = None
 with open('data/quote_table.json', encoding="utf8") as f:
     qt = json.load(f)
+
+
+def get_active():
+    data = dict()
+    for k, v in qt.items():
+        if get_avg_vol(k) > 10000:
+            data[k] = get_mc(k)
+    return data
+
+
+def get_avg_vol(ticker):
+    try:
+        v = qt[ticker]
+        vol = v["Avg. Volume"] * v["Open"]
+        return vol
+    except KeyError:
+        return np.NaN
+
+
+def get_mc(ticker):
+    try:
+        return info[ticker]["marketCap"]
+    except KeyError:
+        return np.NaN
+
+
+def get_sectors():
+    return count_item_by_key(info, 'sector')
 
 
 def sector():
