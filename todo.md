@@ -84,11 +84,11 @@ A7RU has dividends 0.0096
 # WW
 
 - [x] Group stock by sector / industry
-  - [x] Calculate returns / Rreturns
+  - [x] Calculate returns / Returns
   - [x] Calculate beta of CAPM
   - [ ] Calculate Jensen’s Alpha
   - [x] Calculate risk
-- [x] Investment Strategry
+- [x] Investment Strategy
   - [x] Based on last year
   - [x] Based on last 5 year
   - [x] Based on last 10 year
@@ -103,8 +103,8 @@ A7RU has dividends 0.0096
   - [ ] By portfolio
   - [ ] By portfolio with weight
 - [ ] Sector / Industry
-  - [ ] Calculate Market Cap
-  - [ ] Calculate Volume
+  - [x] Calculate Market Cap
+  - [x] Calculate Volume
   - [ ] Calculate return
 
 [-0.04073332919096256, 0.00491763519168289, 0.02021827482279764]

@@ -3,10 +3,22 @@ import numpy as np
 import pandas as pd
 
 
+class ADTV(float):
+    def __str__(self):
+        return f"{int(self):,}"
+
+
 class Stock:
     def __init__(self, price: pd.DataFrame, dividend: pd.DataFrame):
         self.price = price
         self.dividend = dividend
+
+    def get_adtv(self, start_date: str, end_date: str) -> ADTV:
+        # Average Daily Trading Volume
+        df = self.price.loc[self.price["Day"] >= start_date].loc[self.price["Day"] <= end_date]
+        if len(df) == 0:
+            return NaN
+        return ADTV(df["Close"].dot(df["Volume"]) / len(df))
 
 
 class StockReturn:
@@ -103,8 +115,8 @@ def get_addback_close(stock: Stock, start_date="", end_date="") -> pd.DataFrame:
     return df
 
 
-def get_risk(buy_day: str, sell_day: str, stock: Stock) -> StockRisk:
-    df = get_addback_close(stock, buy_day, sell_day)
+def get_risk(start_date: str, end_date: str, stock: Stock) -> StockRisk:
+    df = get_addback_close(stock, start_date, end_date)
     if len(df) == 0:
         return StockRisk(NaN, NaN)
 
