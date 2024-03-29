@@ -60,17 +60,12 @@ A well-established REIT market is another advantage of SGX. Carrying on with the
 
 Although, the market cap of S-REITs is relative small compared with the U.S REITs market, its volume is considerable in the Pacific region. Calculating at the percentage of the entire stock market, S-REITs shows a large impacts among Australia and Japan.
 
-+-----------+---------------------------+--------------+
-| Country | REIT Market Cap(US$BIL) | Percentage |
-+===========+===========================+==============+
-| Singapore | 74.4 | 12% |
-+-----------+---------------------------+--------------+
-| Japan | 105.8 | 3.5% |
-+-----------+---------------------------+--------------+
-| Australia | 83.4 | 6% |
-+-----------+---------------------------+--------------+
-| UK | 59.4 | 2.2% |
-+-----------+---------------------------+--------------+
+| Country   | REIT Market Cap(US$BIL) | Percentage |
+| --------- | ----------------------- | ---------- |
+| Singapore | 74.4                    | 12%        |
+| Japan     | 105.8                   | 3.5%       |
+| Australia | 83.4                    | 6%         |
+| UK        | 59.4                    | 2.2%       |
 
 The function of REITs is similar to stock. They pool the capital of numerous investors. This makes it possible for individual investors to earn dividends from real estate investments without having to buy, manage, or finance any properties themselves. Compared with physical real estate investments, REITs is more accessible and liquid.
 
