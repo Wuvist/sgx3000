@@ -240,23 +240,28 @@ def get_return(buy_day, sell_day, stock):
     print("buy: {:.6f} sell: {:.6f} gain: {:.6f}\n".format(buy["Adj Close"],
                                                            sell["Adj Close"],
                                                            sell["Adj Close"] - buy["Adj Close"]))
-
     ReturnByAdjClose = sell["Adj Close"] / buy["Adj Close"] - 1
+    print("return: {:.2f}% ({:.6f})".format(
+        ReturnByAdjClose*100, ReturnByAdjClose))
 
     dividends = stock.dividend[(stock.dividend.Day > buy_day) & (
         stock.dividend.Day < sell_day)].Dividends.sum()
 
-    print("Dividend: {:.6f}\n".format(dividends))
+    print("Total Dividend: {:.6f}\n".format(dividends))
     ByActual = (sell["Close"] + dividends) / buy["Close"] - 1
 
     print("# Actual Return by adding back dividend")
-    print("buy: {:.6f} sell: {:.6f} gain: {:.6f}\n".format(buy["Close"],
-                                                           sell["Close"] +
-                                                           dividends,
-                                                           sell["Close"] + dividends - buy["Close"]))
+    print("buy: {:.6f} sell: {:.6f} gain: {:.6f}".format(buy["Close"],
+                                                         sell["Close"] +
+                                                         dividends,
+                                                         sell["Close"] + dividends - buy["Close"]))
+    print("return: {:.2f}% ({:.6f})".format(ByActual*100, ByActual))
+    print("")
+
     r = StockReturn(ReturnByAdjClose, ByActual)
     print("# Return difference")
-    print(get_return_diff(r))
+    d = get_return_diff(r)
+    print("{:.2f}% ({:.6f})".format(d*100, d))
     return r
 
 
