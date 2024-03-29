@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Real Estate Investment Trust (REIT)</title>
+<title>Making money in SGX</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,35 +68,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="REIT part 0315_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="REIT part 0315_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -108,7 +79,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Real Estate Investment Trust (REIT)</h1>
+<h1 class="title">Making money in SGX</h1>
 </div>
 
 
@@ -125,6 +96,20 @@ window.Quarto = {
 </header>
 
 
+<section id="making-money-in-sgx" class="level1">
+<h1>Making money in SGX</h1>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>When Chinese market are fighting the defense battle of 3000 points once again, we are also amazed by the Singapore stock market: StraitsTime Index - STI also have stayed around 3000 points for almost 20 years. Does investors in Singapore also fight for defense battle of 3000 points? Are investors able to make money in Singapore Stock Exchange (SGX)? We are curious and decide to find out.</p>
+<p>After investigating the SGX, we summarize the characteristic of SG equity market and the development path in section A.</p>
+<p>To further analysis the trading strategies, in section B, we plot the distribution of SGX in sectors and industries, we dividend total 776 SG stocks into different groups. We find that the SGX offer investors high dividends, and REITs which have less change in price while provide stable dividends can be used as a risk diversification tool. Aiming at investing in high market cap and low P/E ratio stocks, and diversify the risk, we generate our SGX investment portfolio one.</p>
+<p>Moreover, we use a more objective perspective view to generate our second trading strategy. Realizing dividends of investing in SGX is an important factor to consider for investors, we down load all SGX stocks historical price from last 24 years. By adding back all the dividends back to the sock price, we re-ranked the return of each stocks in every year. Selecting high return stocks and combine with other sectors or industrial factors, we consider a return chasing trading strategy in Section C.</p>
+<p>In Section D, we back test these two trading strategies performance, and analyze the results. After conducting the Diebold-Mariano Test, we compare the difference of performance.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+</section>
+</section>
 <section id="the-real-estate-investment-trust-reit" class="level1">
 <h1>The Real Estate Investment Trust (REIT)</h1>
 <section id="what-is-reits" class="level2">
@@ -137,7 +122,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="s-reits">S-REITs</h2>
 <p>Singapore REITs are an important component of Singapore’s stock market</p>
 <p>Largest REIT market in Asia ex-Japan. Specially, one-fifth the stock market of SG is taken by REITs. Source: <a href="https://www.reitas.sg/singapore-reits/overview-of-the-s-reit-industry/" class="uri">https://www.reitas.sg/singapore-reits/overview-of-the-s-reit-industry/</a></p>
-<div id="cell-1" class="cell" data-execution_count="37">
+<div id="cell-2" class="cell" data-execution_count="298">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace with your actual data (lists, NumPy arrays, or Pandas DataFrames)</span></span>
@@ -145,22 +130,17 @@ window.Quarto = {
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> [<span class="st">"Singapore"</span>, <span class="st">"China"</span>, <span class="st">"Australia"</span>, <span class="st">"Japan"</span>, <span class="st">"UK"</span>, <span class="st">"United States"</span>]  <span class="co"># Category labels for the bars (optional)</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar chart</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>p1<span class="op">=</span>plt.bar(categories, data, color<span class="op">=</span><span class="st">'tan'</span>)  <span class="co"># You can change the color</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add labels and title for the chart</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Countries"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"REIT market cap (US$BIL)"</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Market cap comparisons"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Label the data points on top of each bar</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bar <span class="kw">in</span> bars:</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get bar height from the bar object</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    bar_height <span class="op">=</span> bar.get_height()</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    plt.text(bar.get_x() <span class="op">+</span> bar.get_width() <span class="op">/</span> <span class="dv">2</span>, bar_height <span class="op">+</span> <span class="dv">1</span>, <span class="bu">str</span>(bar_height), ha<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the chart</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>p1<span class="op">=</span>plt.bar(categories, data, color<span class="op">=</span><span class="st">'blue'</span>)  </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, v <span class="kw">in</span> <span class="bu">enumerate</span>(data):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    plt.text(i<span class="op">-</span><span class="fl">0.25</span>, v <span class="op">+</span> <span class="dv">1</span>, <span class="bu">str</span>(v), color<span class="op">=</span><span class="st">'black'</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Add labels and title for the chart</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Countries"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"REIT market cap (US$BIL)"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Market cap comparisons"</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the chart</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -170,7 +150,7 @@ window.Quarto = {
 </div>
 </div>
 <p>The market cap of S-REITs is comparable to Australia and UK. In percentage of the entire stock market, S-REITs shows a large impacts.</p>
-<div id="cell-3" class="cell" data-execution_count="91">
+<div id="cell-4" class="cell" data-execution_count="91">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tabulate</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
@@ -212,7 +192,7 @@ window.Quarto = {
 <p>Mapletree Logistics Trust (SGX: M44U) An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.</p>
 <p>Stocks in other sectors (Non-REITs): SGX-Singapore Exchange Limited, Telecommunications - Singapore Telecommunications Limited, Industrial Goods and shipbuilding - Yangzijiang Shipbuilding (Holdings) Ltd. Food &amp; Beverage- Wilmar International Limited (5%) Agriculture Golden Agri-Resources Ltd Transportation-Singapore Airlines Limited Utilities-Sembcorp Industries Ltd Services-United Overseas Insurance Limited</p>
 <p>Real-estate Stocks: Keppel Ltd. CapitaLand Investment Limited City Developments Limited</p>
-<div id="cell-6" class="cell" data-execution_count="61">
+<div id="cell-7" class="cell" data-execution_count="61">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Stock price and yield data (replace with your data)</span></span>
@@ -267,7 +247,7 @@ window.Quarto = {
 <section id="stability" class="level3">
 <h3 class="anchored" data-anchor-id="stability">stability</h3>
 <p>The character of REITs allowing analysts to more accurately forecast earnings, which helps reduce share price volatility.</p>
-<div id="cell-8" class="cell" data-execution_count="86">
+<div id="cell-9" class="cell" data-execution_count="86">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tabulate</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Sabana REIT (SGX: M1GU)"</span>, <span class="st">"0.3600 - 0.3650"</span>, <span class="fl">0.3600</span> <span class="op">-</span> <span class="fl">0.3650</span>, <span class="st">"0.3550 - 0.4900"</span>,<span class="fl">0.3550</span> <span class="op">-</span> <span class="fl">0.4900</span>],</span>
@@ -300,7 +280,7 @@ window.Quarto = {
 <p>Over 90% of S-REITS own properties outside Singapore. Digging deeper in the systematic risk these REITs face.</p>
 <p>For analysis, in this section, we use CSOP iEdge S-REIT Leaders Index ETF (SRU.SI) as a proxy for SREITs and SG real estate market.</p>
 <p>Top 7 Holdings of CSOP iEdge S-REIT Leaders Index ETF (55.04% of Total Assets)</p>
-<div id="cell-10" class="cell" data-execution_count="82">
+<div id="cell-11" class="cell" data-execution_count="82">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tabulate</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"CapitaLand Integrated Commercial Trust"</span>, <span class="st">"10.67%"</span>],</span>
@@ -336,7 +316,7 @@ window.Quarto = {
 +----------------------------------------+-----------+</code></pre>
 </div>
 </div>
-<div id="cell-11" class="cell" data-execution_count="147">
+<div id="cell-12" class="cell" data-execution_count="147">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>start_date <span class="op">=</span> <span class="st">"2023-01-01"</span></span>
@@ -369,7 +349,7 @@ Date
 2023-01-09        0.000489  </code></pre>
 </div>
 </div>
-<div id="cell-12" class="cell" data-execution_count="149">
+<div id="cell-13" class="cell" data-execution_count="149">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Regress SREITs on STI </span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels.api <span class="im">import</span> OLS</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>data[<span class="st">"SRU.SI_log_return"</span>] <span class="op">=</span> np.log(data[<span class="st">"SRU.SI"</span>] <span class="op">/</span> data[<span class="st">"SRU.SI"</span>].shift(<span class="dv">1</span>))</span>
@@ -415,10 +395,6 @@ Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.</code></pre>
 </div>
 </div>
-<ol type="1">
-<li><p>Regress the REIT Index on STI, identify the foreigner market contributor of the price of REITs. (Put the dividend back)</p></li>
-<li><p>CAPM model: the <span class="math inline">\(\beta\)</span> of REITs for further analysis.</p></li>
-</ol>
 <p>REITs offer a strong, stable annual dividends, while the risk exposure to market has not magnified. How S-REITs relate to other market.</p>
 <div id="cell-15" class="cell" data-execution_count="150">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -492,10 +468,6 @@ REET            0.35      0.02      0.01      0.32      0.25      1.00
 (6)Global REIT: iShares Global REIT ETF (REET)</p>
 <p><a href="C:/Users/vic52/Documents/GitHub/sgx3000/REITs%20analysis/SGXcorr.pdf">SGX research</a></p>
 </section>
-<section id="returns" class="level3">
-<h3 class="anchored" data-anchor-id="returns">Returns</h3>
-<p>REITs are sensitive to interest-rate movements.(add dividends back)</p>
-</section>
 <section id="diversification" class="level3">
 <h3 class="anchored" data-anchor-id="diversification">diversification</h3>
 <p>REITs provide diversification benefits.</p>
@@ -510,37 +482,29 @@ REET            0.35      0.02      0.01      0.32      0.25      1.00
 <li>80% Market index funds + 20% Bonds</li>
 </ol>
 <p>Market index: S&amp;P 500 (^GSPC) Bonds: iShares 0-5 Year TIPS Bond ETF (STIP) REITs: CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)</p>
-<div id="cell-20" class="cell" data-execution_count="231">
+<div id="cell-19" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Get data from yahoo finance</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>start_date <span class="op">=</span> <span class="st">"2019-01-01"</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>start_date <span class="op">=</span> <span class="st">"2023-01-01"</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>end_date <span class="op">=</span> <span class="st">"2024-01-01"</span></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>tickers <span class="op">=</span> [<span class="st">"^GSPC"</span>,<span class="st">"SRU.SI"</span>,<span class="st">"STIP"</span>]</span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>prices <span class="op">=</span> yf.download(tickers, start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)[<span class="st">"Adj Close"</span>]</span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(prices.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>[*********************100%%**********************]  3 of 3 completed</code></pre>
+<pre><code>[                       0%%                      ][*********************100%%**********************]  3 of 3 completed</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Ticker      SRU.SI       STIP        ^GSPC  SRU.SI_log_return  \
-Date                                                            
-2021-01-04     NaN  92.023315  3700.649902                NaN   
-2021-01-05     NaN  92.084961  3726.860107                NaN   
-2021-01-06     NaN  92.067345  3748.139893                NaN   
-2021-01-07     NaN  92.234604  3803.790039                NaN   
-2021-01-08     NaN  92.172974  3824.679932                NaN   
-
-Ticker      STIP_log_return  ^GSPC_log_return  
-Date                                           
-2021-01-04              NaN               NaN  
-2021-01-05         0.000670          0.007058  
-2021-01-06        -0.000191          0.005694  
-2021-01-07         0.001815          0.014738  
-2021-01-08        -0.000668          0.005477  </code></pre>
+<pre><code>Ticker      SRU.SI       STIP        ^GSPC
+Date                                      
+2023-01-03   0.626  94.263031  3824.139893
+2023-01-04   0.626  94.146400  3852.969971
+2023-01-05   0.626  94.126968  3808.100098
+2023-01-06   0.626  94.408783  3895.080078
+2023-01-09   0.626  94.496239  3892.090088</code></pre>
 </div>
 </div>
-<div id="cell-21" class="cell" data-execution_count="232">
+<div id="cell-20" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define asset weights as dictionaries for each portfolio</span></span>
@@ -589,41 +553,41 @@ STIP: 0.00
 SRU.SI: 0.20</code></pre>
 </div>
 </div>
-<div id="cell-22" class="cell" data-execution_count="245">
+<div id="cell-21" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>risk_free_rate <span class="op">=</span> <span class="fl">0.025</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>daily_log_returns <span class="op">=</span> prices.pct_change().dropna()</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>annualized_returns <span class="op">=</span> daily_log_returns.mean() <span class="op">*</span> <span class="dv">252</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\vic52\AppData\Local\Temp\ipykernel_24476\3059946309.py:2: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+<pre><code>C:\Users\vic52\AppData\Local\Temp\ipykernel_1096\3059946309.py:2: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
   daily_log_returns = prices.pct_change().dropna()</code></pre>
 </div>
 </div>
-<div id="cell-23" class="cell" data-execution_count="246">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_portfolio_return(weights, daily_returns):</span>
+<div id="cell-22" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_portfolio_return(weights, daily_log_returns):</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">"""</span></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co">  Calculates the daily return of a portfolio based on weights and asset returns.</span></span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co">  Args:</span></span>
 <span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="co">      weights (dict): Dictionary of asset weights for the portfolio.</span></span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co">      daily_returns (pd.DataFrame): DataFrame containing daily log returns for each asset.</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co">      daily_log_returns (pd.DataFrame): DataFrame containing daily log returns for each asset.</span></span>
 <span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="co">  Returns:</span></span>
 <span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="co">      pd.Series or None: Daily return series for the portfolio or None if errors occur.</span></span>
 <span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="co">  """</span></span>
 <span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span>:</span>
 <span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Ensure weights and daily returns have compatible shapes</span></span>
-<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> <span class="bu">len</span>(weights) <span class="op">!=</span> daily_returns.shape[<span class="dv">1</span>]:</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> <span class="bu">len</span>(weights) <span class="op">!=</span> daily_log_returns.shape[<span class="dv">1</span>]:</span>
 <span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>          <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Number of weights does not match number of assets in returns"</span>)</span>
 <span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Calculate portfolio return (weighted average of daily log returns)</span></span>
-<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>      portfolio_return <span class="op">=</span> np.<span class="bu">sum</span>(daily_returns <span class="op">*</span> weights, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>      portfolio_return <span class="op">=</span> np.<span class="bu">sum</span>(daily_log_returns <span class="op">*</span> weights, axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> portfolio_return</span>
 <span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>  <span class="cf">except</span> (<span class="pp">ValueError</span>, <span class="pp">KeyError</span>) <span class="im">as</span> e:</span>
 <span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"Error calculating return: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="va">None</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-24" class="cell" data-execution_count="247">
+<div id="cell-23" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate daily portfolio returns for each portfolio</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>portfolio_returns <span class="op">=</span> {}</span>
@@ -638,7 +602,7 @@ SRU.SI: 0.20</code></pre>
 <span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
 <span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Skipping Sharpe Ratio calculation for </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> due to missing return data."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-25" class="cell" data-execution_count="248">
+<div id="cell-24" class="cell" data-execution_count="290">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_sharpe_ratio(portfolio_return, risk_free_rate, portfolio_std):</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">"""</span></span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="co">  Calculates the Sharpe Ratio for a portfolio.</span></span>
@@ -654,7 +618,7 @@ SRU.SI: 0.20</code></pre>
 <span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  excess_return <span class="op">=</span> portfolio_return <span class="op">-</span> risk_free_rate</span>
 <span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> excess_return <span class="op">/</span> portfolio_std</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-26" class="cell" data-execution_count="249">
+<div id="cell-25" class="cell" data-execution_count="291">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate Sharpe Ratio for each portfolio</span></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>sharpe_ratios <span class="op">=</span> {}</span>
@@ -672,14 +636,14 @@ SRU.SI: 0.20</code></pre>
 <span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Sharpe Ratios for Each Portfolio:
-Portfolio 1: -0.18
-Portfolio 2: -0.19
-Portfolio 3: -0.22
-Portfolio 4: -0.16
-Portfolio 5: -0.15</code></pre>
+Portfolio 1: -0.23
+Portfolio 2: -0.25
+Portfolio 3: -0.29
+Portfolio 4: -0.21
+Portfolio 5: -0.21</code></pre>
 </div>
 </div>
-<div id="cell-27" class="cell" data-execution_count="268">
+<div id="cell-26" class="cell" data-execution_count="268">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tabulate</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [</span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">"Portfolio 1"</span>, <span class="st">"55% Market index funds + 35% Bonds + 10% REITs"</span>,<span class="st">"-0.18"</span>,<span class="st">"3"</span>],</span>
@@ -713,47 +677,7 @@ Portfolio 5: -0.15</code></pre>
 S&amp;P 500: <a href="https://www.gurufocus.com/idx/%5EGSPC" class="uri">https://www.gurufocus.com/idx/%5EGSPC</a> 12% 5years return<br>
 CSOP iEdge S-REIT Leaders Index ETF (SRU.SI):<a href="https://www.csopasset.com/sg/en/products/sg-reit/etf.php" class="uri">https://www.csopasset.com/sg/en/products/sg-reit/etf.php</a> -15% 5years return<br>
 </p>
-<div id="cell-29" class="cell" data-execution_count="267">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>portfolio_returns <span class="op">=</span> {}</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, weights <span class="kw">in</span> portfolio_weights.items():</span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  portfolio_return <span class="op">=</span> calculate_portfolio_return(weights, daily_log_returns)</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> portfolio_return <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>      portfolio_returns[name] <span class="op">=</span> {</span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Annualized Return"</span>: portfolio_return.mean() <span class="op">*</span> <span class="dv">252</span>,</span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Std Dev"</span>: portfolio_return.std() <span class="op">*</span> np.sqrt(<span class="dv">252</span>)</span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>      }</span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"Skipping Sharpe Ratio calculation for </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> due to missing return data."</span>)</span>
-<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract data for plotting</span></span>
-<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>portfolio_names <span class="op">=</span> <span class="bu">list</span>(portfolio_returns.keys())</span>
-<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>annual_returns <span class="op">=</span> [stats[<span class="st">"Annualized Return"</span>] <span class="cf">for</span> name, stats <span class="kw">in</span> portfolio_returns.items()]</span>
-<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>std_devs <span class="op">=</span> [stats[<span class="st">"Std Dev"</span>] <span class="cf">for</span> name, stats <span class="kw">in</span> portfolio_returns.items()]</span>
-<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Create scatter plot</span></span>
-<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>plt.scatter(std_devs,annual_returns,marker<span class="op">=</span><span class="st">'o'</span>, c<span class="op">=</span><span class="st">'b'</span>, edgecolors<span class="op">=</span><span class="st">'k'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, label<span class="op">=</span><span class="st">'Portfolios'</span>)</span>
-<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Standard Deviation'</span>)</span>
-<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Annualized Return (%)'</span>)</span>
-<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Portfolio Annualized Return vs. Standard Deviation'</span>)</span>
-<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Add portfolio names as annotations</span></span>
-<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, name <span class="kw">in</span> <span class="bu">enumerate</span>(portfolio_names):</span>
-<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>  plt.annotate(name, ( std_devs[i],annual_returns[i]), textcoords<span class="op">=</span><span class="st">"offset points"</span>, xytext<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">10</span>), ha<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="REIT%20part%200315_files/figure-html/cell-18-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>risk free rate: CPF 2.5% per year.</p>
 <p><em>Approach</em>: 1. Using the average annual total returns in FTSE ST REIT Index to generate the yield curve from 1 year to 25 years.</p>
 <ol start="2" type="1">
 <li><p>In contrast, plot the yield curve in stock index, bonds of SG market, combined with U.S. REITs and U.S. Market index.</p></li>
@@ -768,6 +692,81 @@ CSOP iEdge S-REIT Leaders Index ETF (SRU.SI):<a href="https://www.csopasset.com/
 <li><p>Rank these portfolio under Sharpe ration, and plot the scatter diagram in average return and standard deviation.</p></li>
 <li><p>Compare the average annualized return between the portfolios with REITs and without REITs. Analysis the ability of REITs in diversification of risk.</p></li>
 </ol>
+<div id="cell-29" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yfinance <span class="im">as</span> yf</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Download adjusted close prices (replace with your tickers and date range)</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>tickers <span class="op">=</span> [<span class="st">"^GSPC"</span>, <span class="st">"N6M.SI"</span>, <span class="st">"SRU.SI"</span>]</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>start_date <span class="op">=</span> <span class="st">"2023-01-01"</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>end_date <span class="op">=</span> <span class="st">"2024-01-01"</span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> yf.download(tickers, start<span class="op">=</span>start_date, end<span class="op">=</span>end_date)[<span class="st">"Adj Close"</span>]</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Define portfolio weights</span></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>portfolio_weights <span class="op">=</span> {</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Portfolio 1"</span>: {<span class="st">"^GSPC"</span>: <span class="fl">0.55</span>, <span class="st">"N6M.SI"</span>: <span class="fl">0.10</span>, <span class="st">"SRU.SI"</span>: <span class="fl">0.35</span>},</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Portfolio 2"</span>: {<span class="st">"^GSPC"</span>: <span class="fl">0.40</span>, <span class="st">"N6M.SI"</span>: <span class="fl">0.20</span>, <span class="st">"SRU.SI"</span>: <span class="fl">0.40</span>},</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Portfolio 3"</span>: {<span class="st">"^GSPC"</span>: <span class="fl">0.33</span>, <span class="st">"N6M.SI"</span>: <span class="fl">0.33</span>, <span class="st">"SRU.SI"</span>: <span class="fl">0.34</span>},</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Portfolio 4"</span>: {<span class="st">"^GSPC"</span>: <span class="fl">0.60</span>, <span class="st">"N6M.SI"</span>: <span class="fl">0.00</span>, <span class="st">"SRU.SI"</span>: <span class="fl">0.40</span>},</span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Portfolio 5"</span>: {<span class="st">"^GSPC"</span>: <span class="fl">0.80</span>, <span class="st">"N6M.SI"</span>: <span class="fl">0.00</span>, <span class="st">"SRU.SI"</span>: <span class="fl">0.20</span>},</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Handle missing values</span></span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>daily_log_returns <span class="op">=</span> data.pct_change().fillna(method<span class="op">=</span><span class="st">'ffill'</span>)</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate portfolio returns and standard deviations</span></span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>portfolio_returns <span class="op">=</span> {}</span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, weights <span class="kw">in</span> portfolio_weights.items():</span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>  portfolio_return <span class="op">=</span> calculate_portfolio_return(weights, daily_log_returns)</span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> portfolio_return <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>      portfolio_returns[name] <span class="op">=</span> {</span>
+<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Annualized Return"</span>: portfolio_return.mean() <span class="op">*</span> <span class="dv">252</span>,</span>
+<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Std Dev"</span>: portfolio_return.std() <span class="op">*</span> np.sqrt(<span class="dv">252</span>)</span>
+<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb31-34"><a href="#cb31-34" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb31-35"><a href="#cb31-35" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="ss">f"Skipping Sharpe Ratio calculation for </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> due to missing return data."</span>)</span>
+<span id="cb31-36"><a href="#cb31-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-37"><a href="#cb31-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract data for plotting</span></span>
+<span id="cb31-38"><a href="#cb31-38" aria-hidden="true" tabindex="-1"></a>portfolio_names <span class="op">=</span> <span class="bu">list</span>(portfolio_returns.keys())</span>
+<span id="cb31-39"><a href="#cb31-39" aria-hidden="true" tabindex="-1"></a>annual_returns <span class="op">=</span> [stats[<span class="st">"Annualized Return"</span>] <span class="cf">for</span> name, stats <span class="kw">in</span> portfolio_returns.items()]</span>
+<span id="cb31-40"><a href="#cb31-40" aria-hidden="true" tabindex="-1"></a>std_devs <span class="op">=</span> [stats[<span class="st">"Std Dev"</span>] <span class="cf">for</span> name, stats <span class="kw">in</span> portfolio_returns.items()]</span>
+<span id="cb31-41"><a href="#cb31-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-42"><a href="#cb31-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Create scatter plot</span></span>
+<span id="cb31-43"><a href="#cb31-43" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb31-44"><a href="#cb31-44" aria-hidden="true" tabindex="-1"></a>plt.scatter(std_devs, annual_returns, marker<span class="op">=</span><span class="st">'o'</span>, c<span class="op">=</span><span class="st">'b'</span>, edgecolors<span class="op">=</span><span class="st">'k'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, label<span class="op">=</span><span class="st">'Portfolios'</span>)</span>
+<span id="cb31-45"><a href="#cb31-45" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Standard Deviation'</span>)</span>
+<span id="cb31-46"><a href="#cb31-46" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Annualized Return'</span>)</span>
+<span id="cb31-47"><a href="#cb31-47" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Portfolio Standard Deviation vs. Annualized Return'</span>)</span>
+<span id="cb31-48"><a href="#cb31-48" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb31-49"><a href="#cb31-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-50"><a href="#cb31-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Add portfolio names as annotations</span></span>
+<span id="cb31-51"><a href="#cb31-51" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, name <span class="kw">in</span> <span class="bu">enumerate</span>(portfolio_names):</span>
+<span id="cb31-52"><a href="#cb31-52" aria-hidden="true" tabindex="-1"></a>  plt.annotate(name, (std_devs[i], annual_returns[i]), textcoords<span class="op">=</span><span class="st">"offset points"</span>, xytext<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">10</span>), ha<span class="op">=</span><span class="st">'center'</span>)</span>
+<span id="cb31-53"><a href="#cb31-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-54"><a href="#cb31-54" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb31-55"><a href="#cb31-55" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb31-56"><a href="#cb31-56" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>[                       0%%                      ][*********************100%%**********************]  3 of 3 completed
+
+1 Failed download:
+['N6M.SI']: Exception("%ticker%: Data doesn't exist for startDate = 1672502400, endDate = 1704038400")
+C:\Users\vic52\AppData\Local\Temp\ipykernel_1096\3199777429.py:23: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  daily_log_returns = data.pct_change().fillna(method='ffill')
+C:\Users\vic52\AppData\Local\Temp\ipykernel_1096\3199777429.py:23: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  daily_log_returns = data.pct_change().fillna(method='ffill')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="REIT%20part%200315_files/figure-html/cell-18-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
