@@ -248,10 +248,10 @@ def get_return(start_day: str | YearMonth, end_day: str | YearMonth, stock: Stoc
         print("buy: {:.6f} sell: {:.6f} gain: {:.6f}\n".format(buy["Adj Close"], sell["Adj Close"],
                                                                sell["Adj Close"] - buy["Adj Close"]))
 
-    if buy["Adj Close"] == 0:
+    if buy["Adj Close"] <= 0:
         ReturnByAdjClose = np.nan
         if debug:
-            print(f"Zero Adj Close {stock.ticker} {buy_day} {sell_day}")
+            print(f"Invalid Adj Close {stock.ticker} {buy_day} {sell_day}")
             print("")
     else:
         ReturnByAdjClose = sell["Adj Close"] / buy["Adj Close"] - 1
