@@ -96,12 +96,12 @@ A7RU has dividends 0.0096
 - [x] Evaluate with
   - [x] Jan 2024
   - [x] Feb 2024 onwards
-- [ ] Portfolio
+- [x] Portfolio
   - [x] Get risk by period
-- [ ] Calculate return
+- [x] Calculate return
   - [x] By period
-  - [ ] By portfolio
-  - [ ] By portfolio with weight
+  - [x] By portfolio
+  - [x] By portfolio with weight
 - [ ] Sector / Industry
   - [x] Calculate Market Cap
   - [x] Calculate Volume

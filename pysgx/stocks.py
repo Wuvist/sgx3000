@@ -52,11 +52,20 @@ class StockReturn:
     ByAddBackClose: float
 
     def __str__(self):
-        return "ByAdjClose: {:.6f} ByAddBackClose: {:.6f}".format(self.ByAdjClose, self.ByAddBackClose)
+        gap = ""
+        if self.ByAdjClose > 0:
+            gap = " "
+        return f"ByAdjClose: {gap}{self.ByAdjClose:.6f} ByAddBackClose: {gap}{self.ByAddBackClose:.6f}"
 
 
 class StockRisk(StockReturn):
     pass
+
+
+@dataclass
+class StockWeights:
+    ByAdjClose: List[float]
+    ByAddBackClose: List[float]
 
 
 NaN = np.NaN
@@ -158,7 +167,55 @@ def get_risk(start_date: str, end_date: str, stock: Stock) -> StockRisk:
     return StockRisk(risk_adj_close, risk_addback_close)
 
 
-def get_return(buy_day: str, sell_day: str, stock: Stock) -> StockReturn:
+def get_portfolio_return(buy_day: str, sell_day: str, portfolio: List[Stock], weights: List[float] = []) -> StockReturn:
+    returns = get_returns(buy_day, sell_day, portfolio)
+
+    if len(weights) == 0:
+        weights = [1/len(portfolio)] * len(portfolio)
+
+    ByAdjClose = [r.ByAdjClose for r in returns]
+    ByAddBackClose = [r.ByAddBackClose for r in returns]
+    return StockReturn(np.dot(ByAdjClose, weights), np.dot(ByAddBackClose, weights))
+
+
+def get_returns(buy_day: str, sell_day: str, stocks: List[Stock]) -> List[StockReturn]:
+    # Same as: [get_return(buy_day, sell_day, stock) for stock in stocks]
+    result: List[StockReturn] = []
+    for stock in stocks:
+        r = get_return(buy_day, sell_day, stock, False)
+        result.append(r)
+
+    return result
+
+
+def get_risks(buy_day: str, sell_day: str, stocks: List[Stock]) -> List[StockRisk]:
+    return [get_risk(buy_day, sell_day, stock) for stock in stocks]
+
+
+def get_weights_by_returns(returns: List[StockReturn]) -> StockWeights:
+    # Higher the return, lower the weight
+
+    SumByAdjClose = sum([r.ByAdjClose for r in returns])
+    SumByAddBackClose = sum([r.ByAddBackClose for r in returns])
+
+    return StockWeights([r.ByAdjClose / SumByAdjClose for r in returns], [r.ByAddBackClose / SumByAddBackClose for r in returns])
+
+
+def get_weights_by_risks(risks: List[StockRisk]) -> StockWeights:
+    # Higher the risk, lower the weight
+    SumByAdjClose = sum([r.ByAdjClose for r in risks])
+    SumByAddBackClose = sum([r.ByAddBackClose for r in risks])
+
+    RiskByAdjClose = [1 - r.ByAdjClose / SumByAdjClose for r in risks]
+    RiskByAddBackClose = [1 - r.ByAddBackClose / SumByAddBackClose for r in risks]
+
+    SumByAdjClose = sum(RiskByAdjClose)
+    SumByAddBackClose = sum(RiskByAddBackClose)
+
+    return StockWeights([r / SumByAdjClose for r in RiskByAdjClose], [r / SumByAddBackClose for r in RiskByAddBackClose])
+
+
+def get_return(buy_day: str, sell_day: str, stock: Stock, debug=True) -> StockReturn:
     # Finding the index of the buy_day and sell_day
     buy_index = stock.price[stock.price['Day'] <= buy_day].index.max()
     sell_index = stock.price[stock.price['Day'] <= sell_day].index.max()
@@ -168,29 +225,36 @@ def get_return(buy_day: str, sell_day: str, stock: Stock) -> StockReturn:
 
     buy = stock.price.loc[buy_index]
     sell = stock.price.loc[sell_index]
-    print("# Return by Adj Close")
-    print("buy: {:.6f} sell: {:.6f} gain: {:.6f}\n".format(buy["Adj Close"],
-                                                           sell["Adj Close"],
-                                                           sell["Adj Close"] - buy["Adj Close"]))
+    if debug:
+        print("# Return by Adj Close")
+        print("buy: {:.6f} sell: {:.6f} gain: {:.6f}\n".format(buy["Adj Close"],
+                                                               sell["Adj Close"],
+                                                               sell["Adj Close"] - buy["Adj Close"]))
     ReturnByAdjClose = sell["Adj Close"] / buy["Adj Close"] - 1
-    print("return: {:.2f}% ({:.6f})".format(
-        ReturnByAdjClose*100, ReturnByAdjClose))
+    if debug:
+        print("return: {:.2f}% ({:.6f})".format(ReturnByAdjClose*100, ReturnByAdjClose))
 
     dividends = stock.dividend[(stock.dividend.Day > buy_day) & (stock.dividend.Day < sell_day)].Dividends.sum()
 
-    print("Total Dividend: {:.6f}\n".format(dividends))
+    if debug:
+        print("Total Dividend: {:.6f}\n".format(dividends))
     ByAddBackClose = (sell["Close"] + dividends) / buy["Close"] - 1
 
-    print("# Actual Return by adding back dividend")
-    print("buy: {:.6f} sell: {:.6f} gain: {:.6f}".format(buy["Close"],
-                                                         sell["Close"] +
-                                                         dividends,
-                                                         sell["Close"] + dividends - buy["Close"]))
-    print("return: {:.2f}% ({:.6f})".format(ByAddBackClose*100, ByAddBackClose))
-    print("")
+    if debug:
+        print("# Actual Return by adding back dividend")
+        print("buy: {:.6f} sell: {:.6f} gain: {:.6f}".format(buy["Close"],
+                                                             sell["Close"] +
+                                                             dividends,
+                                                             sell["Close"] + dividends - buy["Close"]))
+        print("return: {:.2f}% ({:.6f})".format(ByAddBackClose*100, ByAddBackClose))
+        print("")
 
     r = StockReturn(ReturnByAdjClose, ByAddBackClose)
-    print("# Return difference")
-    d = get_return_diff(r)
-    print("{:.2f}% ({:.6f})".format(d*100, d))
+    if debug:
+        print("# Return difference")
+
+    if debug:
+        d = get_return_diff(r)
+        print("{:.2f}% ({:.6f})".format(d*100, d))
+
     return r
