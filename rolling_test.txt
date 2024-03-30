@@ -1,278 +1,279 @@
-Evaluate 1Y since:  2000-01-01 dict_keys([])
+Evaluate 1Y since:  2000-01-01 dict_keys(['L02', '5AB', 'J36', 'CTO', 'H78', 'BTJ', 'BDA', 'LJ3', 'KUH', 'H02'])
+backtest 1Q 2001-01-01 2001-04-01 ByAdjClose: -0.153297 ByAddBackClose: -0.152858
 
-Evaluate 1Y since:  2000-04-01 dict_keys(['L02', 'LJ3', 'H78', 'J36', 'C52', 'H02', 'U14', 'S20', 'S63', 'U11'])
-backtest 1Q 2001-04-01 2001-07-01 ByAdjClose: -0.004094 ByAddBackClose: -0.006173
+Evaluate 1Y since:  2000-04-01 dict_keys(['L02', 'LJ3', 'J36', 'H78', 'H02', 'C52', 'U14', '5AB', 'S63', 'S20'])
+backtest 1Q 2001-04-01 2001-07-01 ByAdjClose:  0.046727 ByAddBackClose:  0.044415
 
-Evaluate 1Y since:  2000-07-01 dict_keys(['T14', 'LJ3', 'L02', 'G07', 'F13', 'H02', 'CTO', 'J36', 'BDA', 'BTJ'])
-backtest 1Q 2001-07-01 2001-10-01 ByAdjClose: -1.164957 ByAddBackClose: -0.188339
+Evaluate 1Y since:  2000-07-01 dict_keys(['600', 'T14', 'AZR', 'L02', 'LJ3', 'G07', 'H02', 'F13', 'WPC', 'J36'])
+backtest 1Q 2001-07-01 2001-10-01 ByAdjClose: -1.071412 ByAddBackClose: -0.088402
 
-Evaluate 1Y since:  2000-10-01 dict_keys(['T14', 'G07', 'D01', 'LJ3', 'H02', 'S20', 'F13', 'M01', 'L23', 'BAZ'])
-backtest 1Q 2001-10-01 2002-01-01 ByAdjClose:  0.178842 ByAddBackClose:  0.178274
+Evaluate 1Y since:  2000-10-01 dict_keys(['AZR', 'T14', '600', 'D01', 'G07', 'LJ3', 'S20', 'H02', 'F13', 'BAZ'])
+backtest 1Q 2001-10-01 2002-01-01 ByAdjClose:  0.244899 ByAddBackClose:  0.244330
 
-Evaluate 1Y since:  2001-01-01 dict_keys(['T14', 'G13', 'F13', 'D01', 'G07', 'BAZ', 'T15', 'S41', 'H02', 'V03'])
-backtest 1Q 2002-01-01 2002-04-01 ByAdjClose:  0.095974 ByAddBackClose:  0.094782
+Evaluate 1Y since:  2001-01-01 dict_keys(['T14', '600', 'AZR', 'G13', 'F13', 'D01', 'G07', 'BAZ', 'T15', 'G92'])
+backtest 1Q 2002-01-01 2002-04-01 ByAdjClose:  0.089573 ByAddBackClose:  0.088380
 
-Evaluate 1Y since:  2001-04-01 dict_keys(['T14', '600', 'AZR', 'F03', '578', 'G13', '554', 'F13', '504', 'S59'])
-backtest 1Q 2002-04-01 2002-07-01 ByAdjClose: -0.047460 ByAddBackClose: -0.051243
+Evaluate 1Y since:  2001-04-01 dict_keys(['T14', '600', 'AZR', 'F03', '578', '558', 'F13', 'G13', '554', '504'])
+backtest 1Q 2002-04-01 2002-07-01 ByAdjClose: -0.080948 ByAddBackClose: -0.084891
 
 Evaluate 1Y since:  2001-07-01 dict_keys(['F03', '596', '578', 'H22', 'T14', 'F10', '558', 'S59', 'Q01', '1H2'])
-backtest 1Q 2002-07-01 2002-10-01 ByAdjClose: -0.066390 ByAddBackClose: -0.157270
+backtest 1Q 2002-07-01 2002-10-01 ByAdjClose: -0.070662 ByAddBackClose: -0.164951
 
-Evaluate 1Y since:  2001-10-01 dict_keys(['F03', '558', 'N02', 'H22', '596', 'S59', '578', 'T14', '580', '546'])
-backtest 1Q 2002-10-01 2003-01-01 ByAdjClose:  0.064044 ByAddBackClose:  0.064217
+Evaluate 1Y since:  2001-10-01 dict_keys(['F03', '558', 'N02', 'H22', '596', '578', 'T14', 'S59', '580', 'F10'])
+backtest 1Q 2002-10-01 2003-01-01 ByAdjClose:  0.054434 ByAddBackClose:  0.054612
 
 Evaluate 1Y since:  2002-01-01 dict_keys(['F03', 'N02', '596', '558', '580', 'T14', '5AI', 'H22', 'D01', '578'])
-backtest 1Q 2003-01-01 2003-04-01 ByAdjClose:  0.101906 ByAddBackClose:  0.102658
+backtest 1Q 2003-01-01 2003-04-01 ByAdjClose:  0.100923 ByAddBackClose:  0.102001
 
-Evaluate 1Y since:  2002-04-01 dict_keys(['N02', 'H22', 'D01', 'M01', 'T14', '580', 'A05', 'D03', 'J36', '596'])
-backtest 1Q 2003-04-01 2003-07-01 ByAdjClose:  0.132323 ByAddBackClose:  0.132382
+Evaluate 1Y since:  2002-04-01 dict_keys(['N02', 'H22', 'D01', 'V3M', 'T14', 'M01', '580', 'A05', 'D03', 'BDU'])
+backtest 1Q 2003-04-01 2003-07-01 ByAdjClose:  0.235920 ByAddBackClose:  0.233897
 
-Evaluate 1Y since:  2002-07-01 dict_keys(['5NV', 'A26', 'BTE', 'BDU', 'N02', 'A05', 'T14', 'M01', '546', 'i11'])
-backtest 1Q 2003-07-01 2003-10-01 ByAdjClose:  0.289277 ByAddBackClose:  0.143477
+Evaluate 1Y since:  2002-07-01 dict_keys(['5NV', 'A26', 'BTE', 'BDU', 'N02', 'T14', 'A05', '5CP', 'V3M', 'M01'])
+backtest 1Q 2003-07-01 2003-10-01 ByAdjClose:  0.327488 ByAddBackClose:  0.181205
 
-Evaluate 1Y since:  2002-10-01 dict_keys(['M14', 'A26', 'BTE', 'MT1', 'S56', 'BQM', 'G0I', '575', '5AU', 'T14'])
-backtest 1Q 2003-10-01 2004-01-01 ByAdjClose:  0.039897 ByAddBackClose:  0.039854
+Evaluate 1Y since:  2002-10-01 dict_keys(['M14', 'A26', 'BTE', 'MT1', 'S56', 'BQM', 'G0I', '575', '5AU', 'A04'])
+backtest 1Q 2003-10-01 2004-01-01 ByAdjClose:  0.025537 ByAddBackClose:  0.025300
 
 Evaluate 1Y since:  2003-01-01 dict_keys(['BQM', '566', 'M14', 'A26', 'BIP', 'BTE', '575', 'S56', 'G0I', 'G92'])
-backtest 1Q 2004-01-01 2004-04-01 ByAdjClose:  0.178512 ByAddBackClose:  0.178564
+backtest 1Q 2004-01-01 2004-04-01 ByAdjClose:  0.151382 ByAddBackClose:  0.151444
 
-Evaluate 1Y since:  2003-04-01 dict_keys(['566', 'G92', '575', 'BQM', 'A26', 'BTE', 'A50', 'M14', 'BIP', 'MT1'])
-backtest 1Q 2004-04-01 2004-07-01 ByAdjClose: -0.182478 ByAddBackClose: -0.182393
+Evaluate 1Y since:  2003-04-01 dict_keys(['566', 'G92', '575', 'BTE', 'A26', 'A50', 'BQM', 'M14', 'BIP', 'MT1'])
+backtest 1Q 2004-04-01 2004-07-01 ByAdjClose: -0.186538 ByAddBackClose: -0.186443
 
-Evaluate 1Y since:  2003-07-01 dict_keys(['G92', 'BQM', '575', '566', 'A50', 'J03', 'B69', 'MT1', 'Y3D', 'G0I'])
-backtest 1Q 2004-07-01 2004-10-01 ByAdjClose:  0.034614 ByAddBackClose:  0.034613
+Evaluate 1Y since:  2003-07-01 dict_keys(['G92', '575', 'BQM', 'A50', '566', 'J03', 'B69', 'MT1', 'Y3D', 'G0I'])
+backtest 1Q 2004-07-01 2004-10-01 ByAdjClose: -0.006490 ByAddBackClose: -0.006493
 
-Evaluate 1Y since:  2003-10-01 dict_keys(['L02', 'G92', 'B69', 'D01', 'J36', 'C09', 'C52', 'J03', 'T14', 'F13'])
+Evaluate 1Y since:  2003-10-01 dict_keys(['L02', 'G92', 'B69', 'J36', 'D01', 'C09', 'C52', 'J03', 'T14', 'F13'])
 backtest 1Q 2004-10-01 2005-01-01 ByAdjClose: -0.038320 ByAddBackClose: -0.038361
 
 Evaluate 1Y since:  2004-01-01 dict_keys(['L23', 'L02', 'B69', 'C52', 'Y3D', '600', 'C07', 'A26', 'BTE', 'BTG'])
-backtest 1Q 2005-01-01 2005-04-01 ByAdjClose: -0.068572 ByAddBackClose: -0.068400
+backtest 1Q 2005-01-01 2005-04-01 ByAdjClose: -0.082557 ByAddBackClose: -0.082396
 
-Evaluate 1Y since:  2004-04-01 dict_keys(['L23', 'V3M', '578', '600', 'C07', 'L02', 'S61', 'J36', 'H78', 'H15'])
-backtest 1Q 2005-04-01 2005-07-01 ByAdjClose:  0.073462 ByAddBackClose:  0.073594
+Evaluate 1Y since:  2004-04-01 dict_keys(['L23', 'V3M', '578', '600', 'L02', 'C07', 'PRH', 'S61', 'J36', 'H78'])
+backtest 1Q 2005-04-01 2005-07-01 ByAdjClose:  0.086213 ByAddBackClose:  0.086108
 
-Evaluate 1Y since:  2004-07-01 dict_keys(['L23', '600', '578', 'V3M', 'C07', 'U96', 'S19', 'H78', 'M04', 'F86'])
-backtest 1Q 2005-07-01 2005-10-01 ByAdjClose:  0.155845 ByAddBackClose:  0.155841
+Evaluate 1Y since:  2004-07-01 dict_keys(['L23', '600', '578', 'C07', 'V3M', 'U96', 'CC3', 'S19', 'H78', 'F86'])
+backtest 1Q 2005-07-01 2005-10-01 ByAdjClose:  0.116707 ByAddBackClose:  0.116647
 
-Evaluate 1Y since:  2004-10-01 dict_keys(['L23', 'H78', '578', 'M04', 'H13', 'U96', 'D01', '600', 'S56', 'B69'])
-backtest 1Q 2005-10-01 2006-01-01 ByAdjClose: -0.053733 ByAddBackClose: -0.053733
+Evaluate 1Y since:  2004-10-01 dict_keys(['L23', 'H78', '578', 'M04', 'CC3', 'H13', 'U96', 'D01', '600', 'U77'])
+backtest 1Q 2005-10-01 2006-01-01 ByAdjClose: -0.013432 ByAddBackClose: -0.013696
 
-Evaluate 1Y since:  2005-01-01 dict_keys(['578', 'H78', 'D01', 'H13', 'CC3', 'M04', 'M01', 'U96', 'F9D', 'BAI'])
-backtest 1Q 2006-01-01 2006-04-01 ByAdjClose:  0.247894 ByAddBackClose:  0.247919
+Evaluate 1Y since:  2005-01-01 dict_keys(['U77', '578', 'D01', 'H78', 'H13', 'CC3', 'M04', 'VC2', 'M01', 'U96'])
+backtest 1Q 2006-01-01 2006-04-01 ByAdjClose:  0.236994 ByAddBackClose:  0.237019
 
-Evaluate 1Y since:  2005-04-01 dict_keys(['H13', 'AZA', 'BHK', 'F1E', '5DN', 'BAI', 'BDU', 'H78', 'VC2', '5EN'])
-backtest 1Q 2006-04-01 2006-07-01 ByAdjClose: -0.072150 ByAddBackClose: -0.071368
+Evaluate 1Y since:  2005-04-01 dict_keys(['U77', 'H13', 'AZA', 'BHK', 'F1E', '5DN', 'BAI', 'BDU', 'H78', 'VC2'])
+backtest 1Q 2006-04-01 2006-07-01 ByAdjClose: -0.124201 ByAddBackClose: -0.123492
 
 Evaluate 1Y since:  2005-07-01 dict_keys(['5IG', 'BQC', 'BHK', 'U77', '5EN', 'BAI', 'H78', 'H13', 'BDU', 'F1E'])
-backtest 1Q 2006-07-01 2006-10-01 ByAdjClose:  0.090242 ByAddBackClose:  0.090111
+backtest 1Q 2006-07-01 2006-10-01 ByAdjClose:  0.087449 ByAddBackClose:  0.087325
 
-Evaluate 1Y since:  2005-10-01 dict_keys(['5IG', 'BQC', '5EN', 'BTE', '532', 'BHK', 'S68', 'B61', 'F9D', 'U14'])
-backtest 1Q 2006-10-01 2007-01-01 ByAdjClose:  0.005085 ByAddBackClose:  0.004337
+Evaluate 1Y since:  2005-10-01 dict_keys(['5IG', 'BQC', '5EN', 'BTE', '532', 'BHK', '5I4', 'S68', 'B61', 'F9D'])
+backtest 1Q 2006-10-01 2007-01-01 ByAdjClose: -0.013945 ByAddBackClose: -0.011156
 
-Evaluate 1Y since:  2006-01-01 dict_keys(['5IG', 'BRD', 'BQC', '5CP', '5EN', '5I4', 'G13', 'S68', 'BLA', 'BDU'])
-backtest 1Q 2007-01-01 2007-04-01 ByAdjClose:  0.041263 ByAddBackClose:  0.043732
+Evaluate 1Y since:  2006-01-01 dict_keys(['5IG', '5CP', 'BRD', '5EN', '5I4', 'BQC', 'Z25', 'G13', 'F34', 'F83'])
+backtest 1Q 2007-01-01 2007-04-01 ByAdjClose: -0.054728 ByAddBackClose: -0.054758
 
-Evaluate 1Y since:  2006-04-01 dict_keys(['AXB', '5IG', 'KJ5', 'C06', 'OU8', 'BEZ', 'PRH', '5EN', '5JK', 'CTO'])
-backtest 1Q 2007-04-01 2007-07-01 ByAdjClose:  0.526210 ByAddBackClose:  0.524230
+Evaluate 1Y since:  2006-04-01 dict_keys(['AXB', '5IG', 'KJ5', 'C06', 'OU8', 'BEZ', 'PRH', 'CTO', '5EN', '5GD'])
+backtest 1Q 2007-04-01 2007-07-01 ByAdjClose:  0.481509 ByAddBackClose:  0.479692
 
-Evaluate 1Y since:  2006-07-01 dict_keys(['AXB', 'BMT', '1C0', 'AVX', 'BTP', '5AL', '566', 'BEZ', 'CTO', 'OU8'])
-backtest 1Q 2007-07-01 2007-10-01 ByAdjClose:  0.072181 ByAddBackClose:  0.072181
+Evaluate 1Y since:  2006-07-01 dict_keys(['AXB', 'BTP', '5AL', 'AVX', '1C0', '566', 'BEZ', 'CTO', 'OU8', '5GJ'])
+backtest 1Q 2007-07-01 2007-10-01 ByAdjClose:  0.102975 ByAddBackClose:  0.102975
 
-Evaluate 1Y since:  2006-10-01 dict_keys(['1C0', 'BTP', 'AXB', '5CF', '5RA', 'BBP', '566', 'OU8', 'AVX', 'RDR'])
-backtest 1Q 2007-10-01 2008-01-01 ByAdjClose: -0.232207 ByAddBackClose: -0.232207
+Evaluate 1Y since:  2006-10-01 dict_keys(['1C0', 'BTP', 'AXB', '5CF', '5RA', '566', 'OU8', 'CTO', 'RDR', '5GJ'])
+backtest 1Q 2007-10-01 2008-01-01 ByAdjClose: -0.225904 ByAddBackClose: -0.225880
 
-Evaluate 1Y since:  2007-01-01 dict_keys(['1C0', 'BTP', '5CF', 'Q0X', '595', '5GJ', 'BQM', 'BEZ', 'AVX', 'OU8'])
-backtest 1Q 2008-01-01 2008-04-01 ByAdjClose: -0.291408 ByAddBackClose: -0.291408
+Evaluate 1Y since:  2007-01-01 dict_keys(['1C0', 'BTP', '5CF', 'Q0X', '595', '5GJ', 'BQM', 'OU8', 'BEZ', 'F17'])
+backtest 1Q 2008-01-01 2008-04-01 ByAdjClose: -0.280465 ByAddBackClose: -0.280465
 
-Evaluate 1Y since:  2007-04-01 dict_keys(['1C0', 'S07', 'LYY', 'Y92', '5NV', 'AAJ', '5CF', 'Q0X', 'CIN', '5JS'])
-backtest 1Q 2008-04-01 2008-07-01 ByAdjClose: nan ByAddBackClose: -0.126605
+Evaluate 1Y since:  2007-04-01 dict_keys(['1C0', 'S07', 'LYY', '5JS', '5NV', 'Y92', '5CF', 'BTP', 'Q0X', 'CIN'])
+backtest 1Q 2008-04-01 2008-07-01 ByAdjClose: nan ByAddBackClose: -0.051580
 
-Evaluate 1Y since:  2007-07-01 dict_keys(['R14', '5JS', 'Y92', '579', 'F34', 'S20', 'J36', 'A26', 'BTE', 'S51'])
-backtest 1Q 2008-07-01 2008-10-01 ByAdjClose: nan ByAddBackClose: -0.362146
+Evaluate 1Y since:  2007-07-01 dict_keys(['R14', '5JS', 'Y92', 'F34', '579', 'E5H', 'S20', 'J36', 'S51', 'CHJ'])
+backtest 1Q 2008-07-01 2008-10-01 ByAdjClose: nan ByAddBackClose: -0.356724
 
-Evaluate 1Y since:  2007-10-01 dict_keys(['Y92', 'i07', 'D01', '579', 'J36', 'R14', 'CC3', 'C07', '600', 'C76'])
-backtest 1Q 2008-10-01 2009-01-01 ByAdjClose: nan ByAddBackClose: -0.212010
+Evaluate 1Y since:  2007-10-01 dict_keys(['Y92', 'LUY', 'i07', 'D01', '579', 'J36', 'R14', 'E3B', 'CC3', 'C07'])
+backtest 1Q 2008-10-01 2009-01-01 ByAdjClose: nan ByAddBackClose: -0.230683
 
-Evaluate 1Y since:  2008-01-01 dict_keys(['Y92', 'D01', 'D03', 'i07', 'R14', 'S20', 'C52', 'S08', 'CC3', 'BRD'])
-backtest 1Q 2009-01-01 2009-04-01 ByAdjClose: nan ByAddBackClose: -0.204126
+Evaluate 1Y since:  2008-01-01 dict_keys(['Y92', 'LUY', 'D01', 'GU5', 'i07', 'D03', 'R14', 'S20', 'C52', 'S08'])
+backtest 1Q 2009-01-01 2009-04-01 ByAdjClose: nan ByAddBackClose: -0.119737
 
-Evaluate 1Y since:  2008-04-01 dict_keys(['Y92', 'D01', '5LY', 'P74', 'G13', 'LJ3', 'L02', 'A7RU', 'F34', 'AW9U'])
-backtest 1Q 2009-04-01 2009-07-01 ByAdjClose: nan ByAddBackClose: 0.440051
+Evaluate 1Y since:  2008-04-01 dict_keys(['Y92', 'LUY', '5LY', 'D01', 'O87', 'GU5', 'P74', 'G13', 'A7RU', 'LJ3'])
+backtest 1Q 2009-04-01 2009-07-01 ByAdjClose: nan ByAddBackClose: 0.210902
 
-Evaluate 1Y since:  2008-07-01 dict_keys(['Y92', 'A78', 'D01', 'BHU', 'Z25', 'E3B', 'C8R', 'G13', 'C07', 'AXB'])
-backtest 1Q 2009-07-01 2009-10-01 ByAdjClose: nan ByAddBackClose: 0.393364
+Evaluate 1Y since:  2008-07-01 dict_keys(['Y92', 'A78', 'G3B', 'D01', 'BHU', 'E3B', 'Z25', 'G13', 'C07', 'C8R'])
+backtest 1Q 2009-07-01 2009-10-01 ByAdjClose: nan ByAddBackClose: 0.401601
 
-Evaluate 1Y since:  2008-10-01 dict_keys(['5CF', 'R14', 'A78', '546', '5CT', 'BQM', 'BAI', 'P36', 'B9S', 'BTP'])
-backtest 1Q 2009-10-01 2010-01-01 ByAdjClose:  0.018838 ByAddBackClose:  0.018915
+Evaluate 1Y since:  2008-10-01 dict_keys(['5CF', 'A78', '5CT', '546', 'BAI', 'BQM', 'B9S', 'P36', 'BTP', 'TVV'])
+backtest 1Q 2009-10-01 2010-01-01 ByAdjClose: -0.022258 ByAddBackClose: -0.022182
 
-Evaluate 1Y since:  2009-01-01 dict_keys(['H20', '546', 'H22', 'H13', 'T14', '5OU', 'A78', '5JS', 'B69', 'C8R'])
-backtest 1Q 2010-01-01 2010-04-01 ByAdjClose:  0.065517 ByAddBackClose:  0.065516
+Evaluate 1Y since:  2009-01-01 dict_keys(['H20', '546', 'H22', 'T14', '5OU', 'A78', 'H13', '5JS', 'R14', 'B69'])
+backtest 1Q 2010-01-01 2010-04-01 ByAdjClose:  0.022156 ByAddBackClose:  0.022157
 
-Evaluate 1Y since:  2009-04-01 dict_keys(['H22', '5JK', 'B69', 'U77', 'P36', 'H13', 'H20', 'BHD', 'A78', 'AZG'])
-backtest 1Q 2010-04-01 2010-07-01 ByAdjClose: -0.125902 ByAddBackClose: -0.125094
+Evaluate 1Y since:  2009-04-01 dict_keys(['H22', '5JK', 'U77', 'B69', 'P36', 'H20', 'H13', 'BHD', 'A78', 'AZG'])
+backtest 1Q 2010-04-01 2010-07-01 ByAdjClose: -0.118293 ByAddBackClose: -0.117578
 
-Evaluate 1Y since:  2009-07-01 dict_keys(['H20', 'B69', 'U77', 'M14', 'BKV', 'BTP', '1H2', 'Y92', 'T14', 'BAZ'])
-backtest 1Q 2010-07-01 2010-10-01 ByAdjClose:  0.122292 ByAddBackClose:  0.062238
+Evaluate 1Y since:  2009-07-01 dict_keys(['H20', 'B69', 'U77', 'M14', 'BTP', 'BKV', '1H2', 'Y92', 'T14', '558'])
+backtest 1Q 2010-07-01 2010-10-01 ByAdjClose:  0.126534 ByAddBackClose:  0.069703
 
-Evaluate 1Y since:  2009-10-01 dict_keys(['1H2', '5AB', '5NV', '558', 'S69', 'B69', 'Y92', 'BN2', 'WPC', 'G20'])
+Evaluate 1Y since:  2009-10-01 dict_keys(['1H2', '5NV', '5AB', 'S69', '558', 'B69', 'Y92', 'WPC', 'G20', 'BN2'])
 backtest 1Q 2010-10-01 2011-01-01 ByAdjClose: -0.040141 ByAddBackClose: -0.036783
 
-Evaluate 1Y since:  2010-01-01 dict_keys(['B49', 'N0Z', '558', 'S69', '5AB', '5NV', 'BN2', 'Y92', 'WPC', 'BQD'])
-backtest 1Q 2011-01-01 2011-04-01 ByAdjClose: -0.031962 ByAddBackClose: -0.031447
+Evaluate 1Y since:  2010-01-01 dict_keys(['B49', '558', 'N0Z', 'S69', 'Y92', '5NV', '5AB', 'BN2', 'WPC', 'BQD'])
+backtest 1Q 2011-01-01 2011-04-01 ByAdjClose: -0.040663 ByAddBackClose: -0.041643
 
-Evaluate 1Y since:  2010-04-01 dict_keys(['AFC', 'B49', '558', 'T4B', 'G13', 'LYY', 'EG0', 'Y92', 'A78', 'WPC'])
-backtest 1Q 2011-04-01 2011-07-01 ByAdjClose:  0.111536 ByAddBackClose:  -0.022852
+Evaluate 1Y since:  2010-04-01 dict_keys(['AFC', 'B49', '558', 'G13', 'LYY', 'T4B', 'Y92', 'A78', 'EG0', 'N0Z'])
+backtest 1Q 2011-04-01 2011-07-01 ByAdjClose:  0.119258 ByAddBackClose:  -0.016849
 
-Evaluate 1Y since:  2010-07-01 dict_keys(['BLS', 'AFC', 'E6R', '583', 'B49', 'TVV', 'L02', 'Y92', 'A78', 'T4B'])
-backtest 1Q 2011-07-01 2011-10-01 ByAdjClose:  0.029204 ByAddBackClose:  -0.042820
+Evaluate 1Y since:  2010-07-01 dict_keys(['AFC', 'BLS', '5SR', 'E6R', 'B49', '583', 'L02', 'TVV', 'Y92', 'A78'])
+backtest 1Q 2011-07-01 2011-10-01 ByAdjClose:  0.033264 ByAddBackClose:  -0.038760
 
-Evaluate 1Y since:  2010-10-01 dict_keys(['BLS', 'AFC', 'Y92', 'A78', 'TVV', 'B49', 'A30', '583', 'DU4', 'E6R'])
-backtest 1Q 2011-10-01 2012-01-01 ByAdjClose: -0.125957 ByAddBackClose: -0.122186
+Evaluate 1Y since:  2010-10-01 dict_keys(['BLS', '5SR', 'AFC', 'Y92', 'A78', 'TVV', 'B49', 'A30', '583', 'DU4'])
+backtest 1Q 2011-10-01 2012-01-01 ByAdjClose: -0.076502 ByAddBackClose: -0.074579
 
-Evaluate 1Y since:  2011-01-01 dict_keys(['BLS', 'A30', 'TVV', 'Y92', '583', 'DU4', 'QC7', '5F7', 'U77', 'BN2'])
-backtest 1Q 2012-01-01 2012-04-01 ByAdjClose:  0.327823 ByAddBackClose:  0.326746
+Evaluate 1Y since:  2011-01-01 dict_keys(['BLS', '5SR', 'TVV', 'A30', 'Y92', '583', 'DU4', '5F7', 'QC7', 'E6R'])
+backtest 1Q 2012-01-01 2012-04-01 ByAdjClose:  0.277952 ByAddBackClose:  0.274240
 
 Evaluate 1Y since:  2011-04-01 dict_keys(['Z59', 'TVV', 'A30', 'Y3D', '5SR', '5GI', 'Y92', 'U77', '583', 'A31'])
-backtest 1Q 2012-04-01 2012-07-01 ByAdjClose:  0.248286 ByAddBackClose:  0.101806
+backtest 1Q 2012-04-01 2012-07-01 ByAdjClose:  0.238476 ByAddBackClose:  0.091991
 
 Evaluate 1Y since:  2011-07-01 dict_keys(['BDX', 'Z59', 'T09', '5GI', 'Y92', 'i06', 'U09', 'AWX', 'A30', 'Y3D'])
-backtest 1Q 2012-07-01 2012-10-01 ByAdjClose:  0.298594 ByAddBackClose:  0.255381
+backtest 1Q 2012-07-01 2012-10-01 ByAdjClose:  0.374477 ByAddBackClose:  0.330773
 
-Evaluate 1Y since:  2011-10-01 dict_keys(['BDX', 'Z59', 'T09', '5GI', 'A33', 'U09', '505', 'Y3D', 'i06', 'A30'])
+Evaluate 1Y since:  2011-10-01 dict_keys(['BDX', 'Z59', 'T09', '5GI', 'A33', 'U09', 'Y3D', 'i06', '505', 'A30'])
 backtest 1Q 2012-10-01 2013-01-01 ByAdjClose:  0.280626 ByAddBackClose:  0.280566
 
-Evaluate 1Y since:  2012-01-01 dict_keys(['5QT', 'BDX', 'T09', 'A33', 'QZG', 'A50', '5GI', 'Z59', '505', 'U09'])
-backtest 1Q 2013-01-01 2013-04-01 ByAdjClose:  0.420593 ByAddBackClose:  0.420593
+Evaluate 1Y since:  2012-01-01 dict_keys(['5QT', 'BDX', 'T09', 'A33', 'QZG', '5GI', 'A50', '505', 'U09', 'Z59'])
+backtest 1Q 2013-01-01 2013-04-01 ByAdjClose:  0.355952 ByAddBackClose:  0.355952
 
-Evaluate 1Y since:  2012-04-01 dict_keys(['A33', '5QT', 'QZG', 'BDX', 'WVJ', '5BI', 'i07', 'Y35', 'A50', 'T09'])
-backtest 1Q 2013-04-01 2013-07-01 ByAdjClose:  0.120464 ByAddBackClose:  0.120507
+Evaluate 1Y since:  2012-04-01 dict_keys(['A33', 'QZG', '5QT', 'BDX', 'i07', 'WVJ', 'Y35', 'A50', '5BI', '9QX'])
+backtest 1Q 2013-04-01 2013-07-01 ByAdjClose:  0.080280 ByAddBackClose:  0.080311
 
-Evaluate 1Y since:  2012-07-01 dict_keys(['A33', '5QT', 'i07', 'QZG', 'A50', '5BI', 'M15', 'T4B', '5PO', 'Y92'])
-backtest 1Q 2013-07-01 2013-10-01 ByAdjClose:  0.176559 ByAddBackClose:  0.164899
+Evaluate 1Y since:  2012-07-01 dict_keys(['A33', 'i07', '5QT', 'QZG', 'A50', '5BI', 'M15', '5PO', 'T4B', 'Y92'])
+backtest 1Q 2013-07-01 2013-10-01 ByAdjClose:  0.220832 ByAddBackClose:  0.209001
 
-Evaluate 1Y since:  2012-10-01 dict_keys(['A33', '5QT', '9QX', 'i07', 'AOF', '5OU', 'QZG', '1B6', 'O08', '5BI'])
-backtest 1Q 2013-10-01 2014-01-01 ByAdjClose: -0.222409 ByAddBackClose: -0.222409
+Evaluate 1Y since:  2012-10-01 dict_keys(['A33', '5QT', '9QX', 'i07', 'AOF', '5OU', 'A50', 'QZG', 'O08', '1B6'])
+backtest 1Q 2013-10-01 2014-01-01 ByAdjClose: -0.200394 ByAddBackClose: -0.200394
 
-Evaluate 1Y since:  2013-01-01 dict_keys(['i07', '5OU', 'WPC', '1B6', '9QX', 'BCD', 'BTJ', 'AOF', '504', 'OU8'])
-backtest 1Q 2014-01-01 2014-04-01 ByAdjClose: -0.112811 ByAddBackClose: -0.113800
+Evaluate 1Y since:  2013-01-01 dict_keys(['i07', '5OU', 'WPC', '9QX', '1B6', 'BCD', 'AOF', 'BTJ', '504', 'Y45'])
+backtest 1Q 2014-01-01 2014-04-01 ByAdjClose: -0.140971 ByAddBackClose: -0.142222
 
-Evaluate 1Y since:  2013-04-01 dict_keys(['5OU', 'Y45', 'U9E', 'OU8', 'BTJ', 'RCU', 'WPC', 'BCD', 'O08', '5RA'])
-backtest 1Q 2014-04-01 2014-07-01 ByAdjClose: -0.164122 ByAddBackClose: -0.164100
+Evaluate 1Y since:  2013-04-01 dict_keys(['5OU', 'Y45', 'U9E', 'BTJ', 'OU8', 'WPC', 'RCU', 'O08', 'BCD', '5RA'])
+backtest 1Q 2014-04-01 2014-07-01 ByAdjClose: -0.169408 ByAddBackClose: -0.169386
 
-Evaluate 1Y since:  2013-07-01 dict_keys(['41F', 'RCU', 'Y45', 'QS9', 'WPC', 'BTM', 'BN2', 'O08', 'L02', 'BHK'])
-backtest 1Q 2014-07-01 2014-10-01 ByAdjClose: -0.037407 ByAddBackClose: -0.035330
+Evaluate 1Y since:  2013-07-01 dict_keys(['41F', 'RCU', 'Y45', 'QS9', 'WPC', 'BTM', 'O08', 'BN2', 'L02', 'BHK'])
+backtest 1Q 2014-07-01 2014-10-01 ByAdjClose: -0.033824 ByAddBackClose: -0.031747
 
-Evaluate 1Y since:  2013-10-01 dict_keys(['41F', 'RCU', 'Y92', 'QS9', 'S85', 'QES', '5UN', 'BTM', 'U77', 'BN2'])
+Evaluate 1Y since:  2013-10-01 dict_keys(['41F', 'RCU', 'Y92', 'QES', 'QS9', 'S85', 'BTM', '5UN', 'U77', 'BN2'])
 backtest 1Q 2014-10-01 2015-01-01 ByAdjClose: -0.054419 ByAddBackClose: -0.054387
 
-Evaluate 1Y since:  2014-01-01 dict_keys(['RCU', '41F', '5OC', '5UN', 'BEZ', 'L38', 'Y92', 'QS9', 'QES', '5HT'])
-backtest 1Q 2015-01-01 2015-04-01 ByAdjClose: -0.020665 ByAddBackClose: -0.020690
+Evaluate 1Y since:  2014-01-01 dict_keys(['41F', 'RCU', '5OC', '5UN', '42N', 'BEZ', 'L38', 'Y92', 'QS9', 'QES'])
+backtest 1Q 2015-01-01 2015-04-01 ByAdjClose:  0.013933 ByAddBackClose:  0.013879
 
-Evaluate 1Y since:  2014-04-01 dict_keys(['5OC', 'TVV', 'RCU', 'Y92', 'L38', '5HH', 'JK8', 'QC7', 'J2T', 'S85'])
-backtest 1Q 2015-04-01 2015-07-01 ByAdjClose:  0.156372 ByAddBackClose:  0.072898
+Evaluate 1Y since:  2014-04-01 dict_keys(['5OC', '42N', 'TVV', 'RCU', 'L38', 'Y92', '5HH', 'JK8', 'QES', 'J2T'])
+backtest 1Q 2015-04-01 2015-07-01 ByAdjClose:  0.196606 ByAddBackClose:  0.114022
 
-Evaluate 1Y since:  2014-07-01 dict_keys(['42N', '5OC', 'Y92', '5AB', 'JK8', 'D8DU', 'RCU', 'AP4', 'QC7', 'BTF'])
-backtest 1Q 2015-07-01 2015-10-01 ByAdjClose: -0.173245 ByAddBackClose: -0.177218
+Evaluate 1Y since:  2014-07-01 dict_keys(['42N', '5OC', 'Y92', '5AB', '1B0', 'JK8', 'RCU', 'D8DU', 'AP4', 'QC7'])
+backtest 1Q 2015-07-01 2015-10-01 ByAdjClose: -0.121387 ByAddBackClose: -0.125130
 
-Evaluate 1Y since:  2014-10-01 dict_keys(['Y35', '42N', '5OC', 'BQC', 'AP4', 'QC7', 'Y92', 'P15', 'D8DU', 'F13'])
-backtest 1Q 2015-10-01 2016-01-01 ByAdjClose:  0.062650 ByAddBackClose:  0.062658
+Evaluate 1Y since:  2014-10-01 dict_keys(['Y35', '42N', '1B0', 'BQC', '5OC', 'QC7', 'AP4', 'Y92', 'P15', 'D8DU'])
+backtest 1Q 2015-10-01 2016-01-01 ByAdjClose:  0.087260 ByAddBackClose:  0.087211
 
-Evaluate 1Y since:  2015-01-01 dict_keys(['Y35', 'BTF', '1B0', '42N', '5OC', 'AP4', '5GD', '8K7', 'BQC', '8A1'])
-backtest 1Q 2016-01-01 2016-04-01 ByAdjClose: -0.169485 ByAddBackClose: -0.169486
+Evaluate 1Y since:  2015-01-01 dict_keys(['Y35', 'BTF', '1B0', '42N', 'AP4', '5GD', '5OC', '8K7', '8A1', 'Y92'])
+backtest 1Q 2016-01-01 2016-04-01 ByAdjClose: -0.132301 ByAddBackClose: -0.132304
 
 Evaluate 1Y since:  2015-04-01 dict_keys(['Y35', '1B0', '5GD', '8A1', 'BTF', 'T4B', 'CGN', 'Y92', 'AP4', 'F13'])
-backtest 1Q 2016-04-01 2016-07-01 ByAdjClose:  0.386184 ByAddBackClose:  0.231439
+backtest 1Q 2016-04-01 2016-07-01 ByAdjClose:  0.344264 ByAddBackClose:  0.190357
 
-Evaluate 1Y since:  2015-07-01 dict_keys(['Y35', 'CGN', '8A1', '1B0', '5GD', 'UD2', 'Y92', 'T4B', '5TP', 'G92'])
-backtest 1Q 2016-07-01 2016-10-01 ByAdjClose:  0.101086 ByAddBackClose:  0.096783
+Evaluate 1Y since:  2015-07-01 dict_keys(['Y35', 'CGN', '8A1', '43F', '1B0', '5GD', 'UD2', 'Y92', 'T4B', '5TP'])
+backtest 1Q 2016-07-01 2016-10-01 ByAdjClose:  0.096871 ByAddBackClose:  0.092552
 
-Evaluate 1Y since:  2015-10-01 dict_keys(['CGN', '5TP', 'UD2', '1B0', '40E', 'Y92', 'G92', '5GD', '40F', 'C07'])
-backtest 1Q 2016-10-01 2017-01-01 ByAdjClose:  0.050277 ByAddBackClose:  0.050252
+Evaluate 1Y since:  2015-10-01 dict_keys(['CGN', '43F', '5TP', 'UD2', '1B0', '40E', 'Y92', 'G92', '5GD', '42R'])
+backtest 1Q 2016-10-01 2017-01-01 ByAdjClose:  0.053794 ByAddBackClose:  0.053767
 
-Evaluate 1Y since:  2016-01-01 dict_keys(['CGN', '5TP', '1B0', 'Y92', 'F03', 'BDX', 'G92', 'UD2', 'U09', 'RE4'])
-backtest 1Q 2017-01-01 2017-04-01 ByAdjClose:  0.282081 ByAddBackClose:  0.235519
+Evaluate 1Y since:  2016-01-01 dict_keys(['CGN', '5TP', '1B0', 'Y92', '43F', 'G92', 'F03', 'BDX', 'UD2', '5GD'])
+backtest 1Q 2017-01-01 2017-04-01 ByAdjClose:  0.266968 ByAddBackClose:  0.220686
 
 Evaluate 1Y since:  2016-04-01 dict_keys(['CGN', '532', '5RF', 'J03', 'PH0', 'AWX', '40F', '41H', 'FQ7', 'RE4'])
-backtest 1Q 2017-04-01 2017-07-01 ByAdjClose: -0.088717 ByAddBackClose: -0.088134
+backtest 1Q 2017-04-01 2017-07-01 ByAdjClose: -0.112325 ByAddBackClose: -0.111751
 
 Evaluate 1Y since:  2016-07-01 dict_keys(['AWX', '5RF', 'J03', '40F', 'FQ7', '41H', '5NV', '41F', 'CGN', '532'])
-backtest 1Q 2017-07-01 2017-10-01 ByAdjClose: -0.029195 ByAddBackClose: -0.029306
+backtest 1Q 2017-07-01 2017-10-01 ByAdjClose: -0.049237 ByAddBackClose: -0.049349
 
-Evaluate 1Y since:  2016-10-01 dict_keys(['AWX', '5RF', 'FQ7', '41H', 'J03', '575', '5NV', 'M03', 'C8R', '40F'])
-backtest 1Q 2017-10-01 2018-01-01 ByAdjClose:  0.050410 ByAddBackClose:  0.050037
+Evaluate 1Y since:  2016-10-01 dict_keys(['AWX', 'FQ7', '5RF', '41H', 'J03', '575', '5NV', 'C8R', 'M03', '5GZ'])
+backtest 1Q 2017-10-01 2018-01-01 ByAdjClose:  0.008469 ByAddBackClose:  0.008103
 
-Evaluate 1Y since:  2017-01-01 dict_keys(['AWX', 'C8R', '40F', 'J03', 'BEC', 'S71', '5NV', '5WA', '5DD', 'MT1'])
-backtest 1Q 2018-01-01 2018-04-01 ByAdjClose:  0.021433 ByAddBackClose:  0.021619
+Evaluate 1Y since:  2017-01-01 dict_keys(['C8R', 'AWX', '40F', 'J03', 'BEC', 'MT1', 'S71', '5WA', '5DD', '5NV'])
+backtest 1Q 2018-01-01 2018-04-01 ByAdjClose:  0.017655 ByAddBackClose:  0.017839
 
-Evaluate 1Y since:  2017-04-01 dict_keys(['C76', 'AWX', 'C8R', '1J4', 'V03', 'BEC', '5DD', 'QES', 'S71', 'M04'])
-backtest 1Q 2018-04-01 2018-07-01 ByAdjClose: -0.163662 ByAddBackClose: -0.162742
+Evaluate 1Y since:  2017-04-01 dict_keys(['C76', 'AWX', 'C8R', '1J4', 'V03', 'BEC', '1F1', '5DD', '1H3', 'QES'])
+backtest 1Q 2018-04-01 2018-07-01 ByAdjClose: -0.185315 ByAddBackClose: -0.184386
 
-Evaluate 1Y since:  2017-07-01 dict_keys(['C76', 'C8R', 'AWX', 'QES', '1J4', 'BEC', '575', '5DD', 'V03', 'Y92'])
-backtest 1Q 2018-07-01 2018-10-01 ByAdjClose: -0.042505 ByAddBackClose: -0.042611
+Evaluate 1Y since:  2017-07-01 dict_keys(['C76', 'C8R', 'AWX', 'QES', '1F1', '1J4', '575', 'BEC', '5DD', 'V03'])
+backtest 1Q 2018-07-01 2018-10-01 ByAdjClose: -0.068362 ByAddBackClose: -0.068310
 
-Evaluate 1Y since:  2017-10-01 dict_keys(['C76', 'BEW', '5WH', '1J4', '544', 'M11', 'BEC', 'F83', 'M14', 'AWX'])
-backtest 1Q 2018-10-01 2019-01-01 ByAdjClose: -0.194224 ByAddBackClose: -0.194223
+Evaluate 1Y since:  2017-10-01 dict_keys(['C76', 'BEW', '5WH', '1J4', 'M11', 'BEC', 'M14', 'F83', '544', 'Y92'])
+backtest 1Q 2018-10-01 2019-01-01 ByAdjClose: -0.203104 ByAddBackClose: -0.203104
 
-Evaluate 1Y since:  2018-01-01 dict_keys(['C76', 'CGN', '5EN', 'UD2', 'QES', 'BEW', 'Y92', 'AIY', 'OV8', 'D01'])
-backtest 1Q 2019-01-01 2019-04-01 ByAdjClose:  0.317402 ByAddBackClose:  0.142990
+Evaluate 1Y since:  2018-01-01 dict_keys(['C76', 'CGN', '5EN', 'UD2', 'QES', 'BEW', 'Y92', 'AIY', 'CTO', 'OV8'])
+backtest 1Q 2019-01-01 2019-04-01 ByAdjClose:  0.328128 ByAddBackClose:  0.157353
 
-Evaluate 1Y since:  2018-04-01 dict_keys(['Y92', 'S61', '5WH', 'UD2', 'CTO', '544', 'BS6', 'C52', 'M44U', 'N2IU'])
-backtest 1Q 2019-04-01 2019-07-01 ByAdjClose:  0.023248 ByAddBackClose:  0.017617
+Evaluate 1Y since:  2018-04-01 dict_keys(['Y92', 'S61', '5WH', 'UD2', 'CTO', '544', 'BS6', 'C52', 'AIY', 'N2IU'])
+backtest 1Q 2019-04-01 2019-07-01 ByAdjClose: -0.001001 ByAddBackClose: -0.006027
 
-Evaluate 1Y since:  2018-07-01 dict_keys(['Y92', 'BS6', '5WH', 'S61', '5JS', 'M14', 'E28', 'CY6U', 'N2IU', 'CTO'])
-backtest 1Q 2019-07-01 2019-10-01 ByAdjClose: -0.021296 ByAddBackClose: -0.021450
+Evaluate 1Y since:  2018-07-01 dict_keys(['Y92', 'BS6', 'S61', '5WH', 'M14', 'E28', 'CY6U', 'N2IU', 'C38U', 'M44U'])
+backtest 1Q 2019-07-01 2019-10-01 ByAdjClose: -0.015241 ByAddBackClose: -0.015431
 
-Evaluate 1Y since:  2018-10-01 dict_keys(['Y92', 'BTM', 'QS9', '5JS', 'E28', 'S61', 'CY6U', 'AJBU', 'N2IU', 'AWX'])
+Evaluate 1Y since:  2018-10-01 dict_keys(['Y92', 'BTM', 'QS9', '5JS', 'S61', 'E28', 'AJBU', 'CY6U', 'N2IU', 'AWX'])
 backtest 1Q 2019-10-01 2020-01-01 ByAdjClose:  0.148459 ByAddBackClose:  0.148511
 
-Evaluate 1Y since:  2019-01-01 dict_keys(['QS9', '5WH', 'Y92', '5GI', 'BTM', 'AWX', 'Z4D', 'E28', '5GD', '558'])
-backtest 1Q 2020-01-01 2020-04-01 ByAdjClose: -0.460857 ByAddBackClose: -0.460444
+Evaluate 1Y since:  2019-01-01 dict_keys(['QS9', '5WH', 'Y92', '5GI', 'BTM', 'AWX', 'E28', 'Z4D', '5GD', '558'])
+backtest 1Q 2020-01-01 2020-04-01 ByAdjClose: -0.465977 ByAddBackClose: -0.465581
 
-Evaluate 1Y since:  2019-04-01 dict_keys(['546', '5AI', '584', '5WV', 'QS9', 'AJBU', 'BVA', 'AWX', '5JS', 'V2Y'])
-backtest 1Q 2020-04-01 2020-07-01 ByAdjClose:  1.047593 ByAddBackClose:  1.046940
+Evaluate 1Y since:  2019-04-01 dict_keys(['584', '5AI', '546', '5WV', 'QS9', 'AJBU', 'BVA', 'AWX', '5JS', 'V2Y'])
+backtest 1Q 2020-04-01 2020-07-01 ByAdjClose:  0.974988 ByAddBackClose:  0.974640
 
-Evaluate 1Y since:  2019-07-01 dict_keys(['Y35', '546', '8K7', '584', '40V', 'NC2', '5AI', 'BVA', '5WV', 'AAJ'])
-backtest 1Q 2020-07-01 2020-10-01 ByAdjClose:  0.118300 ByAddBackClose:  0.118691
+Evaluate 1Y since:  2019-07-01 dict_keys(['Y35', '546', '8K7', '584', '40V', '5AI', 'NC2', 'BVA', 'AAJ', 'AWX'])
+backtest 1Q 2020-07-01 2020-10-01 ByAdjClose:  0.169549 ByAddBackClose:  0.170034
 
-Evaluate 1Y since:  2019-10-01 dict_keys(['546', '8K7', 'Y35', '584', 'BVA', 'C8R', '569', 'NC2', 'AP4', 'AWX'])
-backtest 1Q 2020-10-01 2021-01-01 ByAdjClose: -0.004917 ByAddBackClose: -0.033894
+Evaluate 1Y since:  2019-10-01 dict_keys(['546', '8K7', 'Y35', '584', 'BVA', 'C8R', '569', 'NC2', 'AP4', 'MXNU'])
+backtest 1Q 2020-10-01 2021-01-01 ByAdjClose:  0.007467 ByAddBackClose:  -0.021510
 
-Evaluate 1Y since:  2020-01-01 dict_keys(['546', '8K7', '42F', '579', 'Y35', 'LS9', 'NC2', 'C8R', '5EF', 'BVA'])
-backtest 1Q 2021-01-01 2021-04-01 ByAdjClose:  0.261056 ByAddBackClose:  0.260661
+Evaluate 1Y since:  2020-01-01 dict_keys(['546', '8K7', '42F', '579', 'Y35', 'LS9', 'NC2', '5EF', 'BVA', 'C8R'])
+backtest 1Q 2021-01-01 2021-04-01 ByAdjClose:  0.199473 ByAddBackClose:  0.199157
 
-Evaluate 1Y since:  2020-04-01 dict_keys(['579', '42F', 'E27', '1D3', '546', 'MXNU', 'C8R', '8K7', 'L23', 'AIY'])
-backtest 1Q 2021-04-01 2021-07-01 ByAdjClose:  0.103114 ByAddBackClose:  0.103888
+Evaluate 1Y since:  2020-04-01 dict_keys(['579', '42F', '1D3', '546', 'MXNU', 'E27', 'C8R', '8K7', 'L23', 'AIY'])
+backtest 1Q 2021-04-01 2021-07-01 ByAdjClose:  0.113570 ByAddBackClose:  0.114275
 
-Evaluate 1Y since:  2020-07-01 dict_keys(['42F', '5EB', 'E27', 'MXNU', 'AZT', 'A78', 'AIY', 'C8R', '579', 'T13'])
-backtest 1Q 2021-07-01 2021-10-01 ByAdjClose: -0.306632 ByAddBackClose: 0.118665
+Evaluate 1Y since:  2020-07-01 dict_keys(['42F', '5EB', 'E27', 'MXNU', 'AZT', 'AIY', 'C8R', '579', '43E', 'A78'])
+backtest 1Q 2021-07-01 2021-10-01 ByAdjClose: -0.280798 ByAddBackClose: 0.144495
 
-Evaluate 1Y since:  2020-10-01 dict_keys(['MXNU', 'E27', 'T13', '5EB', 'EB7', '579', 'NC2', 'Y45', 'JLB', 'AIY'])
-backtest 1Q 2021-10-01 2022-01-01 ByAdjClose:  5.660437 ByAddBackClose:  -0.033960
+Evaluate 1Y since:  2020-10-01 dict_keys(['MXNU', 'E27', 'T13', '5EB', 'EB7', '579', 'NC2', 'YYR', 'JLB', 'Y45'])
+backtest 1Q 2021-10-01 2022-01-01 ByAdjClose:  5.666049 ByAddBackClose:  -0.028352
 
-Evaluate 1Y since:  2021-01-01 dict_keys(['MXNU', 'T13', 'NC2', '5HH', 'EB7', 'V3M', 'JLB', 'Y45', '43E', 'AIY'])
-backtest 1Q 2022-01-01 2022-04-01 ByAdjClose: -0.186627 ByAddBackClose: 0.366847
+Evaluate 1Y since:  2021-01-01 dict_keys(['MXNU', 'T13', 'NC2', '5HH', 'EB7', 'YYR', 'V3M', 'Y45', 'JLB', '5CT'])
+backtest 1Q 2022-01-01 2022-04-01 ByAdjClose: -0.173095 ByAddBackClose: 0.381355
 
-Evaluate 1Y since:  2021-04-01 dict_keys(['T13', 'MXNU', '5HH', 'Y45', '532', '5EB', 'S56', 'NC2', 'RE4', 'AGS'])
-backtest 1Q 2022-04-01 2022-07-01 ByAdjClose: -0.151332 ByAddBackClose: -0.151332
+Evaluate 1Y since:  2021-04-01 dict_keys(['T13', 'MXNU', 'Y45', '5HH', '5EB', '532', 'NC2', 'S56', 'RE4', 'AGS'])
+backtest 1Q 2022-04-01 2022-07-01 ByAdjClose: -0.178016 ByAddBackClose: -0.178016
 
-Evaluate 1Y since:  2021-07-01 dict_keys(['MXNU', 'O9E', '5HH', '5FW', 'NO4', 'V3M', '5G9', '532', 'S56', 'RE4'])
-backtest 1Q 2022-07-01 2022-10-01 ByAdjClose: -0.178744 ByAddBackClose: -0.178744
+Evaluate 1Y since:  2021-07-01 dict_keys(['MXNU', '5HH', 'O9E', '5FW', '5G9', 'NO4', 'V3M', 'S56', 'RE4', 'S3N'])
+backtest 1Q 2022-07-01 2022-10-01 ByAdjClose: -0.174956 ByAddBackClose: -0.174956
 
 Evaluate 1Y since:  2021-10-01 dict_keys(['MXNU', 'O9E', '532', '5FW', 'N32', '5WV', 'NO4', 'C07', 'U96', '5G9'])
-backtest 1Q 2022-10-01 2023-01-01 ByAdjClose:  0.038914 ByAddBackClose:  0.038914
+backtest 1Q 2022-10-01 2023-01-01 ByAdjClose:  0.033413 ByAddBackClose:  0.033413
 
-Evaluate 1Y since:  2022-01-01 dict_keys(['O9E', 'MXNU', '5FW', 'NO4', 'N32', 'BS6', '5VJ', 'U96', 'S51', 'Y92'])
-backtest 1Q 2023-01-01 2023-04-01 ByAdjClose:  0.038930 ByAddBackClose:  0.038930
+Evaluate 1Y since:  2022-01-01 dict_keys(['O9E', 'MXNU', '5FW', 'NO4', 'N32', 'BS6', '5VJ', 'S51', 'U96', 'Y92'])
+backtest 1Q 2023-01-01 2023-04-01 ByAdjClose:  0.044522 ByAddBackClose:  0.044522
 
 Evaluate 1Y since:  2022-04-01 dict_keys(['O9E', '5FW', 'N32', 'NO4', 'F03', '5AE', 'CGN', '5VJ', 'U96', 'P34'])
-backtest 1Q 2023-04-01 2023-07-01 ByAdjClose:  0.044668 ByAddBackClose:  0.044668
+backtest 1Q 2023-04-01 2023-07-01 ByAdjClose:  0.016828 ByAddBackClose:  0.016828
 
 Evaluate 1Y since:  2022-07-01 dict_keys(['O9E', 'U96', 'F03', '5VJ', 'T14', '5LY', 'NO4', 'P34', 'BN4', 'BS6'])
-backtest 1Q 2023-07-01 2023-10-01 ByAdjClose: -0.010133 ByAddBackClose: -0.010040
+backtest 1Q 2023-07-01 2023-10-01 ByAdjClose: -0.006342 ByAddBackClose: -0.006248
 
-Evaluate 1Y since:  2022-10-01 dict_keys(['Q0X', 'NO4', 'F03', '5VJ', 'T14', '5PO', 'BQD', 'ENV', 'P34', 'NHD'])
-backtest 1Q 2023-10-01 2024-01-01 ByAdjClose: -0.027095 ByAddBackClose: -0.027095
+Evaluate 1Y since:  2022-10-01 dict_keys(['Q0X', 'NO4', 'F03', 'T14', 'NHD', '5PO', 'ENV', '5VJ', 'BQD', 'P34'])
+backtest 1Q 2023-10-01 2024-01-01 ByAdjClose: -0.033192 ByAddBackClose: -0.033192
 
-Evaluate 1Y since:  2023-01-01 dict_keys(['Q0X', 'A34', 'T14', 'NO4', 'F03', 'BQD', 'BN4', 'U96', 'Y45', 'P34'])
-backtest 1Q 2024-01-01 2024-04-01 ByAdjClose: -0.015241 ByAddBackClose: -0.015241
+Evaluate 1Y since:  2023-01-01 dict_keys(['Q0X', 'T14', 'A34', 'NO4', 'F03', 'BQD', 'BN4', 'Y45', 'U96', 'P34'])
+backtest 1Q 2024-01-01 2024-04-01 ByAdjClose: -0.024978 ByAddBackClose: -0.024978
 
