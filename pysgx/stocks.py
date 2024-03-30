@@ -235,19 +235,19 @@ def get_return(start_day: str | YearMonth, end_day: str | YearMonth, stock: Stoc
     buy_day = str(start_day)
     sell_day = str(end_day)
 
-    buy_index = stock.price[stock.price['Day'] <= buy_day].index.max()
-    sell_index = stock.price[stock.price['Day'] <= sell_day].index.max()
+    buy_index = stock.price['Day'].searchsorted(buy_day)
+    sell_index = stock.price['Day'].searchsorted(sell_day) - 1
 
-    if pd.isna(buy_index) or pd.isna(sell_index):
+    if buy_index > sell_index:
         return StockReturn(NaN, NaN)
 
-    buy = stock.price.loc[buy_index]
-    sell = stock.price.loc[sell_index]
+    buy = stock.price.iloc[buy_index]
+    sell = stock.price.iloc[sell_index]
     if debug:
-        print("# Return by Adj Close")
-        print("buy: {:.6f} sell: {:.6f} gain: {:.6f}\n".format(buy["Adj Close"],
-                                                               sell["Adj Close"],
+        print(f"# Return by Adj Close BUY: {buy.Day} SELL: {sell.Day}")
+        print("buy: {:.6f} sell: {:.6f} gain: {:.6f}\n".format(buy["Adj Close"], sell["Adj Close"],
                                                                sell["Adj Close"] - buy["Adj Close"]))
+
     ReturnByAdjClose = sell["Adj Close"] / buy["Adj Close"] - 1
     if debug:
         print("return: {:.2f}% ({:.6f})".format(ReturnByAdjClose*100, ReturnByAdjClose))
