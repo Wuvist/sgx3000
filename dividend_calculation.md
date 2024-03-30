@@ -128,3 +128,17 @@ Date,Open,High,Low,Close,Adj Close,Volume
 2001-06-04,0.425000,0.535000,0.425000,0.530000,-0.000014,160426000
 2001-06-05,0.540000,0.550000,0.432500,0.447500,-0.000012,134070000
 ```
+
+# Strategy using AddBack Close
+
+```
+AddBack Close Return: 3.07166240833986
+Adj Close Return    : 6.466738845153519
+```
+
+# Strategy using Adj Close
+
+```
+AddBack Close Return: 1.8382072607663853
+Adj Close Return    : 98.17057979089792
+```

@@ -5,7 +5,7 @@ Evaluate 1Y since:  2000-04-01 dict_keys(['L02', 'LJ3', 'J36', 'H78', 'H02', 'C5
 backtest 1Q 2001-04-01 2001-07-01 ByAdjClose:  0.046727 ByAddBackClose:  0.044415
 
 Evaluate 1Y since:  2000-07-01 dict_keys(['600', 'T14', 'AZR', 'L02', 'LJ3', 'G07', 'H02', 'F13', 'WPC', 'J36'])
-backtest 1Q 2001-07-01 2001-10-01 ByAdjClose: -1.071412 ByAddBackClose: -0.088402
+backtest 1Q 2001-07-01 2001-10-01 ByAdjClose: nan ByAddBackClose: -0.088402
 
 Evaluate 1Y since:  2000-10-01 dict_keys(['AZR', 'T14', '600', 'D01', 'G07', 'LJ3', 'S20', 'H02', 'F13', 'BAZ'])
 backtest 1Q 2001-10-01 2002-01-01 ByAdjClose:  0.244899 ByAddBackClose:  0.244330
@@ -248,10 +248,10 @@ Evaluate 1Y since:  2020-07-01 dict_keys(['42F', '5EB', 'E27', 'MXNU', 'AZT', 'A
 backtest 1Q 2021-07-01 2021-10-01 ByAdjClose: -0.280798 ByAddBackClose: 0.144495
 
 Evaluate 1Y since:  2020-10-01 dict_keys(['MXNU', 'E27', 'T13', '5EB', 'EB7', '579', 'NC2', 'YYR', 'JLB', 'Y45'])
-backtest 1Q 2021-10-01 2022-01-01 ByAdjClose:  5.666049 ByAddBackClose:  -0.028352
+backtest 1Q 2021-10-01 2022-01-01 ByAdjClose: nan ByAddBackClose: -0.028352
 
 Evaluate 1Y since:  2021-01-01 dict_keys(['MXNU', 'T13', 'NC2', '5HH', 'EB7', 'YYR', 'V3M', 'Y45', 'JLB', '5CT'])
-backtest 1Q 2022-01-01 2022-04-01 ByAdjClose: -0.173095 ByAddBackClose: 0.381355
+backtest 1Q 2022-01-01 2022-04-01 ByAdjClose: nan ByAddBackClose: 0.381355
 
 Evaluate 1Y since:  2021-04-01 dict_keys(['T13', 'MXNU', 'Y45', '5HH', '5EB', '532', 'NC2', 'S56', 'RE4', 'AGS'])
 backtest 1Q 2022-04-01 2022-07-01 ByAdjClose: -0.178016 ByAddBackClose: -0.178016
