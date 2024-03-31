@@ -2,19 +2,17 @@
 
 https://support.stockcharts.com/doku.php?id=policies:adjusted_data
 
-
 Let's look at this example. A stock closes at $40.00 on Monday. On Tuesday, it begins trading ex-dividend based on a $2.00 dividend. If the stock opens unchanged, it will be trading at $38.00. Unless we adjust the prior prices, the chart will show a misleading $2.00 gap.
 
 To calculate the adjustment factor, we subtract the $2.00 dividend from Monday's closing price ($40.00 - $2.00 = $38.00). Then, we divide 38.00 by 40.00 to determine the dividend adjustment in percentage terms. The result is 0.95.
 
-Lastly, we *multiply* all historical prices prior to the dividend by the factor of 0.95. This adjusts historical prices proportionately so that they stay rationally aligned with current prices.
+Lastly, we _multiply_ all historical prices prior to the dividend by the factor of 0.95. This adjusts historical prices proportionately so that they stay rationally aligned with current prices.
 
 ## From Slides
 
-In most cases it is convenient to choose the adjusted closing price (denoted by Close*) for empirical work.
+In most cases it is convenient to choose the adjusted closing price (denoted by Close) for empirical work.
 
 To smooth out the effect of the dividend, the closing price and all previous prices are scaled by an appropriate adjustment factor.
-
 
 # DBS
 
@@ -22,6 +20,7 @@ To smooth out the effect of the dividend, the closing price and all previous pri
 
 Total of 8 dividends: 3.32
 
+```
 Day,Close,Original Close,Dividends,Adjustment Factor
 2023-11-14,32.599998,32.599998,0.48,0.9854897210090522
 2023-08-11,33.133488,33.62134306796656,0.48,0.9859243080531075
@@ -47,8 +46,10 @@ The real return is:
 
 Difference by:
 0.19965971957954043/0.18567559434246173 - 1 = 0.07531482684410462 = 7.53%
+```
 
 # D8DU (REITs)
+
 Buy at 2022-03-03:
 Original Close: 0.077000
 Adjusted Close: 0.048462
@@ -56,6 +57,7 @@ Adjusted Close: 0.048462
 Current(2024-03-15) price: 0.032
 
 ## Two Dividend Issued
+
 Day,Close,Original Close,Dividends,Adjustment Factor
 2024-02-15,0.045,0.045,0.015,0.75
 2022-08-12,0.053846,0.07179466666666666,0.016,0.8177565835434195
@@ -69,10 +71,8 @@ Return using dividend add back: -18.2%
 Difference in return: 86.8%
 (-0.33968882836036474)/(-0.18181818181818177) - 1 = 0.8682885559820066
 
-
-
-
 # C38U (REITs)
+
 Current(2024-04-27) price: 0.0340
 Buy (2023-103-03) adjusted price: 0.048462
 
@@ -80,6 +80,8 @@ Return: -29.8%
 0.0340/0.048462 - 1 = -0.2984193801328875
 
 ## Dividend
+
+```
 Day,Close,Original Close,Dividends,Adjustment Factor
 2023-08-07,2.677179,2.677179,0.01578,0.994140274694119
 2023-05-23,2.671326,2.6870715008723733,0.06141,0.9776567533816369
@@ -93,12 +95,50 @@ Total Adjustment Factor: 0.994140274694119 * 0.9776567533816369 * 0.971860926766
 
 Original price:
 0.048462 / 0.9192419495474851 = 0.05271952615288757
-
+```
 
 ## Return Compare
+
 Real Return: -20.5%
 (0.0340 + 0.016)/0.06286217828622367 - 1 = -0.2046091725880017
 
 Difference by: -54.2%
 (-0.2984193801328875 - (-0.2046091725880017))/(-0.2046091725880017) - 1 = -0.5415151414849775
 
+# Y92 / NC2
+
+Adjusted Close is zero
+
+Y92
+
+```csv
+Date,Open,High,Low,Close,Adj Close,Volume
+2006-05-30,0.280000,0.280000,0.260000,0.270000,0.000000,316209000
+2006-05-31,0.260000,0.265000,0.255000,0.260000,0.000000,154859
+2006-06-01,0.270000,0.270000,0.260000,0.260000,0.000000,72665
+```
+
+# T14
+
+Adjusted Close is negative
+
+```csv
+Date,Open,High,Low,Close,Adj Close,Volume
+2001-06-01,0.387500,0.412500,0.387500,0.412500,-0.000011,68552000
+2001-06-04,0.425000,0.535000,0.425000,0.530000,-0.000014,160426000
+2001-06-05,0.540000,0.550000,0.432500,0.447500,-0.000012,134070000
+```
+
+# Strategy using AddBack Close
+
+```
+AddBack Close Return: 3.07166240833986
+Adj Close Return    : 6.466738845153519
+```
+
+# Strategy using Adj Close
+
+```
+AddBack Close Return: 1.8382072607663853
+Adj Close Return    : 98.17057979089792
+```

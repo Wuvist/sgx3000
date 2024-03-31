@@ -1,8 +1,12 @@
 {
-  "cSpell.enableFiletypes": [
-    "!python"
-  ],
+  "cSpell.enableFiletypes": ["!python"],
   "cSpell.words": [
-    "fintech"
+    "Agri",
+    "AJBU",
+    "backtest",
+    "BUOU",
+    "CMOU",
+    "fintech",
+    "MXNU"
   ]
 }
