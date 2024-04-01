@@ -221,13 +221,14 @@ def get_weights_by_risks(risks: List[StockRisk]) -> StockWeights:
     SumByAdjClose = sum([r.ByAdjClose for r in risks])
     SumByAddBackClose = sum([r.ByAddBackClose for r in risks])
 
-    RiskByAdjClose = [1 - r.ByAdjClose / SumByAdjClose for r in risks]
+    # RiskByAdjClose = [1 - r.ByAdjClose / SumByAdjClose for r in risks]
     RiskByAddBackClose = [1 - r.ByAddBackClose / SumByAddBackClose for r in risks]
 
-    SumByAdjClose = sum(RiskByAdjClose)
+    # SumByAdjClose = sum(RiskByAdjClose)
     SumByAddBackClose = sum(RiskByAddBackClose)
 
-    return StockWeights([r / SumByAdjClose for r in RiskByAdjClose], [r / SumByAddBackClose for r in RiskByAddBackClose])
+    # return StockWeights([r / SumByAdjClose for r in RiskByAdjClose], [r / SumByAddBackClose for r in RiskByAddBackClose])
+    return StockWeights([], [r / SumByAddBackClose for r in RiskByAddBackClose])
 
 
 def get_return(start_day: str | YearMonth, end_day: str | YearMonth, stock: Stock, debug=True) -> StockReturn:
