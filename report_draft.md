@@ -3,9 +3,9 @@ Everything you need to know
 
 # Introduction
 
-Singapore, ranked as the world’s most competitive economy in the world, is recognized as a dynamic global financial hub with estimated total assets of more than SGD$2.4 trillion under management. However, due to the size limitation, the liquidity Singapore equity market is not comparable with other gigantic equity market,such as U.S market. The colliding of Singapore equity market characters increases the complexity of making trading strategies for investors who want to making money in SG. Our team want to analysis Singapore exchange (SGX) for investors' respective, and based on our knowledge acquired we generate some strategies and evaluate these strategies performance.
+Singapore, ranked as the world’s most competitive economy in the world, is recognized as a dynamic global financial hub with estimated total assets of more than SGD$2.4 trillion under management. However, due to the size limitation, the liquidity Singapore stock market is not comparable with other gigantic equity market,such as U.S market. The colliding of Singapore equity market characters increases the complexity of making trading strategies for investors who want to making money in SG. Our team want to analysis Singapore exchange (SGX) from investors' respective, and based on our knowledge acquired, we generate some strategies and evaluate these strategies performance.
 
-After investigating the SGX, we summarize the characteristic of SG equity market and the development path in section A. We find that Singapore boasts core sectors in Financial, Consumer, Healthcare, Technology and Commodities & Resources. It also obtains the world's largest Maritime & Offshore services related companies. Beside this prevalent sectors, Singapore Real Estate Investment Trusts (REITs) and Property Trusts sector is a global REIT platform and the second largest REIT market in Asia. More importantly, we find that the SGX offer investors high dividends, and REITs which have less change in price while provide stable dividends can be used as a risk diversification tool. Aiming at investing in high market cap and low P/E ratio stocks, and diversify the risk, we generate our SGX investment trading strategy one and explain in section B.
+After investigating the SGX, we summarize the characteristic of SG equity market and the development path in section A. We find that Singapore boasts core sectors in Financial, Consumer, Healthcare, Technology and Commodities & Resources. It also obtains the world's largest Maritime & Offshore services related companies. Beside this prevalent sectors, Singapore Real Estate Investment Trusts (REITs) and Property Trusts sector is a global REIT platform and the second largest REIT market in Asia. More importantly, we find that the SGX offer investors high dividends, and REITs which have less fluctuations in price while provide stable dividends can be used as a risk diversification tool. Aiming at investing in high market cap and low P/E ratio stocks, and diversify the risk, we generate our SGX investment trading strategy one and this strategy is explained in section B.
 
 In section C, we use a more objective perspective view to generate our second trading strategy. We analyze all 767 currently listed stocks on SGX's transaction history up to 2000. By adding back all the dividends back to the stock prices, we re-ranked the return of each stocks and calculate all returns and volatility of different sectors, especially the results of S-REITs, which is a sector mainly relying on dividends for return. By selecting high historical return stocks and weight them by past performance of return and volatility,we generate a return chasing trading strategy.
 
@@ -15,7 +15,7 @@ To precise analyze these two strategies, in Section D, we simulate these two tra
 
 ## Introduction about SGX
 
-SGX is ASEAN's second largest market capitalization after Indonesia Stock Exchange at US$585.97 billion as of September 2023. Currently, there are _1384_ securities trading on SGX, including 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts).
+SGX is Asian second largest market capitalization after Indonesia Stock Exchange at US$585.97 billion as of September 2023. Currently, there are _1384_ securities trading on SGX, including 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts).
 
 _TBD_: 1384 should includes derivatives, which we could ignore?
 
@@ -23,7 +23,7 @@ More than a securities exchange, SGX is a cornerstone of Singapore's financial s
 
 SGX's derivatives market is particularly notable for its diversity, including commodities, currencies, and indices, attracting international traders, currently have 643 companies listed in it. SGX also known for its international appeal, with numerous foreign companies choosing to list there, such as CapitaLand China Trust (CLCT), Hutchison Port Holdings Trust (HPHT), NIO, Prudential PLC, Alita Resource Limited. This not only brings in capital from abroad but also enhances Singapore's status as a global financial center. The presence of international companies contributes to the cross-border flow of funds, investment diversification, and economic resilience.
 
-Nonetheless, the trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, underscores its role in providing liquidity to the market. According to SGX statistic report the securities market turnover volume is 32,838 million shares in February 2024. Compared with the U.S market who has a 234,703 million shares in same time period, the turnover volume is relative small.
+Nonetheless, the trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, underscores its role in providing liquidity to the market. According to SGX statistic report the securities market turnover volume is 32,838 million shares in February 2024. Compared with the U.S market who has a 234,703 million shares in same time period, the turnover volume of SGX is relative small.
 
 ## Dividend
 
@@ -75,37 +75,37 @@ Moreover, REITs invest in most real estate property types, including apartment b
 
 By law and IRS regulation, REITs must pay out 90% or more of their taxable profits to shareholders in the form of dividends. As a result, REIT companies are often exempt from most corporate income tax. Hence, REITs provide a high dividend for investors. There are currently 42 REITs and property trusts listed in Singapore. The average dividend yield of S-REITs was 7.6% as of 31 December 2022. This compares favorably with the 10-year Singapore government bond benchmark yield of 3.1% and the CDF ratio of 2.5%.
 
-Forward yield is the percentage of a company's current stock price that it expects to pay out as dividends over 12 months. Based on 15th March 2024 close price calculation, we plot the following stocks' forward dividend yield to verify the yield level of S-REITs.[^1]
+Forward yield is the percentage of a company's current stock price that it expects to pay out as dividends over 12 months. Based on 15th March 2024 close price calculation, we plot the following stocks' forward dividend yield to verify the yield level of S-REITs.[^1] [^2]
 
 ![REITs analysis yield](/REITS%20yield.png "Figure 5 REITs yields comparison")
 
 [^1]:
     we use following REITs and stocks:
-    REITs( blue points):Sabana REIT (SGX: M1GU)
-    An industrial REIT with a portfolio of 18 properties in Singapore covering high-tech industrial, warehouse and logistics, and general industrial sectors.
-
-Keppel Pacific Oak US REIT (SGX: CMOU)
-An office REIT with 13 freehold office buildings and business campuses across eight markets in the US.
-
-Frasers Logistics & Commercial Trust (SGX: BUOU)
-A diversified portfolio of 108 properties across Singapore, the UK, Australia, the netherlands and Germany.
-
-Mapletree Logistics Trust (SGX: M44U)
-An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
-
-Stocks in other sectors (Non-REITs,red points):
-SGX-Singapore Exchange Limited,
-Telecommunications - Singapore Telecommunications Limited,
-Industrial Goods and shipbuilding - Yangzijiang Shipbuilding (Holdings) Ltd.
-Food & Beverage- Wilmar International Limited (5%) Agriculture Golden Agri-Resources Ltd
-Transportation-Singapore Airlines Limited
-Utilities-Sembcorp Industries Ltd
-Services-United Overseas Insurance Limited
-
-Real-estate Stocks(Orange points):
-Keppel Ltd.
-CapitaLand Investment Limited
-City Developments Limited
+    (1) REITs( blue points):
+     Sabana REIT (SGX: M1GU)
+      An industrial REIT with a portfolio of 18 properties in Singapore covering high-tech industrial, warehouse and logistics, and general industrial sectors.
+     Keppel Pacific Oak US REIT (SGX: CMOU)
+      An office REIT with 13 freehold office buildings and business campuses across eight markets in the US.
+     Frasers Logistics & Commercial Trust (SGX: BUOU)
+      A diversified portfolio of 108 properties across Singapore, the UK, Australia, the netherlands and Germany.
+     Mapletree Logistics Trust (SGX: M44U)
+      An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
+[^2]:
+    (2) Stocks in other sectors (Non-REITs,red points):
+     SGX-Singapore Exchange Limited,
+     Telecommunications 
+     Singapore Telecommunications Limited,
+     Industrial Goods and shipbuilding 
+      Yangzijiang Shipbuilding (Holdings) Ltd.
+     Food & Beverage
+      Wilmar International Limited (5%) Agriculture Golden Agri-Resources Ltd.
+      Transportation-Singapore Airlines Limited
+      Utilities-Sembcorp Industries Ltd
+      Services-United Overseas Insurance Limited
+     Real-estate Stocks(Orange points):
+      Keppel Ltd.
+      CapitaLand Investment Limited
+      City Developments Limited
 
 We can observe that the majority of REITs stands higher than the 5% yield rate line which indicating that these type of assets provider a relative higher dividends to investors. Unfortunately, these blue points also falls in the left corner, where is low value stocks.
 
@@ -146,9 +146,9 @@ Top 7 Holdings of CSOP iEdge S-REIT Leaders Index ETF are list in below table. T
 
 ### Singapore market risk
 
-By regressing the past one year historical adjust close price of S-REITs ETF on the STI, we have a general view of the risk in SG market. Following is the results:
+By regressing the past one year historical adjust close price of S-REITs ETF on the STI ETF, we have a general view of the risk in SG market. Following is the results:
 
-# OLS Regression Results
+* OLS Regression Results
 
 Dep. Variable: SRU.SI_log_return R-squared: 0.003
 Model: OLS Adj. R-squared: -0.001
@@ -233,12 +233,34 @@ It is worth to note that the portfolio 1 and portfolio 4 obtains similar annual 
 
 Considering the balance of risk and returns of these portfolios, the portfolio 1 sightly beats portfolio 4. This reversal suggests that including S-REITs can efficient diversify risk for a high volatilized portfolio.
 
-# Liquidity
+# 3000 level for STI Index
+The Straits Times Index (STI) is a leading indicator of the Singaporean stock market, with a long history when first being introduced in 1966. This index was constructed by SPH, the Singapore Exchange and SPH's consultant, Professor Tse Yiu Kuen from the Singapore Management University.
 
-See Liquidity trend
+Liking all index, the STI experienced many fluctuations. In past 30 years, the STI has showed a series of ups and downs, especially, in the late 1990s and early 2000s, the index reached all-time highs, peaking at 3875.77 closing price on 11 October 2007.<https://en.wikipedia.org/wiki/Straits_Times_Index>. The development of the Singapore market was fuelled by strong economic growth and favorable market conditions.
+
+However, the index was hit hard by the global financial crisis in 2008, declining by over 50% from the peak value. Recovering from this crisis, STI backed to 3000 level at 2011 years. Even though the index faced challenges onwards, such as 2015 when the STI collapsed 18.9% and broke below 3,000 Points.<https://fifthperson.com/4-reasons-why-the-sti-collapsed-18-9-and-broke-below-3000-points/> and the covid period decline, the STI still keep the its position around 3000 points.
+
+![STI development path](/STI_volumn.png "Figure 7 STI development path")
+
+The pace of STI growth seems become more steady, lacking of momentum. Except the economic factors' impacts, we consider another explanation that is the high dividend generated by STI. According to statistical analysis, the STI has delivered strong returns for investors over the past decade, with a total return of 61% compared to 41% for indexes such as the Dow Jones, Hang Seng, Nikkei 225, and FTSE 100.<https://www.ig.com/sg/indices/singapore-index>
+
+Moreover, the index is calculated using a free-float market capitalization-weighted methodology, which means that the larger companies have a greater impact on the overall index value. And the large companies listed on SGX have a culture of high dividends, for instance three Banking stocks (DBS, OCBC,UOB) we analyzed in above sub-section. In total,the STI pays out a relatively high dividend, with a dividend yield of 4% annually. Comparatively, other indexes such as the S&P500 pays out only 1.5% per year. <https://www.moomoo.com/sg/learn/detail-straits-times-index-sti-in-singapore-93047-230116062?lang=en-us>
+
+This high dividends character makes us decide to add dividends back to stock price when we analysis the return of SGX and also use the portfolio with or without considering dividends add back to evaluate the effects of dividends. The detail of dividends add back will be illustrate in section C.
 
 # Section B
+In this section, we generate the trading strategy one based on our market analysis.
+## Market analysis
+### Market capitalization
+Market capitalization, or "market cap," represents the total dollar market value of a company's outstanding shares of stock.  we use market cap to determine a company's size, and then compare with other companies.
 
+According to the criteria of companies'size <https://www.finra.org/investors/insights/market-cap>, generally, companies can be divide into five level: mega-cap,large-cap, mid-cap, small-cap and micro-cap. Large-cap companies typically have a market capitalization of $10 billion or more and represent major players in well-established industries and sectors. Mid-cap companies generally have a market capitalization between $2 billion and $10 billion. Companies with a market capitalization between $250 million and $2 billion are commonly classified as small-cap companies.
+
+Based on the situation of SGX, we adjust the barriers for mid-cap at $1.5 billion, $100 million for small-cap and below  $100 million is micro-cap. Then we plot the trading frequency against market cap.
+
+![mc](/mc_1.5B_20B.png) ![](/mc_100M_1.5B.png) ![](/mc_100M.png)
+
+In the number of stocks in each group, we observe that the majority of stocks in SGX are small and micro companies, in consistent with our prediction that the size limitation of SGX. For the distribution, more stocks concentrate on the left side of each distribution 
 ## Trading strategy one
 
 ### Sector select and portfolio generation
