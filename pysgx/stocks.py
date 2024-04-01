@@ -283,3 +283,13 @@ def get_return(start_day: str | YearMonth, end_day: str | YearMonth, stock: Stoc
         print("{:.2f}% ({:.6f})".format(d*100, d))
 
     return r
+
+
+def get_overall_return(ByAdjClose, ByAddBackClose):
+    df = pd.DataFrame(ByAdjClose, columns=['ByAdjClose'])
+    returns = df['ByAdjClose'].dropna() + 1
+    print(returns.product())
+
+    df = pd.DataFrame(ByAddBackClose, columns=['ByAddBackClose'])
+    returns = df['ByAddBackClose'] + 1
+    print(returns.product())

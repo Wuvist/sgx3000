@@ -3,11 +3,11 @@ Everything you need to know
 
 # Introduction
 
-Singapore, ranked as the world’s most competitive economy in the world, is recognized as a dynamic global financial hub with estimated total assets of more than SGD$2.4 trillion under management. However, due to the size limitation, the liquidity Singapore stock market is not comparable with other gigantic equity market,such as U.S market. The colliding of Singapore equity market characters increases the complexity of making trading strategies for investors who want to making money in SG. Our team want to analysis Singapore exchange (SGX) from investors' respective, and based on our knowledge acquired, we generate some strategies and evaluate these strategies performance.
+Singapore, ranked as the world’s most competitive economy in the world, is recognized as a dynamic global financial hub with estimated total assets of more than SGD$2.4 trillion under management. However, due to the size limitation, the liquidity Singapore stock market is not comparable with other gigantic equity market, such as U.S market. The colliding of Singapore equity market characters increases the complexity of making trading strategies for investors who want to making money in SG. Our team want to analysis Singapore Exchange (SGX) from investors' respective, and based on our knowledge acquired, we generate some strategies and evaluate these strategies performance.
 
 After investigating the SGX, we summarize the characteristic of SG equity market and the development path in section A. We find that Singapore boasts core sectors in Financial, Consumer, Healthcare, Technology and Commodities & Resources. It also obtains the world's largest Maritime & Offshore services related companies. Beside this prevalent sectors, Singapore Real Estate Investment Trusts (REITs) and Property Trusts sector is a global REIT platform and the second largest REIT market in Asia. More importantly, we find that the SGX offer investors high dividends, and REITs which have less fluctuations in price while provide stable dividends can be used as a risk diversification tool. Aiming at investing in high market cap and low P/E ratio stocks, and diversify the risk, we generate our SGX investment trading strategy one and this strategy is explained in section B.
 
-In section C, we use a more objective perspective view to generate our second trading strategy. We analyze all 767 currently listed stocks on SGX's transaction history up to 2000. By adding back all the dividends back to the stock prices, we re-ranked the return of each stocks and calculate all returns and volatility of different sectors, especially the results of S-REITs, which is a sector mainly relying on dividends for return. By selecting high historical return stocks and weight them by past performance of return and volatility,we generate a return chasing trading strategy.
+In section C, we use a more objective perspective view to generate our second trading strategy. We analyze all 767 currently listed stocks on SGX's transaction history up to 2000. By adding back all the dividends back to the stock prices, we re-ranked the return of each stocks and calculate all returns and volatility of different sectors, especially the results of S-REITs, which is a sector mainly relying on dividends for return. By selecting high historical return stocks and weight them by past performance of return and volatility, we generate a return chasing trading strategy (RCTS).
 
 To precise analyze these two strategies, in Section D, we simulate these two trading strategies in SGX from past 24 years, and calculate the annual returns and analyze the results. After conducting the Diebold-Mariano Test, we compare the difference of performance of our trading strategies. We find that the "return chasing" strategy perform better in ... years while the simple strategy is good at ... situations.
 
@@ -52,6 +52,8 @@ In comparing the dividend yields of banks from Singapore, China, and the USA, se
 Analyzing the standard deviations of these three banks, with DBS at 7.97, UOB at 6.58, and OCBC at 3.05, indicates that DBS has the highest volatility, followed by UOB, and OCBC has the lowest. This is also reflected in their stock price movements. Therefore, if you are a risk-averse investor, it's recommended to invest in OCBC. However, if you are willing to take on more risk for the potential of higher returns, DBS could be the better choice for investment.
 ![Banks analysis volatility](/Banks%203.png "Figure 3 Banking stocks volatility")
 
+This section we focused merely on dividend return of SG banks and its comparison to top banks in China and US. The return gaining from stock itself is ignore. We will analysis this more in section C.
+
 # REIT-s
 
 A well-established REIT market is another advantage of SGX. Carrying on with the theme of dividends, Singapore also has a vibrant real estate investment trust (REIT) market which is now the second largest in Asia (after Japan). Specially, one-fifth the stock market of SG is taken by REITs.
@@ -82,30 +84,31 @@ Forward yield is the percentage of a company's current stock price that it expec
 [^1]:
     we use following REITs and stocks:
     (1) REITs( blue points):
-     Sabana REIT (SGX: M1GU)
-      An industrial REIT with a portfolio of 18 properties in Singapore covering high-tech industrial, warehouse and logistics, and general industrial sectors.
-     Keppel Pacific Oak US REIT (SGX: CMOU)
-      An office REIT with 13 freehold office buildings and business campuses across eight markets in the US.
-     Frasers Logistics & Commercial Trust (SGX: BUOU)
-      A diversified portfolio of 108 properties across Singapore, the UK, Australia, the netherlands and Germany.
-     Mapletree Logistics Trust (SGX: M44U)
-      An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
+    Sabana REIT (SGX: M1GU)
+    An industrial REIT with a portfolio of 18 properties in Singapore covering high-tech industrial, warehouse and logistics, and general industrial sectors.
+    Keppel Pacific Oak US REIT (SGX: CMOU)
+    An office REIT with 13 freehold office buildings and business campuses across eight markets in the US.
+    Frasers Logistics & Commercial Trust (SGX: BUOU)
+    A diversified portfolio of 108 properties across Singapore, the UK, Australia, the netherlands and Germany.
+    Mapletree Logistics Trust (SGX: M44U)
+    An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
+
 [^2]:
     (2) Stocks in other sectors (Non-REITs,red points):
-     SGX-Singapore Exchange Limited,
-     Telecommunications 
-     Singapore Telecommunications Limited,
-     Industrial Goods and shipbuilding 
-      Yangzijiang Shipbuilding (Holdings) Ltd.
-     Food & Beverage
-      Wilmar International Limited (5%) Agriculture Golden Agri-Resources Ltd.
-      Transportation-Singapore Airlines Limited
-      Utilities-Sembcorp Industries Ltd
-      Services-United Overseas Insurance Limited
-     Real-estate Stocks(Orange points):
-      Keppel Ltd.
-      CapitaLand Investment Limited
-      City Developments Limited
+    SGX-Singapore Exchange Limited,
+    Telecommunications
+    Singapore Telecommunications Limited,
+    Industrial Goods and shipbuilding
+    Yangzijiang Shipbuilding (Holdings) Ltd.
+    Food & Beverage
+    Wilmar International Limited (5%) Agriculture Golden Agri-Resources Ltd.
+    Transportation-Singapore Airlines Limited
+    Utilities-Sembcorp Industries Ltd
+    Services-United Overseas Insurance Limited
+    Real-estate Stocks(Orange points):
+    Keppel Ltd.
+    CapitaLand Investment Limited
+    City Developments Limited
 
 We can observe that the majority of REITs stands higher than the 5% yield rate line which indicating that these type of assets provider a relative higher dividends to investors. Unfortunately, these blue points also falls in the left corner, where is low value stocks.
 
@@ -146,10 +149,11 @@ Top 7 Holdings of CSOP iEdge S-REIT Leaders Index ETF are list in below table. T
 
 ### Singapore market risk
 
-By regressing the past one year historical adjust close price of S-REITs ETF on the STI ETF, we have a general view of the risk in SG market. Following is the results:
+By regressing last year's historical adjust close price of S-REITs ETF on the STI ETF, we have a general view of the risk in SG market. Following is the results:
 
-* OLS Regression Results
+- OLS Regression Results
 
+```
 Dep. Variable: SRU.SI_log_return R-squared: 0.003
 Model: OLS Adj. R-squared: -0.001
 Method: Least Squares F-statistic: 0.7061
@@ -161,9 +165,11 @@ Df Model: 1
 Covariance Type: nonrobust
 ==================================================================================
 coef std err t P>|t| [0.025 0.975]
+```
 
 ---
 
+```
 const 0.0001 0.001 0.148 0.883 -0.002 0.002
 STI_log_return -0.0219 0.026 -0.840 0.402 -0.073 0.029
 ==============================================================================
@@ -172,6 +178,7 @@ Prob(Omnibus): 0.000 Jarque-Bera (JB): 1913.019
 Skew: 0.884 Prob(JB): 0.00
 Kurtosis: 17.111 Cond. No. 30.7
 ================================================================================
+```
 
 Under OLS method, the coefficient is not statistical significant, which suggests that the systematic risk of S-REITs is less relate to the Singapore market risk. Investors can consider S-REITs as a tool to against the market risk.
 
@@ -181,12 +188,12 @@ As the nature of S-REITs which invest property globally, we calculate the correl
 
 Based on the historical adjust price 1st February to the middle of March, we compute the correlation of S-REITs and following assets:
 
-(1)S REITs: CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)
-(2)Asia ex Japan REITs: NikkoAM-StraitsTrading Asia ex Japan REIT ETF (CFA.SI)
-(3)US Bonds: iShares J.P. Morgan USD Asia Credit Bond Index ETF (N6M.SI)
-(4)US Equities (S&P 500 Index):S&P 500 (^GSPC)
-(5)US REITs: Prime US REIT (OXMU.SI)
-(6)Global REIT: iShares Global REIT ETF (REET)
+- S REITs: CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)
+- Asia ex Japan REITs: NikkoAM-StraitsTrading Asia ex Japan REIT ETF (CFA.SI)
+- US Bonds: iShares J.P. Morgan USD Asia Credit Bond Index ETF (N6M.SI)
+- US Equities (S&P 500 Index):S&P 500 (^GSPC)
+- US REITs: Prime US REIT (OXMU.SI)
+- Global REIT: iShares Global REIT ETF (REET)
 
 |         | SRU.SI | CFA.SI | N6M.SI | ^GSPC | OXMU.SI | REET |
 | ------- | ------ | ------ | ------ | ----- | ------- | ---- |
@@ -208,12 +215,13 @@ Market index: S&P 500 (^GSPC)
 Bonds: iShares 0-5 Year TIPS Bond ETF (STIP)
 REITs: CSOP iEdge S-REIT Leaders Index ETF (SRU.SI)
 
-Portfolio:
-(1) 55% Market index funds + 35% Bonds + 10% REITs
-(2) 40% Market index funds + 40% Bonds + 20% REITs
-(3) 33.3% Market index funds + 33.3% Bonds + 33.3% REITs
-(4) 60% Market index funds + 40% Bonds
-(5) 80% Market index funds + 20% Bonds
+### Portfolios
+
+- Portfolio 1: 55% Market index funds + 35% Bonds + 10% REITs
+- Portfolio 2: 40% Market index funds + 40% Bonds + 20% REITs
+- Portfolio 3: 33.3% Market index funds + 33.3% Bonds + 33.3% REITs
+- Portfolio 4: 60% Market index funds + 40% Bonds
+- Portfolio 5: 80% Market index funds + 20% Bonds
 
 Based on the historical price from 1st January 2023 to 1st January 2024, we calculate the annual return and standard deviation of each portfolio. Plotting these five portfolio in figure 6.
 
@@ -234,6 +242,7 @@ It is worth to note that the portfolio 1 and portfolio 4 obtains similar annual 
 Considering the balance of risk and returns of these portfolios, the portfolio 1 sightly beats portfolio 4. This reversal suggests that including S-REITs can efficient diversify risk for a high volatilized portfolio.
 
 # 3000 level for STI Index
+
 The Straits Times Index (STI) is a leading indicator of the Singaporean stock market, with a long history when first being introduced in 1966. This index was constructed by SPH, the Singapore Exchange and SPH's consultant, Professor Tse Yiu Kuen from the Singapore Management University.
 
 Liking all index, the STI experienced many fluctuations. In past 30 years, the STI has showed a series of ups and downs, especially, in the late 1990s and early 2000s, the index reached all-time highs, peaking at 3875.77 closing price on 11 October 2007.<https://en.wikipedia.org/wiki/Straits_Times_Index>. The development of the Singapore market was fuelled by strong economic growth and favorable market conditions.
@@ -244,15 +253,61 @@ However, the index was hit hard by the global financial crisis in 2008, declinin
 
 The pace of STI growth seems become more steady, lacking of momentum. Except the economic factors' impacts, we consider another explanation that is the high dividend generated by STI. According to statistical analysis, the STI has delivered strong returns for investors over the past decade, with a total return of 61% compared to 41% for indexes such as the Dow Jones, Hang Seng, Nikkei 225, and FTSE 100.<https://www.ig.com/sg/indices/singapore-index>
 
-Moreover, the index is calculated using a free-float market capitalization-weighted methodology, which means that the larger companies have a greater impact on the overall index value. And the large companies listed on SGX have a culture of high dividends, for instance three Banking stocks (DBS, OCBC,UOB) we analyzed in above sub-section. In total,the STI pays out a relatively high dividend, with a dividend yield of 4% annually. Comparatively, other indexes such as the S&P500 pays out only 1.5% per year. <https://www.moomoo.com/sg/learn/detail-straits-times-index-sti-in-singapore-93047-230116062?lang=en-us>
+Moreover, the index is calculated using a free-float market capitalization-weighted methodology, which means that the larger companies have a greater impact on the overall index value. And the large companies listed on SGX have a culture of high dividends, for instance three Banking stocks (DBS, OCBC,UOB) we analyzed in above sub-section. In total, the STI pays out a relatively high dividend, with a dividend yield of 4% annually. Comparatively, other indexes such as the S&P500 pays out only 1.5% per year. <https://www.moomoo.com/sg/learn/detail-straits-times-index-sti-in-singapore-93047-230116062?lang=en-us>
 
-This high dividends character makes us decide to add dividends back to stock price when we analysis the return of SGX and also use the portfolio with or without considering dividends add back to evaluate the effects of dividends. The detail of dividends add back will be illustrate in section C.
+## 3000 Points Defense Battle for SGX
+
+It turns out dividend is also an "enemy" faced by SGX investors when fighting Singapore's version of "3000 Points Defense Battle".
+
+When one of 30 performance-tracked stock, that say DBS (ticker: D05 / D05.SI) issued a dividend payment:
+
+> A dividend payment lowers the price by the amount of the dividend so that the closing price is greater than the opening price on the ex-dividend day. To smooth out the effect of the dividend, the closing price and all previous prices are scaled by an appropriate adjustment factor.
+>
+> > Slide 7 Chapter 1: Financial Asset Prices and Returns - Financial Econometric Modeling
+
+As the opening price on the ex-dividend day is lower, its Close on the ex-dividend day would also be lower than if no dividend is paid. In consequence, STI will be also be lower.
+
+As all previous prices of DBS are scaled, DBS's trend of price history is mostly preserved. This is the comparison of DBS's price history using Adjusted Close(which is what investor usually see when checking stock's price history) and a estimated price history if dividends are added back:
+
+![DBS Price History](/dbs_d2.png "DBS")
+
+We could see that using adjusted close price shift the whole price history curve downward while keeping its trend by appropriate scale.
+
+On the other hand, market indexes like STI will never adjust its previous value due to stock's dividend payment. It always rely on stock's actual price. As a result, the trend of STI will be "flatten" due to stock's dividend payment.
+
+We estimated STI for both if add back dividend and if history value is adjusted:
+
+![STI Estimation](/STI_estimated.png "Estimation")
+
+In both case, the trend of STI will be different from actual. And in the case of add back dividend, STI will not stagnate around 3000 points since 2010, it would grow to above 4000.
+
+This is the "hidden" return of SGX.
+
+Some investors may look at STI history and conclude that SGX market has "zero return" in the past 15 years. Some investors may suspect that there will be returns via dividend, but couldn't find quick info about dividend yield.
+
+We hope that Chat STI could provide some reference value to these investors.
+
+Once again, quoting:
+
+> In most cases it is convenient to choose the adjusted closing price (denoted by Close\*) for empirical work.
+>
+> These adjustments mean that the historical prices do not necessarily reflect the actual prices at which trades took place.
+>
+> > Slide 7 Chapter 1: Financial Asset Prices and Returns - Financial Econometric Modeling:
+
+After learning impact of dividend on STI, we conclude that SGX shouldn't be the empirical case that researchers could just use adjusted closing price for convenience. We must use actual prices at which trades took place and dividend paid to calculated a stock's return.
+
+With or without considering dividends add back could have huge impact when evaluating return of portfolio. The detail of dividends add back will be illustrate in section C.
 
 # Section B
+
 In this section, we generate the trading strategy one based on our market analysis.
+
 ## Market analysis
+
 ### Market capitalization
-Market capitalization, or "market cap," represents the total dollar market value of a company's outstanding shares of stock.  we use market cap to determine a company's size, and then compare with other companies.
+
+Market capitalization, or "market cap," represents the total dollar market value of a company's outstanding shares of stock. we use market cap to determine a company's size, and then compare with other companies.
 
 According to the criteria of companies'size <https://www.finra.org/investors/insights/market-cap>, generally, companies can be divide into five level: mega-cap,large-cap, mid-cap, small-cap and micro-cap. Large-cap companies typically have a market capitalization of $10 billion or more and represent major players in well-established industries and sectors. Mid-cap companies generally have a market capitalization between $2 billion and $10 billion. Companies with a market capitalization between $250 million and $2 billion are commonly classified as small-cap companies.
 
@@ -263,6 +318,7 @@ Based on the situation of SGX, we adjust the barriers for mid-cap at $1.5 billio
 In the number of stocks in each group, we observe that the majority of stocks in SGX are small and micro companies, consistently with our prediction that the size limitation of SGX. For the distribution, more stocks/companies concentrate on the left side of each distribution, indicating that the market size of stocks listed on SGX is relative small.
 
 ### Average daily trading volume
+
 We also considered the average daily trading volume. Average daily trading volume (ADTV) is the average number of shares traded within a day in a given stock. The ADTV is an important metric of liquidity - this indicators' high or low suggest that how many different types of traders and investors are attracted to buy this stocks. We calculate the ADTV in dollar term. Based on the past one year average trading volume times the open price on 29th Mar 2024 and plot the distribution of the ADTV.
 
 ![adtv](/adtv_300K_3M.png) ![](/adtv_10K_300K.png) ![](/adtv_10K.png)
@@ -271,28 +327,26 @@ The distribution of ADTV is similar to the distribution of the market cap. The m
 
 ## Trading strategy one
 
-To avoid these stocks which are on the edge of unlisted, we exclude the stocks that ADTV below $10,000 dollars before we select investment objectives. After the screening, only 273 stocks remain. These 273 stocks are randomly assigned to four groups and our four team members each select 10 stocks to simulate the real investors in SGX. 
+To avoid these stocks which are on the edge of unlisted, we exclude the stocks that ADTV below $10,000 dollars before we select investment objectives. After the screening, only 273 stocks remain. These 273 stocks are randomly assigned to four groups and our four team members each select 10 stocks to simulate the real investors in SGX.
 
-Investor 1,2,and 4 do not have the accurate and precise criteria for investing, they work as a placebo for us to compare the performance of different portfolios. Investor 3 access to the ranked market cap, ADTV and P/E ratio of these stocks. Besides, based on the previous market cap analysis, and the average P/E ratio of STI. 
+Investor 1,2,and 4 do not have the accurate and precise criteria for investing, they work as a placebo for us to compare the performance of different portfolios. Investor 3 access to the ranked market cap, ADTV and P/E ratio of these stocks. Besides, based on the previous market cap analysis, and the average P/E ratio of STI.
 
 Investor 3 have the following investing strategy:
-(1) High market cap: only select the market cap higher than $100 million stocks. That means only focus on the small and above size companies, ignoring the micro-cap companies.
 
-(2) P/E ratio: According to the Singapore market index, the Strait Times closed at 3,158.800 points in May 2023 which is just beyond the 3000 level. At that time the FTSE Straits Times recorded a monthly P/E ratio of 13.159.<https://www.ceicdata.com.cn/en/indicator/singapore/pe-ratio> Used 13.159 as a benchmark, investor 3 regard the figure below that is low P/E ratio and vice versa.
-
-(3) Risk diversification
-Including one REIT in the investment portfolio to diversify the risk.
+- (1) High market cap: only select the market cap higher than $100 million stocks. That means only focus on the small and above size companies, ignoring the micro-cap companies.
+- (2) P/E ratio: According to the Singapore market index, the Strait Times closed at 3,158.800 points in May 2023 which is just beyond the 3000 level. At that time the FTSE Straits Times recorded a monthly P/E ratio of 13.159.<https://www.ceicdata.com.cn/en/indicator/singapore/pe-ratio> Used 13.159 as a benchmark, investor 3 regard the figure below that is low P/E ratio and vice versa.
+- (3) Risk diversification
+  - Including one REIT in the investment portfolio to diversify the risk.
 
 The following are each investors trading portfolios:
 
-| No.         | Trading stocks                                       | Remarks       |
-| ----------- | ---------------------------------------------------- | ------------- |
-| Investor  1 | AIY,1D1,Q01,C52,C6L,N02,CMOU,J36,MZH,H15             |               |
-| Investor  2 | EB5,WJP,9CI,D05,H02,SJX,Z77,F9D,O39,BVA              |               |
-| Investor 3-1| 3M01,5DD,CC3,i07,BN4                                 | high P/E ratio|
-| Investor 3-2| L38,E5H,1D0,Z74,CY6U                                 | low P/E ratio |
-| Investor  4 | 5LY,T82U,AWX,U96,S56,CJLU,AP4,S68,A7RU,C09           |               |
-
+| No.          | Trading stocks                             | Remarks        |
+| ------------ | ------------------------------------------ | -------------- |
+| Investor 1   | AIY,1D1,Q01,C52,C6L,N02,CMOU,J36,MZH,H15   |                |
+| Investor 2   | EB5,WJP,9CI,D05,H02,SJX,Z77,F9D,O39,BVA    |                |
+| Investor 3-1 | 3M01,5DD,CC3,i07,BN4                       | high P/E ratio |
+| Investor 3-2 | L38,E5H,1D0,Z74,CY6U                       | low P/E ratio  |
+| Investor 4   | 5LY,T82U,AWX,U96,S56,CJLU,AP4,S68,A7RU,C09 |                |
 
 Investor 3-1 portfolio consist of five stocks. The market cap pf these five stocks are all over $100 million, with the maximum $39 billions and minimum $300 millions. The other three stocks owns around $1 billion market cap. The P/E ratio for this portfolio are all below 13.159 as mentioned in the screening criteria. Typically, involving one REIT "CY6U" as a diversification tool and capturing the dividends.
 
@@ -304,17 +358,121 @@ The investor 3-1 portfolio as our main "value and growth investing" strategy, ai
 
 ## Dividends add back
 
-## Trading strategy two
+The actual return of investor transacting a stock paid dividend is:
 
-Portfolio
+```
+(P_t + D_t) / P_(t-1) - 1
+```
 
-- Weight via
-  - Return
-  - Risk
+And it will be different just using adjusted close price:
 
-Compare return with / without dividend
+```
+AdjP_t / AdjP_(t-1) - 1
+```
 
-- rolling back testing
+### D8DU's case
+
+Considering SGX stock `D8DU`, assume investor buy `D8DU` on 2022-03-03 at its close price:
+
+Actual Close: 0.077000
+Adjusted Close: 0.048462
+
+Investor sell `D8DU` on 2024-03-15 at its close price.
+
+As this is a recent date and no dividend has been paid after 2024-03-15, so: both close price & adjusted close are the same:
+
+```
+Actual Close = Adjusted Close: 0.032
+```
+
+During the 2 year holding period, two dividends are paid:
+
+- 2024-02-15: 0.015
+- 2022-08-12: 0.016
+
+Return using Adjusted Close: -34.0%
+0.032/0.048462 - 1 = -0.339689
+
+Return using dividend add back: -18.2%
+(0.032 + 0.016 + 0.015)/0.077000 - 1 = -0.181818
+
+Difference in return: 86.8%
+(-0.339689)/(-0.181818) - 1 = 0.868289
+
+D8DU is a REITs, which is required by regulation that dividend must been paid to investor regularly, and such dividend payment could be a major portion of the overall return compared with price movements. 86.8% is a huge difference that we must not ignore.
+
+### More case
+
+The difference in return between using Adjust Close and actual return also varies from stock to stock.
+
+For example, C38U will have -62.02% difference in return for the same period as D8DU illustrated above. We actually checked all SGX stock for the same two year period, as the difference in return spread between -62.02% (C38U) to 86.8% (D8DU).
+
+> Very often dividends are ignored in the computation of returns. This practice stems from the reality that dividends are paid relatively infrequently and constitute a minor proportion of the overall return compared with price movements.
+>
+> > Slide 15 Chapter 1: Financial Asset Prices and Returns - Financial Econometric Modeling
+
+Furthermore, it's impossible to use adjusted close for some stock when we check through the 20+ years history:
+
+- Y92: Adjusted Close is zero
+
+```csv
+Date,Open,High,Low,Close,Adj Close,Volume
+2006-05-30,0.280000,0.280000,0.260000,0.270000,0.000000,316209000
+2006-05-31,0.260000,0.265000,0.255000,0.260000,0.000000,154859
+2006-06-01,0.270000,0.270000,0.260000,0.260000,0.000000,72665
+```
+
+- T14: Adjusted Close is negative
+
+```csv
+Date,Open,High,Low,Close,Adj Close,Volume
+2001-06-01,0.387500,0.412500,0.387500,0.412500,-0.000011,68552000
+2001-06-04,0.425000,0.535000,0.425000,0.530000,-0.000014,160426000
+2001-06-05,0.540000,0.550000,0.432500,0.447500,-0.000012,134070000
+```
+
+It's a must that we need to use add back dividend return for analysing SGX stock and evaluate our trading strategy.
+
+# Return Chasing Trading Strategy (RCTS)
+
+Inspired by Trading strategy one mentioned above, we would like to further adapt it, and test it throughout history:
+
+- Step 1: Find top 10 return stocks in 12 month period with all cash
+  - Only consider stocks with ADTV higher than 100K SGD
+- Step 2: Buy the 10 best performing stocks
+  - Each stock has equal weight in the portfolio, i.e. buy with the same cash amount
+- Step 3: Hold the stocks for 3 months
+- Step 4: Sell all stocks no matter profit or lost
+- Repeat from Step 1
+
+Since we have stock history up to beginning of 2000, above strategy will start on beginning of 2001. It transacts only at the beginning and end of each quarter and continue until 2024 Q1.
+
+(We assume all stocks are sold on 2024-03-15 for the last transaction, which is close to one whole quarter.)
+
+All returns are calculated using add back division approach.
+
+During this 23 yr + 1Q period and total of 93 portfolios (details in appendix), RCTS gives 207.16% return. Its annual percentage yield (APY) is about 5%, which is about two times for the risk free rate 2.5% (Interest rate of CPF ordinary account). It also beat the market, ES3 - Straits Times Index ETF gives merely gives about 1.5% APY since 2010. ES3 will actually have negative return if we track it since 2008. STI is revamped and relaunched on 10 January 2008, and ES3 was founded. This is obviously due to impact of Global Financial Crisis (GFS). Yet, RCTS stood the test of GFS.
+
+For curiosity, we also evaluate RCTS using return calculated by adjusted close price. It gives a whopping `9717%` overall return! But as shown earlier, return calculated using adjusted close price is not the actual return that investor will get. In order to calculate investor's actual return, we must use add back dividend approach. RCTS with portfolio construction using return calculated by adjusted close price actually only give 83.82% overall return, much lower than portfolios constructed using add back dividend approach. This may implies that portfolios were not constructed correctly at the beginning, the trading strategy chased fake return.
+
+# RCTS with different weight and Diebold-Mariano Test
+
+We further evaluate RCTS with two different portfolio weight adjustment:
+
+- Weight by return: stocks in the portfolio are weighted according to its return in past 12 months. The higher the return, the higher its weight.
+- Weight by risk: stocks in the portfolio are weighted according to its risk in past 12 month. The higher the risk, the lower its weight.
+
+We used a slightly modified version of Diebold-Mariano Test to evaluate these two weighting strategy:
+
+- Instead of evaluating forecasting error, we evaluate difference in return of each strategy
+- Return of RCTS with equal weight is used as baseline(actual return)
+
+And the test result is:
+
+- DM=1.8331375977777478
+- p_value=0.07001611485180186
+
+会算不会解读。。。。
 
 # Section D
 
@@ -330,3 +488,9 @@ Compare return with / without dividend
 
 The third strategy is weighted (may change the weights) two strategies, and calculate the return
 compared with other two strategies, conduct DM test.
+
+# Appendix
+
+## RCTS Portfolio and return
+
+See RCTS_portfolio.txt

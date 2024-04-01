@@ -73,8 +73,8 @@ Difference in return: 86.8%
 
 # C38U (REITs)
 
+Buy (2023-03-03) adjusted price: 0.048462
 Current(2024-04-27) price: 0.0340
-Buy (2023-103-03) adjusted price: 0.048462
 
 Return: -29.8%
 0.0340/0.048462 - 1 = -0.2984193801328875
@@ -83,10 +83,10 @@ Return: -29.8%
 
 ```
 Day,Close,Original Close,Dividends,Adjustment Factor
-2023-08-07,2.677179,2.677179,0.01578,0.994140274694119
-2023-05-23,2.671326,2.6870715008723733,0.06141,0.9776567533816369
-2023-02-09,2.660282,2.7371185187070988,0.07925,0.9718609267666501
-2022-08-10,2.698085,2.856389531183477,0.07873,0.97317656089861
+2024-02-14,1.91,1.91,0.0545,0.9722575719012472
+2023-08-08,1.886869,1.9407089793193715,0.053,0.9734163809513997
+2023-02-08,1.922083,2.030916897832926,0.0536,0.9742866080597751
+2022-08-04,2.020652,2.191415895484169,0.0522,0.9767339854807299
 
 Total Dividend:
 0.01578 + 0.06141 + 0.07925 + 0.07873 = 0.23517
@@ -97,13 +97,18 @@ Original price:
 0.048462 / 0.9192419495474851 = 0.05271952615288757
 ```
 
-## Return Compare
+## Return by Adj Close BUY: 2022-03-03 SELL: 2024-03-15
+buy: 1.918871 sell: 1.920000 gain: 0.001129
 
-Real Return: -20.5%
-(0.0340 + 0.016)/0.06286217828622367 - 1 = -0.2046091725880017
+return: 0.06% (0.000588)
+Total Dividend: 0.213300
 
-Difference by: -54.2%
-(-0.2984193801328875 - (-0.2046091725880017))/(-0.2046091725880017) - 1 = -0.5415151414849775
+## Actual Return by adding back dividend
+buy: 2.130000 sell: 2.133300 gain: 0.003300
+return: 0.15% (0.001549)
+
+## Return difference
+-62.02% (-0.620236)
 
 # Y92 / NC2
 
@@ -175,3 +180,7 @@ Adj Close Return    : 98.17057979089792
 
 all stock; with dividend
 708 542
+
+In most cases it is convenient to choose the adjusted closing price (denoted by Close\*) for empirical work.
+
+These adjustments mean that the historical prices do not necessarily reflect the actual prices at which trades took place.

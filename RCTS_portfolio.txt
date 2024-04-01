@@ -1,0 +1,278 @@
+['L02', '5AB', 'J36', 'CTO', 'H78', 'BTJ', 'BDA', 'LJ3', 'KUH', 'H02']
+Holding Period: 2001-01-01 2001-04-01 Return: -0.152858
+
+['L02', 'LJ3', 'J36', 'H78', 'H02', 'C52', 'U14', '5AB', 'S63', 'S20']
+Holding Period: 2001-04-01 2001-07-01 Return:  0.044415
+
+['600', 'T14', 'AZR', 'L02', 'LJ3', 'G07', 'H02', 'F13', 'WPC', 'J36']
+Holding Period: 2001-07-01 2001-10-01 Return: -0.088402
+
+['AZR', 'T14', '600', 'D01', 'G07', 'LJ3', 'S20', 'H02', 'F13', 'BAZ']
+Holding Period: 2001-10-01 2002-01-01 Return:  0.244330
+
+['T14', '600', 'AZR', 'G13', 'F13', 'D01', 'G07', 'BAZ', 'T15', 'G92']
+Holding Period: 2002-01-01 2002-04-01 Return:  0.088380
+
+['T14', '600', 'AZR', 'F03', '578', '558', 'F13', 'G13', '554', '504']
+Holding Period: 2002-04-01 2002-07-01 Return: -0.084891
+
+['F03', '596', '578', 'H22', 'T14', 'F10', '558', 'S59', 'Q01', '1H2']
+Holding Period: 2002-07-01 2002-10-01 Return: -0.164951
+
+['F03', '558', 'N02', 'H22', '596', '578', 'T14', 'S59', '580', 'F10']
+Holding Period: 2002-10-01 2003-01-01 Return:  0.054612
+
+['F03', 'N02', '596', '558', '580', 'T14', '5AI', 'H22', 'D01', '578']
+Holding Period: 2003-01-01 2003-04-01 Return:  0.102001
+
+['N02', 'H22', 'D01', 'V3M', 'T14', 'M01', '580', 'A05', 'D03', 'BDU']
+Holding Period: 2003-04-01 2003-07-01 Return:  0.233897
+
+['5NV', 'A26', 'BTE', 'BDU', 'N02', 'T14', 'A05', '5CP', 'V3M', 'M01']
+Holding Period: 2003-07-01 2003-10-01 Return:  0.181205
+
+['M14', 'A26', 'BTE', 'MT1', 'S56', 'BQM', 'G0I', '575', '5AU', 'A04']
+Holding Period: 2003-10-01 2004-01-01 Return:  0.025300
+
+['BQM', '566', 'M14', 'A26', 'BIP', 'BTE', '575', 'S56', 'G0I', 'G92']
+Holding Period: 2004-01-01 2004-04-01 Return:  0.151444
+
+['566', 'G92', '575', 'BTE', 'A26', 'A50', 'BQM', 'M14', 'BIP', 'MT1']
+Holding Period: 2004-04-01 2004-07-01 Return: -0.186443
+
+['G92', '575', 'BQM', 'A50', '566', 'J03', 'B69', 'MT1', 'Y3D', 'G0I']
+Holding Period: 2004-07-01 2004-10-01 Return: -0.006493
+
+['L02', 'G92', 'B69', 'J36', 'D01', 'C09', 'C52', 'J03', 'T14', 'F13']
+Holding Period: 2004-10-01 2005-01-01 Return: -0.038361
+
+['L23', 'L02', 'B69', 'C52', 'Y3D', '600', 'C07', 'A26', 'BTE', 'BTG']
+Holding Period: 2005-01-01 2005-04-01 Return: -0.082396
+
+['L23', 'V3M', '578', '600', 'L02', 'C07', 'PRH', 'S61', 'J36', 'H78']
+Holding Period: 2005-04-01 2005-07-01 Return:  0.086108
+
+['L23', '600', '578', 'C07', 'V3M', 'U96', 'CC3', 'S19', 'H78', 'F86']
+Holding Period: 2005-07-01 2005-10-01 Return:  0.116647
+
+['L23', 'H78', '578', 'M04', 'CC3', 'H13', 'U96', 'D01', '600', 'U77']
+Holding Period: 2005-10-01 2006-01-01 Return: -0.013696
+
+['U77', '578', 'D01', 'H78', 'H13', 'CC3', 'M04', 'VC2', 'M01', 'U96']
+Holding Period: 2006-01-01 2006-04-01 Return:  0.237019
+
+['U77', 'H13', 'AZA', 'BHK', 'F1E', '5DN', 'BAI', 'BDU', 'H78', 'VC2']
+Holding Period: 2006-04-01 2006-07-01 Return: -0.123492
+
+['5IG', 'BQC', 'BHK', 'U77', '5EN', 'BAI', 'H78', 'H13', 'BDU', 'F1E']
+Holding Period: 2006-07-01 2006-10-01 Return:  0.087325
+
+['5IG', 'BQC', '5EN', 'BTE', '532', 'BHK', '5I4', 'S68', 'B61', 'F9D']
+Holding Period: 2006-10-01 2007-01-01 Return: -0.011156
+
+['5IG', '5CP', 'BRD', '5EN', '5I4', 'BQC', 'Z25', 'G13', 'F34', 'F83']
+Holding Period: 2007-01-01 2007-04-01 Return: -0.054758
+
+['AXB', '5IG', 'KJ5', 'C06', 'OU8', 'BEZ', 'PRH', 'CTO', '5EN', '5GD']
+Holding Period: 2007-04-01 2007-07-01 Return:  0.479692
+
+['AXB', 'BTP', '5AL', 'AVX', '1C0', '566', 'BEZ', 'CTO', 'OU8', '5GJ']
+Holding Period: 2007-07-01 2007-10-01 Return:  0.102975
+
+['1C0', 'BTP', 'AXB', '5CF', '5RA', '566', 'OU8', 'CTO', 'RDR', '5GJ']
+Holding Period: 2007-10-01 2008-01-01 Return: -0.225880
+
+['1C0', 'BTP', '5CF', 'Q0X', '595', '5GJ', 'BQM', 'OU8', 'BEZ', 'F17']
+Holding Period: 2008-01-01 2008-04-01 Return: -0.280465
+
+['1C0', 'S07', 'LYY', '5JS', '5NV', 'Y92', '5CF', 'BTP', 'Q0X', 'CIN']
+Holding Period: 2008-04-01 2008-07-01 Return: -0.051580
+
+['R14', '5JS', 'Y92', 'F34', '579', 'E5H', 'S20', 'J36', 'S51', 'CHJ']
+Holding Period: 2008-07-01 2008-10-01 Return: -0.356724
+
+['Y92', 'LUY', 'i07', 'D01', '579', 'J36', 'R14', 'E3B', 'CC3', 'C07']
+Holding Period: 2008-10-01 2009-01-01 Return: -0.230683
+
+['Y92', 'LUY', 'D01', 'GU5', 'i07', 'D03', 'R14', 'S20', 'C52', 'S08']
+Holding Period: 2009-01-01 2009-04-01 Return: -0.119737
+
+['Y92', 'LUY', '5LY', 'D01', 'O87', 'GU5', 'P74', 'G13', 'A7RU', 'LJ3']
+Holding Period: 2009-04-01 2009-07-01 Return: 0.210902
+
+['Y92', 'A78', 'G3B', 'D01', 'BHU', 'E3B', 'Z25', 'G13', 'C07', 'C8R']
+Holding Period: 2009-07-01 2009-10-01 Return: 0.401601
+
+['5CF', 'A78', '5CT', '546', 'BAI', 'BQM', 'B9S', 'P36', 'BTP', 'TVV']
+Holding Period: 2009-10-01 2010-01-01 Return: -0.022182
+
+['H20', '546', 'H22', 'T14', '5OU', 'A78', 'H13', '5JS', 'R14', 'B69']
+Holding Period: 2010-01-01 2010-04-01 Return:  0.022157
+
+['H22', '5JK', 'U77', 'B69', 'P36', 'H20', 'H13', 'BHD', 'A78', 'AZG']
+Holding Period: 2010-04-01 2010-07-01 Return: -0.117578
+
+['H20', 'B69', 'U77', 'M14', 'BTP', 'BKV', '1H2', 'Y92', 'T14', '558']
+Holding Period: 2010-07-01 2010-10-01 Return:  0.069703
+
+['1H2', '5NV', '5AB', 'S69', '558', 'B69', 'Y92', 'WPC', 'G20', 'BN2']
+Holding Period: 2010-10-01 2011-01-01 Return: -0.036783
+
+['B49', '558', 'N0Z', 'S69', 'Y92', '5NV', '5AB', 'BN2', 'WPC', 'BQD']
+Holding Period: 2011-01-01 2011-04-01 Return: -0.041643
+
+['AFC', 'B49', '558', 'G13', 'LYY', 'T4B', 'Y92', 'A78', 'EG0', 'N0Z']
+Holding Period: 2011-04-01 2011-07-01 Return:  -0.016849
+
+['AFC', 'BLS', '5SR', 'E6R', 'B49', '583', 'L02', 'TVV', 'Y92', 'A78']
+Holding Period: 2011-07-01 2011-10-01 Return:  -0.038760
+
+['BLS', '5SR', 'AFC', 'Y92', 'A78', 'TVV', 'B49', 'A30', '583', 'DU4']
+Holding Period: 2011-10-01 2012-01-01 Return: -0.074579
+
+['BLS', '5SR', 'TVV', 'A30', 'Y92', '583', 'DU4', '5F7', 'QC7', 'E6R']
+Holding Period: 2012-01-01 2012-04-01 Return:  0.274240
+
+['Z59', 'TVV', 'A30', 'Y3D', '5SR', '5GI', 'Y92', 'U77', '583', 'A31']
+Holding Period: 2012-04-01 2012-07-01 Return:  0.091991
+
+['BDX', 'Z59', 'T09', '5GI', 'Y92', 'i06', 'U09', 'AWX', 'A30', 'Y3D']
+Holding Period: 2012-07-01 2012-10-01 Return:  0.330773
+
+['BDX', 'Z59', 'T09', '5GI', 'A33', 'U09', 'Y3D', 'i06', '505', 'A30']
+Holding Period: 2012-10-01 2013-01-01 Return:  0.280566
+
+['5QT', 'BDX', 'T09', 'A33', 'QZG', '5GI', 'A50', '505', 'U09', 'Z59']
+Holding Period: 2013-01-01 2013-04-01 Return:  0.355952
+
+['A33', 'QZG', '5QT', 'BDX', 'i07', 'WVJ', 'Y35', 'A50', '5BI', '9QX']
+Holding Period: 2013-04-01 2013-07-01 Return:  0.080311
+
+['A33', 'i07', '5QT', 'QZG', 'A50', '5BI', 'M15', '5PO', 'T4B', 'Y92']
+Holding Period: 2013-07-01 2013-10-01 Return:  0.209001
+
+['A33', '5QT', '9QX', 'i07', 'AOF', '5OU', 'A50', 'QZG', 'O08', '1B6']
+Holding Period: 2013-10-01 2014-01-01 Return: -0.200394
+
+['i07', '5OU', 'WPC', '9QX', '1B6', 'BCD', 'AOF', 'BTJ', '504', 'Y45']
+Holding Period: 2014-01-01 2014-04-01 Return: -0.142222
+
+['5OU', 'Y45', 'U9E', 'BTJ', 'OU8', 'WPC', 'RCU', 'O08', 'BCD', '5RA']
+Holding Period: 2014-04-01 2014-07-01 Return: -0.169386
+
+['41F', 'RCU', 'Y45', 'QS9', 'WPC', 'BTM', 'O08', 'BN2', 'L02', 'BHK']
+Holding Period: 2014-07-01 2014-10-01 Return: -0.031747
+
+['41F', 'RCU', 'Y92', 'QES', 'QS9', 'S85', 'BTM', '5UN', 'U77', 'BN2']
+Holding Period: 2014-10-01 2015-01-01 Return: -0.054387
+
+['41F', 'RCU', '5OC', '5UN', '42N', 'BEZ', 'L38', 'Y92', 'QS9', 'QES']
+Holding Period: 2015-01-01 2015-04-01 Return:  0.013879
+
+['5OC', '42N', 'TVV', 'RCU', 'L38', 'Y92', '5HH', 'JK8', 'QES', 'J2T']
+Holding Period: 2015-04-01 2015-07-01 Return:  0.114022
+
+['42N', '5OC', 'Y92', '5AB', '1B0', 'JK8', 'RCU', 'D8DU', 'AP4', 'QC7']
+Holding Period: 2015-07-01 2015-10-01 Return: -0.125130
+
+['Y35', '42N', '1B0', 'BQC', '5OC', 'QC7', 'AP4', 'Y92', 'P15', 'D8DU']
+Holding Period: 2015-10-01 2016-01-01 Return:  0.087211
+
+['Y35', 'BTF', '1B0', '42N', 'AP4', '5GD', '5OC', '8K7', '8A1', 'Y92']
+Holding Period: 2016-01-01 2016-04-01 Return: -0.132304
+
+['Y35', '1B0', '5GD', '8A1', 'BTF', 'T4B', 'CGN', 'Y92', 'AP4', 'F13']
+Holding Period: 2016-04-01 2016-07-01 Return:  0.190357
+
+['Y35', 'CGN', '8A1', '43F', '1B0', '5GD', 'UD2', 'Y92', 'T4B', '5TP']
+Holding Period: 2016-07-01 2016-10-01 Return:  0.092552
+
+['CGN', '43F', '5TP', 'UD2', '1B0', '40E', 'Y92', 'G92', '5GD', '42R']
+Holding Period: 2016-10-01 2017-01-01 Return:  0.053767
+
+['CGN', '5TP', '1B0', 'Y92', '43F', 'G92', 'F03', 'BDX', 'UD2', '5GD']
+Holding Period: 2017-01-01 2017-04-01 Return:  0.220686
+
+['CGN', '532', '5RF', 'J03', 'PH0', 'AWX', '40F', '41H', 'FQ7', 'RE4']
+Holding Period: 2017-04-01 2017-07-01 Return: -0.111751
+
+['AWX', '5RF', 'J03', '40F', 'FQ7', '41H', '5NV', '41F', 'CGN', '532']
+Holding Period: 2017-07-01 2017-10-01 Return: -0.049349
+
+['AWX', 'FQ7', '5RF', '41H', 'J03', '575', '5NV', 'C8R', 'M03', '5GZ']
+Holding Period: 2017-10-01 2018-01-01 Return:  0.008103
+
+['C8R', 'AWX', '40F', 'J03', 'BEC', 'MT1', 'S71', '5WA', '5DD', '5NV']
+Holding Period: 2018-01-01 2018-04-01 Return:  0.017839
+
+['C76', 'AWX', 'C8R', '1J4', 'V03', 'BEC', '1F1', '5DD', '1H3', 'QES']
+Holding Period: 2018-04-01 2018-07-01 Return: -0.184386
+
+['C76', 'C8R', 'AWX', 'QES', '1F1', '1J4', '575', 'BEC', '5DD', 'V03']
+Holding Period: 2018-07-01 2018-10-01 Return: -0.068310
+
+['C76', 'BEW', '5WH', '1J4', 'M11', 'BEC', 'M14', 'F83', '544', 'Y92']
+Holding Period: 2018-10-01 2019-01-01 Return: -0.203104
+
+['C76', 'CGN', '5EN', 'UD2', 'QES', 'BEW', 'Y92', 'AIY', 'CTO', 'OV8']
+Holding Period: 2019-01-01 2019-04-01 Return:  0.157353
+
+['Y92', 'S61', '5WH', 'UD2', 'CTO', '544', 'BS6', 'C52', 'AIY', 'N2IU']
+Holding Period: 2019-04-01 2019-07-01 Return: -0.006027
+
+['Y92', 'BS6', 'S61', '5WH', 'M14', 'E28', 'CY6U', 'N2IU', 'C38U', 'M44U']
+Holding Period: 2019-07-01 2019-10-01 Return: -0.015431
+
+['Y92', 'BTM', 'QS9', '5JS', 'S61', 'E28', 'AJBU', 'CY6U', 'N2IU', 'AWX']
+Holding Period: 2019-10-01 2020-01-01 Return:  0.148511
+
+['QS9', '5WH', 'Y92', '5GI', 'BTM', 'AWX', 'E28', 'Z4D', '5GD', '558']
+Holding Period: 2020-01-01 2020-04-01 Return: -0.465581
+
+['584', '5AI', '546', '5WV', 'QS9', 'AJBU', 'BVA', 'AWX', '5JS', 'V2Y']
+Holding Period: 2020-04-01 2020-07-01 Return:  0.974640
+
+['Y35', '546', '8K7', '584', '40V', '5AI', 'NC2', 'BVA', 'AAJ', 'AWX']
+Holding Period: 2020-07-01 2020-10-01 Return:  0.170034
+
+['546', '8K7', 'Y35', '584', 'BVA', 'C8R', '569', 'NC2', 'AP4', 'MXNU']
+Holding Period: 2020-10-01 2021-01-01 Return:  -0.021510
+
+['546', '8K7', '42F', '579', 'Y35', 'LS9', 'NC2', '5EF', 'BVA', 'C8R']
+Holding Period: 2021-01-01 2021-04-01 Return:  0.199157
+
+['579', '42F', '1D3', '546', 'MXNU', 'E27', 'C8R', '8K7', 'L23', 'AIY']
+Holding Period: 2021-04-01 2021-07-01 Return:  0.114275
+
+['42F', '5EB', 'E27', 'MXNU', 'AZT', 'AIY', 'C8R', '579', '43E', 'A78']
+Holding Period: 2021-07-01 2021-10-01 Return: 0.144495
+
+['MXNU', 'E27', 'T13', '5EB', 'EB7', '579', 'NC2', 'YYR', 'JLB', 'Y45']
+Holding Period: 2021-10-01 2022-01-01 Return: -0.028352
+
+['MXNU', 'T13', 'NC2', '5HH', 'EB7', 'YYR', 'V3M', 'Y45', 'JLB', '5CT']
+Holding Period: 2022-01-01 2022-04-01 Return: 0.381355
+
+['T13', 'MXNU', 'Y45', '5HH', '5EB', '532', 'NC2', 'S56', 'RE4', 'AGS']
+Holding Period: 2022-04-01 2022-07-01 Return: -0.178016
+
+['MXNU', '5HH', 'O9E', '5FW', '5G9', 'NO4', 'V3M', 'S56', 'RE4', 'S3N']
+Holding Period: 2022-07-01 2022-10-01 Return: -0.174956
+
+['MXNU', 'O9E', '532', '5FW', 'N32', '5WV', 'NO4', 'C07', 'U96', '5G9']
+Holding Period: 2022-10-01 2023-01-01 Return:  0.033413
+
+['O9E', 'MXNU', '5FW', 'NO4', 'N32', 'BS6', '5VJ', 'S51', 'U96', 'Y92']
+Holding Period: 2023-01-01 2023-04-01 Return:  0.044522
+
+['O9E', '5FW', 'N32', 'NO4', 'F03', '5AE', 'CGN', '5VJ', 'U96', 'P34']
+Holding Period: 2023-04-01 2023-07-01 Return:  0.016828
+
+['O9E', 'U96', 'F03', '5VJ', 'T14', '5LY', 'NO4', 'P34', 'BN4', 'BS6']
+Holding Period: 2023-07-01 2023-10-01 Return: -0.006248
+
+['Q0X', 'NO4', 'F03', 'T14', 'NHD', '5PO', 'ENV', '5VJ', 'BQD', 'P34']
+Holding Period: 2023-10-01 2024-01-01 Return: -0.033192
+
+['Q0X', 'T14', 'A34', 'NO4', 'F03', 'BQD', 'BN4', 'Y45', 'U96', 'P34']
+Holding Period: 2024-01-01 2024-04-01 Return: -0.024978
