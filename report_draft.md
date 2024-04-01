@@ -256,14 +256,14 @@ Market capitalization, or "market cap," represents the total dollar market value
 
 According to the criteria of companies'size <https://www.finra.org/investors/insights/market-cap>, generally, companies can be divide into five level: mega-cap,large-cap, mid-cap, small-cap and micro-cap. Large-cap companies typically have a market capitalization of $10 billion or more and represent major players in well-established industries and sectors. Mid-cap companies generally have a market capitalization between $2 billion and $10 billion. Companies with a market capitalization between $250 million and $2 billion are commonly classified as small-cap companies.
 
-Based on the situation of SGX, we adjust the barriers for mid-cap at $1.5 billion, $100 million for small-cap and below $100 million is micro-cap. Then we plot the trading frequency against market cap.
+Based on the situation of SGX, we adjust the barriers for mid-cap at $1.5 billion, $100 million for small-cap and below $100 million we see these companies as micro-cap. Then we plot the distribution of SGX market cap.
 
 ![mc](/mc_1.5B_20B.png) ![](/mc_100M_1.5B.png) ![](/mc_100M.png)
 
-In the number of stocks in each group, we observe that the majority of stocks in SGX are small and micro companies, in consistent with our prediction that the size limitation of SGX. For the distribution, more stocks/companies concentrate on the left side of each distribution, indicating that the market size of stocks listed on SGX is relative small.
+In the number of stocks in each group, we observe that the majority of stocks in SGX are small and micro companies, consistently with our prediction that the size limitation of SGX. For the distribution, more stocks/companies concentrate on the left side of each distribution, indicating that the market size of stocks listed on SGX is relative small.
 
 ### Average daily trading volume
-We also focus on the average daily trading volume. Average daily trading volume (ADTV) is the average number of shares traded within a day in a given stock. The ADTV is an important metric of liquidity - this indicators' high or low suggest that how many different types of traders and investors are attracted to buy this stocks. We calculate the ADTV in dollar term. Based on the past one year average trading volume times the open price on 29th Mar 2024 and plot the distribution of the ADTV.
+We also considered the average daily trading volume. Average daily trading volume (ADTV) is the average number of shares traded within a day in a given stock. The ADTV is an important metric of liquidity - this indicators' high or low suggest that how many different types of traders and investors are attracted to buy this stocks. We calculate the ADTV in dollar term. Based on the past one year average trading volume times the open price on 29th Mar 2024 and plot the distribution of the ADTV.
 
 ![adtv](/adtv_300K_3M.png) ![](/adtv_10K_300K.png) ![](/adtv_10K.png)
 
@@ -271,14 +271,14 @@ The distribution of ADTV is similar to the distribution of the market cap. The m
 
 ## Trading strategy one
 
-To avoid these stocks which are on the edge of unlisted, we exclude the stocks that ADTV below $10,000 dollars before we select investment objectives. After the selection, only 273 stocks remain. Four team members are randomly assign to 70 stocks to select stocks to simulate the real investors in SGX. 
+To avoid these stocks which are on the edge of unlisted, we exclude the stocks that ADTV below $10,000 dollars before we select investment objectives. After the screening, only 273 stocks remain. These 273 stocks are randomly assigned to four groups and our four team members each select 10 stocks to simulate the real investors in SGX. 
 
 Investor 1,2,and 4 do not have the accurate and precise criteria for investing, they work as a placebo for us to compare the performance of different portfolios. Investor 3 access to the ranked market cap, ADTV and P/E ratio of these stocks. Besides, based on the previous market cap analysis, and the average P/E ratio of STI. 
 
 Investor 3 have the following investing strategy:
 (1) High market cap: only select the market cap higher than $100 million stocks. That means only focus on the small and above size companies, ignoring the micro-cap companies.
 
-(2) P/E ratio: According to the Singapore market index, the Strait Times closed at 3,158.800 points in May 2023 which is just beyond the 3000 level. At that time the FTSE Straits Times recorded a monthly P/E ratio of 13.159.<https://www.ceicdata.com.cn/en/indicator/singapore/pe-ratio> Used 13.159 as a benchmark, below that is low P/E ratio and vice versa.
+(2) P/E ratio: According to the Singapore market index, the Strait Times closed at 3,158.800 points in May 2023 which is just beyond the 3000 level. At that time the FTSE Straits Times recorded a monthly P/E ratio of 13.159.<https://www.ceicdata.com.cn/en/indicator/singapore/pe-ratio> Used 13.159 as a benchmark, investor 3 regard the figure below that is low P/E ratio and vice versa.
 
 (3) Risk diversification
 Including one REIT in the investment portfolio to diversify the risk.
@@ -294,15 +294,11 @@ The following are each investors trading portfolios:
 | Investor  4 | 5LY,T82U,AWX,U96,S56,CJLU,AP4,S68,A7RU,C09           |               |
 
 
-We see investor 3-1 portfolio consist of five stocks. The market cap pf these five stocks are all over $100 million, with the maximum is $39 billions and minimum is $300 millions. The other three stocks owns around $1 billion market cap. The P/E ratio for this portfolio are all below 13.159 as mentioned in the screening criteria. Typically, involving one REIT "CY6U" as a diversification tool and capturing the dividends character.
+Investor 3-1 portfolio consist of five stocks. The market cap pf these five stocks are all over $100 million, with the maximum $39 billions and minimum $300 millions. The other three stocks owns around $1 billion market cap. The P/E ratio for this portfolio are all below 13.159 as mentioned in the screening criteria. Typically, involving one REIT "CY6U" as a diversification tool and capturing the dividends.
 
-Only focusing on large market cap is 
-Relying totally on PE ratios without paying attention to fundamentals and growth of companies is also not useful. 
-This portfolio as our "value and growth investing" strategy, aim at investing stocks which are under growth and  
+In general, a high P/E suggests that investors expect higher earnings growth than those with a lower P/E. A low P/E can indicate that a company is undervalued or that a firm is doing exceptionally well relative to its past performance. Relying totally on PE ratios without paying attention to fundamentals and growth of companies is also not useful. Large-cap stocks are mature, yet has limitation in growth. Once a company grows very large, it may no longer be as nimble or able to take advantage of new growth opportunities. Hence, under the low P/E ratio, the investor 3-1 strategy combine one large-cap stocks and four small-cap to balance the portfolio.
 
-
-
-### Sector select and portfolio generation
+The investor 3-1 portfolio as our main "value and growth investing" strategy, aim at investing stocks which has relative high market cap and low P/E ratio. For comparison purpose, investor 3-2 select relative high market cap combination.
 
 # Section C
 
