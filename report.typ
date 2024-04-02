@@ -70,7 +70,7 @@
     ),
   ),
   date: "April 2024",
-  abstract: [],
+  abstract: [This paper presents a thorough quantitative analysis of the Singapore Exchange (SGX), highlighting its unique position within global financial markets and its potential as a fertile ground for diverse investment strategies. Through a detailed examination of the SGX's market characteristics, including its size, liquidity constraints, and the significant role of dividends and REITs, we identify unique opportunities and challenges for investors. Our investigation extends to the formulation and evaluation of two novel investment strategies: the Dividend Add-Back Approach and the Return Chasing Trading Strategy (RCTS), which are rigorously compared using the Diebold-Mariano test over different economic conditions. Additionally, we delve into the impact of dividends on market performance indices and propose a methodological refinement to account for dividends in investment returns, challenging the conventional reliance on adjusted close prices. Our findings not only contribute to the existing body of financial econometric literature by offering new insights into the SGX and its investment prospects but also provide practical guidance for investors seeking to navigate this unique market. The study underscores the importance of considering dividend policies and market capitalization in developing robust investment strategies and offers a compelling case for the inclusion of SGX in diversified investment portfolios.],
   keywords: [
     Singapore Exchange (SGX) Analysis, Investment Strategy Evaluation, Quantitative Finance, Real Estate Investment Trusts (REITs) Performance, Add-Back Dividend Methodology],
   acknowledgments: "This paper is a work in progress.",
@@ -87,14 +87,14 @@
 
 Singapore, ranked as the world’s most competitive economy in the world, is recognized as a dynamic global financial hub with estimated total assets of more than SGD\$2.4 trillion under management. However, due to the size limitation, the liquidity Singapore stock market is not comparable with other gigantic equity market, such as U.S market. The colliding of Singapore equity market characters increases the complexity of making trading strategies for investors who want to making money in SG. Our team want to analysis Singapore Exchange (SGX) from investors' respective, and based on our knowledge acquired, we generate some strategies and evaluate these strategies performance.
 
-After investigating the SGX, we summarize the characteristic of SG equity market and the development path in section A. We find that Singapore boasts core sectors in Financial, Consumer, Healthcare, Technology and Commodities & Resources. It also obtains the world's largest Maritime & Offshore services related companies. Beside this prevalent sectors, Singapore Real Estate Investment Trusts (REITs) and Property Trusts sector is a global REIT platform and the second largest REIT market in Asia. More importantly, we find that the SGX offer investors high dividends, and REITs which have less fluctuations in price while provide stable dividends can be used as a risk diversification tool. Aiming at investing in high market cap and low P/E ratio stocks, and diversify the risk, we generate our SGX investment trading strategy one and this strategy is explained in @trading_strategy.
+After investigating the SGX, we summarize the characteristic of SG equity market and the development path in @overview. We find that Singapore boasts core sectors in Financial, Consumer, Healthcare, Technology and Commodities & Resources. It also obtains the world's largest Maritime & Offshore services related companies. Beside this prevalent sectors, Singapore Real Estate Investment Trusts (REITs) and Property Trusts sector is a global REIT platform and the second largest REIT market in Asia. More importantly, we find that the SGX offer investors high dividends, and REITs which have less fluctuations in price while provide stable dividends can be used as a risk diversification tool. Aiming at investing in high market cap and low P/E ratio stocks, and diversify the risk, we generate our SGX investment trading strategy one and this strategy is explained in @trading_strategy.
 
 In @rcts, we use a more objective perspective view to generate our second trading strategy. We analyze all 767 currently listed stocks on SGX's transaction history up to 2000. By adding back all the dividends back to the stock prices, we re-ranked the return of each stocks and calculate all returns and volatility of different sectors, especially the results of S-REITs, which is a sector mainly relying on dividends for return. By selecting high historical return stocks and weight them by past performance of return and volatility, we generate a return chasing trading strategy (RCTS).
 
 To precise analyze these two strategies, in @dm_test, we simulate these two trading strategies in SGX from past 24 years, and calculate the annual returns and analyze the results. After conducting the Diebold-Mariano Test, we compare the difference of performance of our trading strategies. We find that the simple "vale growth" investing strategy is possible to approach to RCTS when situation of economic development is good.
 
 
-== Overview of SGX
+= Overview of SGX<overview>
 
 SGX is Asian second largest market capitalization after Indonesia Stock Exchange at US\$585.97 billion as of September 2023. Currently, there are 587 stocks, 69 ETFs, and 41 REITs(including 6 business trusts) trading on SGX.
 
@@ -104,7 +104,7 @@ SGX's derivatives market is particularly notable for its diversity, including co
 
 Nonetheless, the trading volume on SGX, which includes stocks, bonds, derivatives, and other financial instruments, underscores its role in providing liquidity to the market. According to SGX statistic report the securities market turnover volume is 32,838 million shares in February 2024. Compared with the U.S market who has a 234,703 million shares in same time period, the turnover volume of SGX is relative small.
 
-== Dividend
+= Dividend Yield in SGX
 
 Many Singapore-listed companies have a culture of paying regular dividends to shareholders. This is particularly appealing to income-seeking investors who prioritize consistent cash flows. Dividend stocks can provide a steady income stream and potentially outperform during periods of market volatility.
 
@@ -112,7 +112,7 @@ The Straits Times Index (STI) comprises 30 stocks representing the largest and m
 
 To investigating the real example of high dividends, we focus on the three banks: DBS, OCBC and UOB since they occupy 20%, 13% and 11%(44% in total) of the STI.
 
-=== SG banks' dividends
+== SG banks' dividends
 
 Figure one Plotting a line graph of those three banks, showing their yearly dividends.
 
@@ -123,7 +123,7 @@ Figure one Plotting a line graph of those three banks, showing their yearly divi
 
 The dividend yields have fluctuated but show a general increase in more recent years. Each of these three banks has been distributing dividends to its shareholders annually, and calculations show that the average dividend yield over the past 20 years has reached 3.51%. This figure is approximately 1% higher than the interest rate of the Central Provident Fund's (CPF) ordinary account, which has remained at 2.5% over the same period.
 
-=== Comparison to Banks in China and US
+== Comparison to Banks in China and US
 
 In comparing the dividend yields of banks from Singapore, China, and the USA, selecting three top market-cap banks from each and averaging their dividend yields over the past two decades, we observe a trend starting from 2010. Chinese banks rank first in dividend yield, followed by Singaporean and then American banks. Singaporean banks show a trend of catching up with Chinese banks in recent years. The average dividend yields over the last 20 years for Chinese, Singaporean, and American banks are approximately 4.49%, 3.51%, and 2.55%, respectively. In a global comparison, Singaporean banks' dividend yields are at a moderate level.
 
@@ -654,7 +654,7 @@ The Diebold-Mariano (DM) test is a statistical test used to compare the forecast
 
 - Step 1: calculate the return for each trading strategy for one specific year;
 - Step 2: select annual return for strategy a and b, compute the standard error
-- Step 3: $D_i = "Return"^a - "Return"^b, i=1,2,3,4 $ and $ overline_D= 1/n sum D_i$
+- Step 3: $D_i = "Return"^a - "Return"^b, i=1,2,3,4 $ and $ macron(D)= 1/n sum D_i$
 - Step 4: test $E[D_i]=0$
   - Under the null hypothesis (H0), both models have equal amount of returns;
   - Under the against hypothesis(Ha), the return from two strategies are different.
@@ -713,10 +713,10 @@ More importantly, through these two cases, we observer that the test outcome is 
 
 In this sub-section, we obtain the Singapore GDP data as our stable variable. Taking the S0 strategy and V1 strategy as the representations of the RCTS and "Value growth" investing strategy, we conduct the following regression:
 
-$ Delta R = "Return"^s - "Return"^v $
+$ Delta R_i = "Return"^s_i - "Return"^v_i $
 
 
-Regress $Delta R$ on the constant and GDP data:$ Delta = beta_0 + beta_1 "GDP" $
+Regress $Delta R_i$ on the constant and GDP data:$ Delta_i = beta_0 + beta_1 "GDP"_i + epsilon_i $
 
 As our portfolio only available from 2017, we limit this regression data from 2017 onwards.
 
