@@ -36,7 +36,7 @@
 #set quote(block: true)
 
 #show: doc => paper(
-  title: [Making money in SGX Everything you need to know],
+  title: [Making money in SGX \ Everything you need to know],
   authors: (
     (
       name: "Cao Danyang",
@@ -70,10 +70,8 @@
     ),
   ),
   date: "April 2024",
-  abstract: [This paper presents a thorough quantitative analysis of the Singapore Exchange (SGX), highlighting its unique position within global financial markets and its potential as a fertile ground for diverse investment strategies. Through a detailed examination of the SGX's market characteristics, including its size, liquidity constraints, and the significant role of dividends and REITs, we identify unique opportunities and challenges for investors. Our investigation extends to the formulation and evaluation of two novel investment strategies: the Dividend Add-Back Approach and the Return Chasing Trading Strategy (RCTS), which are rigorously compared using the Diebold-Mariano test over different economic conditions. Additionally, we delve into the impact of dividends on market performance indices and propose a methodological refinement to account for dividends in investment returns, challenging the conventional reliance on adjusted close prices. Our findings not only contribute to the existing body of financial econometric literature by offering new insights into the SGX and its investment prospects but also provide practical guidance for investors seeking to navigate this unique market. The study underscores the importance of considering dividend policies and market capitalization in developing robust investment strategies and offers a compelling case for the inclusion of SGX in diversified investment portfolios.],
-  keywords: [
-    Singapore Exchange (SGX) Analysis, Investment Strategy Evaluation, Quantitative Finance, Real Estate Investment Trusts (REITs) Performance, Add-Back Dividend Methodology],
-  acknowledgments: "This paper is a work in progress.",
+  abstract: [This report presents a thorough quantitative analysis of the Singapore Exchange (SGX), highlighting its unique position within global financial markets and its potential as a fertile ground for diverse investment strategies. Through a detailed examination of the SGX's market characteristics, including its size, liquidity constraints, and the significant role of dividends and REITs, we identify unique opportunities and challenges for investors. Our investigation extends to the formulation and evaluation of two novel investment strategies: the Dividend Add-Back Approach and the Return Chasing Trading Strategy (RCTS), which are rigorously compared using the Diebold-Mariano test over different economic conditions. Additionally, we delve into the impact of dividends on market performance indices and propose a methodological refinement to account for dividends in investment returns, challenging the conventional reliance on adjusted close prices. Our findings not only contribute to the existing body of financial econometric literature by offering new insights into the SGX and its investment prospects but also provide practical guidance for investors seeking to navigate this unique market. The study underscores the importance of considering dividend policies and market capitalization in developing robust investment strategies and offers a compelling case for the inclusion of SGX in diversified investment portfolios.],
+  acknowledgments: "This report is a work in progress.",
   doc,
 )
 
@@ -178,7 +176,7 @@ By law and IRS regulation, REITs must pay out 90% or more of their taxable profi
 Forward yield is the percentage of a company's current stock price that it expects to pay out as dividends over 12 months. Based on 15th March 2024 close price calculation, we plot the following stocks' forward dividend yield to verify the yield level of S-REITs.
 
 #figure(
-  image("REITS yield.png", width: 90%),
+  image("REITS yield.png", width: 120%),
   caption: "REITs yields comparison"
 ) <REITs_analysis_yield>
 
@@ -197,6 +195,11 @@ In @REITs_analysis_yield, we use following REITs and stocks:
 
     An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
 - (2) Stocks in other sectors (Non-REITs,red points):
+
+#box(height: 190pt,
+  columns(2, gutter: 11pt)[
+   #set par(justify: true)
+-
   - SGX-Singapore Exchange Limited,
   - Telecommunications
   - Singapore Telecommunications Limited,
@@ -211,6 +214,8 @@ In @REITs_analysis_yield, we use following REITs and stocks:
   - Keppel Ltd.
   - CapitaLand Investment Limited
   - City Developments Limited
+ ]
+)
 
 We can observe that the majority of REITs stands higher than the 5% yield rate line which indicating that these type of assets provider a relative higher dividends to investors. Unfortunately, these blue points also falls in the left corner, where is low value stocks.
 
@@ -221,8 +226,8 @@ According to 15th March 2024 stock price, we tabulate the daily range and one ye
 
 #figure(
   tablem[
-| *REITs*                                            | *Daily range*     | *spread* | *52-week range*   | *spread* |
-| ------------------------------------------------ | --------------- | ------ | --------------- | ------ |
+| *REITs*                                           | *Daily range*  | *spread* | *52-week range* | *spread* |
+| ------------------------------------------------- | --------------- | ------ | ---------------- | ------ |
 | Sabana REIT \ (SGX: M1GU)                          | 0.3600 - 0.3650 | -0.005 | 0.3550 - 0.4900 | -0.135 |
 | Keppel Pacific Oak US REIT \ (SGX: CMOU)           | 0.1260 - 0.1350 | -0.009 | 0.1230 - 0.4450 | -0.322 |
 | Frasers Logistics & Commercial Trust \ (SGX: BUOU) | 1.0200 - 1.0400 | -0.02  | 1.0200 - 1.0400 | -0.36  |
@@ -342,7 +347,7 @@ First, we generate following portfolios,using following three assets:
 Based on the historical price from 1st January 2023 to 1st January 2024, we calculate the annual return and standard deviation of each portfolio. Plotting these five portfolio in figure 6.
 
 #figure(
-  image("Portfolio analysis.png", width: 90%),
+  image("Portfolio analysis.png"),
   caption: "EFive portfolio return vs. standard deviation"
 ) <REITs_analysis_portfolio>
 
@@ -388,13 +393,13 @@ Moreover, the index is calculated using a free-float market capitalization-weigh
 
 It turns out dividend is also an "enemy" faced by SGX investors when fighting Singapore's version of "3000 Points Defense Battle".
 
-When one of 30 performance-tracked stock, that say DBS (ticker: D05 / D05.SI) issued a dividend payment:
+When one of 30 performance-tracked stock, that say DBS (ticker: D05 / D05.SI) paid a dividend payment:
 
 #quote(attribution: [Chapter 1 of Financial Econometric Modeling])[
   A dividend payment lowers the price by the amount of the dividend so that the closing price is greater than the opening price on the ex-dividend day. To smooth out the effect of the dividend, the closing price and all previous prices are scaled by an appropriate adjustment factor.
 ]
 
-As the opening price on the ex-dividend day is lower, its Close on the ex-dividend day would also be lower than if no dividend is paid. In consequence, STI will be also be lower.
+As the opening price on the ex-dividend day is lower, its close price on the ex-dividend day would also be lower than if no dividend is paid. In consequence, STI will be also be lower.
 
 As all previous prices of DBS are scaled, DBS's trend of price history is mostly preserved. This is the comparison of DBS's price history using Adjusted Close(which is what investor usually see when checking stock's price history) and a estimated price history if dividends are added back:
 
@@ -441,7 +446,7 @@ In this section, we generate the trading strategy one based on our market analys
 
 === Market capitalization
 
-Market capitalization, or "market cap," represents the total dollar market value of a company's outstanding shares of stock. we use market cap to determine a company's size, and then compare with other companies.
+Market capitalization, or "market cap" represents the total dollar market value of a company's outstanding shares of stock. we use market cap to determine a company's size, and then compare with other companies.
 
 According to the criteria of companies'size #footnote[https://www.finra.org/investors/insights/market-cap], generally, companies can be divide into five level: mega-cap,large-cap, mid-cap, small-cap and micro-cap. Large-cap companies typically have a market capitalization of \$10 billion or more and represent major players in well-established industries and sectors. Mid-cap companies generally have a market capitalization between \$2 billion and \$10 billion. Companies with a market capitalization between \$250 million and \$2 billion are commonly classified as small-cap companies.
 
@@ -538,16 +543,14 @@ $ P_t^"Adj Close" / P_(t-1)^"Adj Close" - 1 $
 
 Considering SGX stock `D8DU`, assume investor buy `D8DU` on 2022-03-03 at its close price:
 
-- Actual Close: 0.077000
-- Adjusted Close: 0.048462
+- Actual Close = 0.077000
+- Adjusted Close = 0.048462
 
 Investor sell `D8DU` on 2024-03-15 at its close price.
 
 As this is a recent date and no dividend has been paid after 2024-03-15, so: both close price & adjusted close are the same:
 
-```
-Actual Close = Adjusted Close: 0.032
-```
+- Actual Close = Adjusted Close = 0.032
 
 During the 2 year holding period, two dividends are paid:
 
@@ -573,7 +576,7 @@ The difference in return between using Adjust Close and actual return also varie
 
 For example, C38U will have -62.02% difference in return for the same period as D8DU illustrated above. We actually checked all SGX stock for the same two year period, as the difference in return spread between -62.02% (C38U) to 86.8% (D8DU).
 
-Furthermore, it's impossible to use adjusted close for some stock when we check through the 20+ years history:
+When we check through the 20+ years stock transaction history, we also found that it's impossible to use adjusted close for some stock :
 
 - Y92: Adjusted Close is zero
 
