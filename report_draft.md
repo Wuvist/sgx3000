@@ -504,34 +504,30 @@ V1 strategy stands for the high market cap and low P/E ratio
 V2 strategy stands for the high market cap and high P/E ratio
 
 ### 2017 test results
-s0 vs v1
-{'mean_difference': -0.18894577139478996, 'dm_test': -5.597592819341997, 'p_value': 0.011263942998929943}
-s1 vs v1
-{'mean_difference': -0.2212078436926252, 'dm_test': -4.630497553285952, 'p_value': 0.01897075095340538}
-s2 vs v1
-{'mean_difference': -0.18322517941429067, 'dm_test': -4.660900571719684, 'p_value': 0.018637886419313594}
-v1 vs v2
-{'mean_difference': 0.07757902864509883, 'dm_test': 2.805209645966729, 'p_value': 0.06756036829246757}
+         mean_difference   dm_test   p_value
+s0 vs v1        -0.188946 -5.597593  0.011264
+s1 vs v1        -0.221208 -4.630498  0.018971
+s2 vs v1        -0.183225 -4.660901  0.018638
+v1 vs v2         0.077579  2.805210  0.067560
 
 In 2017 case, the S strategies are not perform well compare to V1 strategies. The p-value of first three test outcome is less than 0.05, we can reject the H0 hypothesis. 
 
 Besides, the v1 high market cap and low P/E ration portfolio offers a higher return than the combination of high market cap and high P/E ratio.
 
 ### 2022 test results
-s0 vs v1
-{'mean_difference': 0.03308287047392257, 'dm_test': 1.9625163676891586, 'p_value': 0.1444970479789515}
-s1 vs v1
-{'mean_difference': 0.03239445121805028, 'dm_test': 0.6320653064459356, 'p_value': 0.5722267445837429}
-s2 vs v1
-{'mean_difference': 0.03913300793973412, 'dm_test': 1.6194771832530175, 'p_value': 0.20378276539673199}
-v1 vs v2
-{'mean_difference': -0.018485486205029385, 'dm_test': -2.2941761003381966, 'p_value': 0.10555083324484736}
+          mean_difference   dm_test   p_value
+s0 vs v1         0.033083  1.962516  0.144497
+s1 vs v1         0.032394  0.632065  0.572227
+s2 vs v1         0.039133  1.619477  0.203783
+v1 vs v2        -0.018485 -2.294176  0.105551
 
 The outcome of 2022 is different from 2017 case. The S strategies are all have better performance than V1 strategies. However, only the first test p-value is less than 0.15. That make us hard to identify the disparity of two strategies' returns.
 
 More importantly, given the GDP data (At Current Market Prices ), 2022 witnessed a higher Singapore economic growth compared with 2017. The two strategies comparison is subject to the responding economic growth and other stable factors. Hence, we need to analyze the return performance in a dynamic way.
 
 ## Regress the return difference on GDP growth
+
+
 
 ## Combine the naive strategy and "return chasing" strategy
 
