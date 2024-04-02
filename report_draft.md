@@ -344,15 +344,15 @@ The following are each investors trading portfolios:
 | ------------ | ------------------------------------------ | -------------- |
 | Investor 1   | AIY,1D1,Q01,C52,C6L,N02,CMOU,J36,MZH,H15   |                |
 | Investor 2   | EB5,WJP,9CI,D05,H02,SJX,Z77,F9D,O39,BVA    |                |
-| Investor 3-1 | 3M01,5DD,CC3,i07,BN4                       | high P/E ratio |
+| Investor 3-1 | M01,5DD,CC3,i07,BN4                        | high P/E ratio |
 | Investor 3-2 | L38,E5H,1D0,Z74,CY6U                       | low P/E ratio  |
 | Investor 4   | 5LY,T82U,AWX,U96,S56,CJLU,AP4,S68,A7RU,C09 |                |
 
-Investor 3-1 portfolio consist of five stocks. The market cap pf these five stocks are all over $100 million, with the maximum $39 billions and minimum $300 millions. The other three stocks owns around $1 billion market cap. The P/E ratio for this portfolio are all below 13.159 as mentioned in the screening criteria. Typically, involving one REIT "CY6U" as a diversification tool and capturing the dividends.
+Investor 3-2 portfolio consist of five stocks. The market cap pf these five stocks are all over $100 million, with the maximum $39 billions and minimum $300 millions. The other three stocks owns around $1 billion market cap. The P/E ratio for this portfolio are all below 13.159 as mentioned in the screening criteria. Typically, involving one REIT "CY6U" as a diversification tool and capturing the dividends.
 
 In general, a high P/E suggests that investors expect higher earnings growth than those with a lower P/E. A low P/E can indicate that a company is undervalued or that a firm is doing exceptionally well relative to its past performance. Relying totally on PE ratios without paying attention to fundamentals and growth of companies is also not useful. Large-cap stocks are mature, yet has limitation in growth. Once a company grows very large, it may no longer be as nimble or able to take advantage of new growth opportunities. Hence, under the low P/E ratio, the investor 3-1 strategy combine one large-cap stocks and four small-cap to balance the portfolio.
 
-The investor 3-1 portfolio as our main "value and growth investing" strategy, aim at investing stocks which has relative high market cap and low P/E ratio. For comparison purpose, investor 3-2 select relative high market cap combination.
+The investor 3-2 portfolio as our main "value and growth investing" strategy, aim at investing stocks which has relative high market cap and low P/E ratio. For comparison purpose, investor 3-1 select relative high market cap combination.
 
 # Section C
 
@@ -483,12 +483,12 @@ And the test result is:
 # Section D
 
 ## Comparison two strategies
-We have two main trading strategies: one is investor 3-1 "Value Growth" investing strategy, and another Return Chasing Trading Strategy (RCTS) comes from past performance of SGX. We conduct the Diebold-Mariano Test to compare these two strategies.
+We have two main trading strategies: one is investor 3-2 "Value Growth" investing strategy, and another Return Chasing Trading Strategy (RCTS) comes from past performance of SGX. We conduct the Diebold-Mariano Test to compare these two strategies.
 
 The Diebold-Mariano (DM) test is a statistical test used to compare the forecast accuracy of two different forecasting methods applied to the same time series data. In our case we compare two strategies annual return by this test:
 Step one: calculate the return for each trading strategy for one specific year;
 Step two: select annual return for strategy a and b, compute the standard error
-Step three: $ D_i = Return^a - Return^b, i=1,2,3,4 $ and $\overline{D_i}= \frac{1}{n} \sum D_i $ 
+Step three: $ D_i = Return^a - Return^b, i=1,2,3,4 $ and $\overline{D}= \frac{1}{n} \sum D_i $ 
 Step four: test $E[D_i]=0$
 Under the null hypothesis (H0), both models have equal amount of returns;
 Under the against hypothesis(Ha), the return from two strategies are different.
@@ -500,30 +500,30 @@ S1 strategy stands for the portfolio weighted by the past return rank strategy
 S2 strategy stands for the portfolio weighted by the past risk rank strategy
 
 V strategies are series of "Value Growth" investing strategy:
-V1 strategy stands for the high market cap and low P/E ratio
-V2 strategy stands for the high market cap and high P/E ratio
+V1 strategy stands for the high market cap and high P/E ratio
+V2 strategy stands for the high market cap and low P/E ratio
 
 ### 2017 test results
-         mean_difference   dm_test   p_value
-s0 vs v1        -0.188946 -5.597593  0.011264
-s1 vs v1        -0.221208 -4.630498  0.018971
-s2 vs v1        -0.183225 -4.660901  0.018638
+          mean_difference   dm_test   p_value
+s0 vs v2        -0.111367 -1.997241  0.139699
+s1 vs v2        -0.143629 -2.168592  0.118613
+s2 vs v2        -0.105646 -1.807976  0.168331
 v1 vs v2         0.077579  2.805210  0.067560
 
-In 2017 case, the S strategies are not perform well compare to V1 strategies. The p-value of first three test outcome is less than 0.05, we can reject the H0 hypothesis. 
+In 2017 case, the S strategies are not perform well compare to V strategies. The p-value of first two test outcome is less than 0.15, we can reject the H0 hypothesis under this level. 
 
-Besides, the v1 high market cap and low P/E ration portfolio offers a higher return than the combination of high market cap and high P/E ratio.
+Besides, the v1 high market cap and high P/E ration portfolio offers a higher return than the combination of high market cap and low P/E ratio. Considering the 2017 the economic situation of Singapore, the investors may trend to chasing for well-developed companies that may be the reason why the v1 is out perform than v2.
 
 ### 2022 test results
           mean_difference   dm_test   p_value
-s0 vs v1         0.033083  1.962516  0.144497
-s1 vs v1         0.032394  0.632065  0.572227
-s2 vs v1         0.039133  1.619477  0.203783
-v1 vs v2        -0.018485 -2.294176  0.105551
+ s0 vs v2         0.014597  0.694107  0.537536
+ s1 vs v2         0.013909  0.317385  0.771758
+ s2 vs v2         0.020648  0.754232  0.505512
+ v1 vs v2        -0.018485 -2.294176  0.105551
 
-The outcome of 2022 is different from 2017 case. The S strategies are all have better performance than V1 strategies. However, only the first test p-value is less than 0.15. That make us hard to identify the disparity of two strategies' returns.
+The outcome of 2022 is different from 2017 case. The S strategies are all have better return than V2 strategies. However, the p-value of the first three test are relative large, suggesting that we cannot reject the null hypothesis. That make us hard to identify the disparity of two strategies' returns. The v1's return is lower than v2, indicating that these stocks which have lower P/E ratio perform better in this period.
 
-More importantly, given the GDP data (At Current Market Prices ), 2022 witnessed a higher Singapore economic growth compared with 2017. The two strategies comparison is subject to the responding economic growth and other stable factors. Hence, we need to analyze the return performance in a dynamic way.
+More importantly, we observer that the test outcome is not unique. Given the GDP data, 2022 witnessed a higher Singapore economic growth compared with 2017. The different economic factor generate different test results. Due to the two strategies comparison is subject to the responding economic growth and other stable factors, hence, we need to analyze the return performance in a dynamic way.
 
 ## Regress the return difference on GDP growth
 
