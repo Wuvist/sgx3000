@@ -12,7 +12,7 @@ def test_strategy(r1, r2):
     returns_strategy_2 = np.array(r2)
 
     # Compute the differences in returns
-    differences = returns_strategy_2 - returns_strategy_1
+    differences = returns_strategy_1 - returns_strategy_2
 
     # Compute the mean difference
     mean_difference = np.mean(differences)
@@ -29,9 +29,7 @@ def test_strategy(r1, r2):
     # p-value from t-distribution
     p_value = 2 * t.sf(np.abs(dm_statistic), df)
 
-    dm_return = collections.namedtuple('dm_return', 'DM p_value')
-
-    return dm_return(DM=dm_statistic, p_value=p_value)
+    return {'mean_difference': mean_difference, 'dm_test': dm_statistic, 'p_value': p_value}
 
 
 # Author   : John Tsang
