@@ -483,12 +483,55 @@ And the test result is:
 # Section D
 
 ## Comparison two strategies
+We have two main trading strategies: one is investor 3-1 "Value Growth" investing strategy, and another Return Chasing Trading Strategy (RCTS) comes from past performance of SGX. We conduct the Diebold-Mariano Test to compare these two strategies.
 
-- Back Test two strategies return after 2024-01-01 (short term return)
-- compare two strategies' return and the STI return
-- Using the DM test to the test the difference in return of two strategy is significant large
-- calculate the long term return of two strategies compare performance in different
-- regress the delta of strategies' return on GDP of SG each year to see whether it can explain the performance difference
+The Diebold-Mariano (DM) test is a statistical test used to compare the forecast accuracy of two different forecasting methods applied to the same time series data. In our case we compare two strategies annual return by this test:
+Step one: calculate the return for each trading strategy for one specific year;
+Step two: select annual return for strategy a and b, compute the standard error
+Step three: $ D_i = Return^a - Return^b, i=1,2,3,4 $ and $\overline{D_i}= \frac{1}{n} \sum D_i $ 
+Step four: test $E[D_i]=0$
+Under the null hypothesis (H0), both models have equal amount of returns;
+Under the against hypothesis(Ha), the return from two strategies are different.
+If the $E[D_i]>0$, the return of trading strategy greater than the second one, and vice versa.
+
+S strategies are series of Return Chasing Trading Strategy (RCTS):
+S0 strategy stands equally invest in each top return stocks strategy
+S1 strategy stands for the portfolio weighted by the past return rank strategy
+S2 strategy stands for the portfolio weighted by the past risk rank strategy
+
+V strategies are series of "Value Growth" investing strategy:
+V1 strategy stands for the high market cap and low P/E ratio
+V2 strategy stands for the high market cap and high P/E ratio
+
+### 2017 test results
+s0 vs v1
+{'mean_difference': -0.18894577139478996, 'dm_test': -5.597592819341997, 'p_value': 0.011263942998929943}
+s1 vs v1
+{'mean_difference': -0.2212078436926252, 'dm_test': -4.630497553285952, 'p_value': 0.01897075095340538}
+s2 vs v1
+{'mean_difference': -0.18322517941429067, 'dm_test': -4.660900571719684, 'p_value': 0.018637886419313594}
+v1 vs v2
+{'mean_difference': 0.07757902864509883, 'dm_test': 2.805209645966729, 'p_value': 0.06756036829246757}
+
+In 2017 case, the S strategies are not perform well compare to V1 strategies. The p-value of first three test outcome is less than 0.05, we can reject the H0 hypothesis. 
+
+Besides, the v1 high market cap and low P/E ration portfolio offers a higher return than the combination of high market cap and high P/E ratio.
+
+### 2022 test results
+s0 vs v1
+{'mean_difference': 0.03308287047392257, 'dm_test': 1.9625163676891586, 'p_value': 0.1444970479789515}
+s1 vs v1
+{'mean_difference': 0.03239445121805028, 'dm_test': 0.6320653064459356, 'p_value': 0.5722267445837429}
+s2 vs v1
+{'mean_difference': 0.03913300793973412, 'dm_test': 1.6194771832530175, 'p_value': 0.20378276539673199}
+v1 vs v2
+{'mean_difference': -0.018485486205029385, 'dm_test': -2.2941761003381966, 'p_value': 0.10555083324484736}
+
+The outcome of 2022 is different from 2017 case. The S strategies are all have better performance than V1 strategies. However, only the first test p-value is less than 0.15. That make us hard to identify the disparity of two strategies' returns.
+
+More importantly, given the GDP data (At Current Market Prices ), 2022 witnessed a higher Singapore economic growth compared with 2017. The two strategies comparison is subject to the responding economic growth and other stable factors. Hence, we need to analyze the return performance in a dynamic way.
+
+## Regress the return difference on GDP growth
 
 ## Combine the naive strategy and "return chasing" strategy
 
