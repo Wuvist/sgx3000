@@ -135,7 +135,7 @@ In comparing the dividend yields of banks from Singapore, China, and the USA, se
 Analyzing the standard deviations of these three banks, with DBS at 7.97, UOB at 6.58, and OCBC at 3.05, indicates that DBS has the highest volatility, followed by UOB, and OCBC has the lowest. This is also reflected in their stock price movements. Therefore, if you are a risk-averse investor, it's recommended to invest in OCBC. However, if you are willing to take on more risk for the potential of higher returns, DBS could be the better choice for investment.
 
 #figure(
-  image("Banks 2.png", width: 90%),
+  image("Banks 3.png", width: 90%),
   caption: "Banking stocks volatility"
 ) <banks_analysis_volatility>
 
@@ -162,7 +162,7 @@ Although, the market cap of S-REITs is relative small compared with the U.S REIT
     | UK        | 59.4                    | 2.2%       |
   ],
   kind: table,
-  caption: "REIT Markets in different countries "
+  caption: "REIT Markets in different countries"
 ) <REIT_Markets>
 
 The function of REITs is similar to stock. They pool the capital of numerous investors. This makes it possible for individual investors to earn dividends from real estate investments without having to buy, manage, or finance any properties themselves. Compared with physical real estate investments, REITs is more accessible and liquid.
@@ -181,25 +181,18 @@ Forward yield is the percentage of a company's current stock price that it expec
 ) <REITs_analysis_yield>
 
 In @REITs_analysis_yield, we use following REITs and stocks:
--  (1) REITs( blue points):
-  - Sabana REIT (SGX: M1GU)
-
-    An industrial REIT with a portfolio of 18 properties in Singapore covering high-tech industrial, warehouse and logistics, and general industrial sectors.
-  - Keppel Pacific Oak US REIT (SGX: CMOU)
-
-    An office REIT with 13 freehold office buildings and business campuses across eight markets in the US.
-  - Frasers Logistics & Commercial Trust (SGX: BUOU)
-
-    A diversified portfolio of 108 properties across Singapore, the UK, Australia, the netherlands and Germany.
-  - Mapletree Logistics Trust (SGX: M44U)
-
-    An industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
-- (2) Stocks in other sectors (Non-REITs,red points):
+-  (1) REITs (blue points):
+  - (SGX: M1GU) Sabana REIT is an industrial REIT with a portfolio of 18 properties in Singapore covering high-tech industrial, warehouse and logistics, and general industrial sectors.
+  - (SGX: CMOU) Keppel Pacific Oak US REIT is an office REIT with 13 freehold office buildings and business campuses across eight markets in the US.
+  - (SGX: BUOU) Frasers Logistics & Commercial Trust is a diversified portfolio of 108 properties across Singapore, the UK, Australia, the netherlands and Germany.
+  - (SGX: M44U) Mapletree Logistics Trust is an industrial REIT with a portfolio of 187 properties spread across eight countries. The price of these REITs in over one years.
+- (2) Stocks in other sectors (Non-REITs, red points):
 
 #box(height: 190pt,
-  columns(2, gutter: 11pt)[
+  columns(2, gutter: 10pt)[
    #set par(justify: true)
--
+   #set text(white)
+-  #set text(black)
   - SGX-Singapore Exchange Limited,
   - Telecommunications
   - Singapore Telecommunications Limited,
@@ -226,12 +219,12 @@ According to 15th March 2024 stock price, we tabulate the daily range and one ye
 
 #figure(
   tablem[
-| *REITs*                                           | *Daily range*  | *spread* | *52-week range* | *spread* |
+| *REITs*                                           | *Daily Range*  | *Spread* | *52-week Range* | *Spread* |
 | ------------------------------------------------- | --------------- | ------ | ---------------- | ------ |
-| Sabana REIT \ (SGX: M1GU)                          | 0.3600 - 0.3650 | -0.005 | 0.3550 - 0.4900 | -0.135 |
-| Keppel Pacific Oak US REIT \ (SGX: CMOU)           | 0.1260 - 0.1350 | -0.009 | 0.1230 - 0.4450 | -0.322 |
-| Frasers Logistics & Commercial Trust \ (SGX: BUOU) | 1.0200 - 1.0400 | -0.02  | 1.0200 - 1.0400 | -0.36  |
-| Mapletree Logistics Trust \ (SGX: M44U)            | 1.4300 - 1.4600 | -0.03  | 1.4300 - 1.8000 | -0.37  |
+| (SGX: M1GU) \ Sabana REIT                         | 0.3600 - 0.3650 | -0.005 | 0.3550 - 0.4900 | -0.135 |
+| (SGX: CMOU) \ Keppel Pacific Oak US REIT          | 0.1260 - 0.1350 | -0.009 | 0.1230 - 0.4450 | -0.322 |
+| (SGX: BUOU) Frasers Logistics & Commercial Trust  | 1.0200 - 1.0400 | -0.02  | 1.0200 - 1.0400 | -0.36  |
+| (SGX: M44U) \ Mapletree Logistics Trust           | 1.4300 - 1.4600 | -0.03  | 1.4300 - 1.8000 | -0.37  |
   ],
   kind: table,
   caption: "Selected REIT Daily Range"
@@ -252,7 +245,7 @@ Top 7 Holdings of CSOP iEdge S-REIT Leaders Index ETF are list in below table. T
 
 #figure(
   three-line-table[
-| *REITs*                                  | *%Assets* |
+| *REITs*                                | *%Assets* |
 | -------------------------------------- | ------- |
 | CapitaLand Integrated Commercial Trust | 10.67%  |
 | Mapletree Logistics Trust              | 9.17%   |
@@ -425,7 +418,7 @@ This is the "hidden" return of SGX.
 
 Some investors may look at STI history and conclude that SGX market has "zero return" in the past 15 years. Some investors may suspect that there will be returns via dividend, but couldn't find quick info about dividend yield.
 
-We hope that Chat STI could provide some reference value to these investors.
+We hope that @STI_estimated could provide reference value to these investors.
 
 Once again, quoting:
 
@@ -436,11 +429,11 @@ Once again, quoting:
 
 After learning impact of dividend on STI, we conclude that SGX shouldn't be the empirical case that researchers could just use adjusted closing price for convenience. We must use actual prices at which trades took place and dividend paid to calculated a stock's return.
 
-With or without considering dividends add back could have huge impact when evaluating return of portfolio. The detail of dividends add back will be illustrate in section C.
+With or without considering dividends add back could have huge impact when evaluating return of portfolio. The detail of dividends add back will be illustrate in @addback.
 
 = Trading Strategy<trading_strategy>
 
-In this section, we generate the trading strategy one based on our market analysis.
+In this section, we generate the Trading Strategy One based on our market analysis.
 
 == Market analysis
 
