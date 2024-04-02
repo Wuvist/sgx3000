@@ -154,30 +154,28 @@ By regressing last year's historical adjust close price of S-REITs ETF on the ST
 - OLS Regression Results
 
 ```
-Dep. Variable: SRU.SI_log_return R-squared: 0.003
-Model: OLS Adj. R-squared: -0.001
-Method: Least Squares F-statistic: 0.7061
-Date: Sat, 16 Mar 2024 Prob (F-statistic): 0.402
-Time: 20:43:38 Log-Likelihood: 668.64
-No. Observations: 227 AIC: -1333.
-Df Residuals: 225 BIC: -1326.
-Df Model: 1
-Covariance Type: nonrobust
-==================================================================================
-coef std err t P>|t| [0.025 0.975]
-```
-
----
-
-```
-const 0.0001 0.001 0.148 0.883 -0.002 0.002
-STI_log_return -0.0219 0.026 -0.840 0.402 -0.073 0.029
+                            OLS Regression Results
 ==============================================================================
-Omnibus: 86.636 Durbin-Watson: 1.876
-Prob(Omnibus): 0.000 Jarque-Bera (JB): 1913.019
-Skew: 0.884 Prob(JB): 0.00
-Kurtosis: 17.111 Cond. No. 30.7
-================================================================================
+Dep. Variable:      SRU.SI_log_return   R-squared:                       0.003
+Model:                            OLS   Adj. R-squared:                 -0.001
+Method:                 Least Squares   F-statistic:                    0.7061
+Date:                Sat, 16 Mar 2024   Prob (F-statistic):              0.402
+Time:                        20:43:38   Log-Likelihood:                 668.64
+No. Observations:                 227   AIC:                            -1333.
+Df Residuals:                     225   BIC:                            -1326.
+Df Model:                           1
+Covariance Type:            nonrobust
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              0.0001      0.001      0.148      0.883      -0.002       0.002
+STI_log_return    -0.0219      0.026     -0.840      0.402      -0.073       0.029
+==============================================================================
+Omnibus:                       86.636   Durbin-Watson:                   1.876
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1913.019
+Skew:                           0.884   Prob(JB):                         0.00
+Kurtosis:                      17.111   Cond. No.                         30.7
+==============================================================================
 ```
 
 Under OLS method, the coefficient is not statistical significant, which suggests that the systematic risk of S-REITs is less relate to the Singapore market risk. Investors can consider S-REITs as a tool to against the market risk.
@@ -344,8 +342,8 @@ The following are each investors trading portfolios:
 | ------------ | ------------------------------------------ | -------------- |
 | Investor 1   | AIY,1D1,Q01,C52,C6L,N02,CMOU,J36,MZH,H15   |                |
 | Investor 2   | EB5,WJP,9CI,D05,H02,SJX,Z77,F9D,O39,BVA    |                |
-| Investor 3-1 | M01,5DD,CC3,i07,BN4                        | high P/E ratio |
-| Investor 3-2 | L38,E5H,1D0,Z74,CY6U                       | low P/E ratio  |
+| Investor 3-1 | M01,5DD,CC3,i07,BN4                        | High P/E ratio |
+| Investor 3-2 | L38,E5H,1D0,Z74,CY6U                       | Low P/E ratio  |
 | Investor 4   | 5LY,T82U,AWX,U96,S56,CJLU,AP4,S68,A7RU,C09 |                |
 
 Investor 3-2 portfolio consist of five stocks. The market cap pf these five stocks are all over $100 million, with the maximum $39 billions and minimum $300 millions. The other three stocks owns around $1 billion market cap. The P/E ratio for this portfolio are all below 13.159 as mentioned in the screening criteria. Typically, involving one REIT "CY6U" as a diversification tool and capturing the dividends.
@@ -462,18 +460,6 @@ We further evaluate RCTS with two different portfolio weight adjustment:
 - Weight by return: stocks in the portfolio are weighted according to its return in past 12 months. The higher the return, the higher its weight.
 - Weight by risk: stocks in the portfolio are weighted according to its risk in past 12 month. The higher the risk, the lower its weight.
 
-We used a slightly modified version of Diebold-Mariano Test to evaluate these two weighting strategy:
-
-- Instead of evaluating forecasting error, we evaluate difference in return of each strategy
-- Return of RCTS with equal weight is used as baseline(actual return)
-
-And the test result is:
-
-- DM=1.8331375977777478
-- p_value=0.07001611485180186
-
-会算不会解读。。。。但是！Weight by risk 看起来最牛逼：
-
 | Weight         | Equal                | By Return            | By risk              |
 | -------------- | -------------------- | -------------------- | -------------------- |
 | overall return | 2.07166240833986     | 1.384823130491502    | 2.657403780155815    |
@@ -483,62 +469,108 @@ And the test result is:
 # Section D
 
 ## Comparison two strategies
+
 We have two main trading strategies: one is investor 3-2 "Value Growth" investing strategy, and another Return Chasing Trading Strategy (RCTS) comes from past performance of SGX. We conduct the Diebold-Mariano Test to compare these two strategies.
 
 The Diebold-Mariano (DM) test is a statistical test used to compare the forecast accuracy of two different forecasting methods applied to the same time series data. In our case we compare two strategies annual return by this test:
-Step one: calculate the return for each trading strategy for one specific year;
-Step two: select annual return for strategy a and b, compute the standard error
-Step three: $ D_i = Return^a - Return^b, i=1,2,3,4 $ and $\overline{D}= \frac{1}{n} \sum D_i $ 
-Step four: test $E[D_i]=0$
-Under the null hypothesis (H0), both models have equal amount of returns;
-Under the against hypothesis(Ha), the return from two strategies are different.
-If the $E[D_i]>0$, the return of trading strategy greater than the second one, and vice versa.
+
+- Step 1: calculate the return for each trading strategy for one specific year;
+- Step 2: select annual return for strategy a and b, compute the standard error
+- Step 3: $ D_i = Return^a - Return^b, i=1,2,3,4 $ and $\overline{D}= \frac{1}{n} \sum D_i $
+- Step 4: test $E[D_i]=0$
+  - Under the null hypothesis (H0), both models have equal amount of returns;
+  - Under the against hypothesis(Ha), the return from two strategies are different.
+  - If the $E[D_i]>0$, the return of trading strategy greater than the second one, and vice versa.
 
 S strategies are series of Return Chasing Trading Strategy (RCTS):
-S0 strategy stands equally invest in each top return stocks strategy
-S1 strategy stands for the portfolio weighted by the past return rank strategy
-S2 strategy stands for the portfolio weighted by the past risk rank strategy
+
+- S0: strategy stands equally invest in each top return stocks strategy
+- S1: strategy stands for the portfolio weighted by the past return rank strategy
+- S2: strategy stands for the portfolio weighted by the past risk rank strategy
 
 V strategies are series of "Value Growth" investing strategy:
-V1 strategy stands for the high market cap and high P/E ratio
-V2 strategy stands for the high market cap and low P/E ratio
+
+- V1: strategy stands for the high market cap and high P/E ratio
+- V2: strategy stands for the high market cap and low P/E ratio
 
 ### 2017 test results
-          mean_difference   dm_test   p_value
-s0 vs v2        -0.111367 -1.997241  0.139699
-s1 vs v2        -0.143629 -2.168592  0.118613
-s2 vs v2        -0.105646 -1.807976  0.168331
-v1 vs v2         0.077579  2.805210  0.067560
+
+| strategies | mean_difference | dm_test   | p_value  |
+| ---------- | --------------- | --------- | -------- |
+| S0 vs V2   | -0.111367       | -1.997241 | 0.139699 |
+| S1 vs V2   | -0.143629       | -2.168592 | 0.118613 |
+| S2 vs V2   | -0.105646       | -1.807976 | 0.168331 |
+| V1 vs V2   | 0.077579        | 2.805210  | 0.067560 |
 
 In 2017 case, the S strategies are not perform well compare to V strategies. The t-test of the second test outcome is sightly greater than 2. The test outcome suggests that the RCTS provide less return than " Value growth" investing strategy.
 
-Besides, the v1 high market cap and high P/E ration portfolio offers a higher return than the combination of high market cap and low P/E ratio. Considering the 2017 the economic situation of Singapore, the investors may trend to chasing for well-developed companies that may be the reason why the v1 is out perform than v2.
+Besides, the V1 high market cap and high P/E ration portfolio offers a higher return than the combination of high market cap and low P/E ratio. Considering the 2017 the economic situation of Singapore, the investors may trend to chasing for well-developed companies that may be the reason why the V1 is out perform than V2.
 
 ### 2022 test results
-          mean_difference   dm_test   p_value
- s0 vs v2         0.014597  0.694107  0.537536
- s1 vs v2         0.013909  0.317385  0.771758
- s2 vs v2         0.020648  0.754232  0.505512
- v1 vs v2        -0.018485 -2.294176  0.105551
 
-The outcome of 2022 is different from 2017 case. The S strategies are all have better return than V2 strategies. However, the p-value of the first three test are relative large, suggesting that we cannot reject the null hypothesis. That make us hard to identify the disparity of two strategies' returns. The v1's return is lower than v2, indicating that these stocks which have lower P/E ratio perform better in this period.
+| strategies | mean_difference | dm_test   | p_value  |
+| ---------- | --------------- | --------- | -------- |
+| S0 vs V2   | 0.014597        | 0.694107  | 0.537536 |
+| S1 vs V2   | 0.013909        | 0.317385  | 0.771758 |
+| S2 vs V2   | 0.020648        | 0.754232  | 0.505512 |
+| V1 vs V2   | -0.018485       | -2.294176 | 0.105551 |
+
+The outcome of 2022 is different from 2017 case. The S strategies are all have better return than V2 strategies. However, the p-value of the first three test are relative large, suggesting that we cannot reject the null hypothesis. That make us hard to identify the disparity of two strategies' returns. The v1's return is lower than V2, indicating that these stocks which have lower P/E ratio perform better in this period.
 
 More importantly, through these two cases, we observer that the test outcome is not unique, for each year the performance of different strategies varies. Due to the two strategies comparison is subject to the responding economic growth and other stable factors, hence, we need to analyze the return performance in a dynamic way.
 
 ## Regress the return difference on GDP growth
 
 In this sub-section, we obtain the Singapore GDP data as our stable variable. Taking the S0 strategy and V1 strategy as the representations of the RCTS and "Value growth" investing strategy, we conduct the following regression:
-$ \Delta R = Return^s - Return^v $
-Regress $\DeltaR $ on the constant and GDP data:$\Delta = \beat_{0} + \beta_{1} GDP$
+
+```
+Delta R = Return^s - Return^v
+```
+
+Regress $ DeltaR $ on the constant and GDP data:$ Delta = beta_0 + beta_1 GDP$
+
 As our portfolio only available from 2017, we limit this regression data from 2017 onwards.
 
-[此处应该附上regress的图]
+```
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.191
+Model:                            OLS   Adj. R-squared:                  0.160
+Method:                 Least Squares   F-statistic:                     6.130
+Date:                Tue, 02 Apr 2024   Prob (F-statistic):             0.0201
+Time:                        20:42:05   Log-Likelihood:                 7.5313
+No. Observations:                  28   AIC:                            -11.06
+Df Residuals:                      26   BIC:                            -8.398
+Df Model:                           1
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.0639      0.038      1.681      0.105      -0.014       0.142
+x1            -1.7423      0.704     -2.476      0.020      -3.189      -0.296
+==============================================================================
+Omnibus:                       10.770   Durbin-Watson:                   2.042
+Prob(Omnibus):                  0.005   Jarque-Bera (JB):                9.574
+Skew:                           1.132   Prob(JB):                      0.00834
+Kurtosis:                       4.756   Cond. No.                         19.4
+==============================================================================
+```
 
-The coefficient of the GDP stable variable is -1.74 with a p-value 0.02. This figure suggests that when the GDP achieve a large growth, the return difference between the S0 and V1 strategy becomes smaller. Recalling the S0 is generated by the past 30 years top returns stocks, we can have a insight that the V1 strategy stocks (high market cap and low P/E ratio) catch up the performance of top return stocks when the economic development well. However, when the society does not have a strong economic increase, these return offered by the v1 not exceed these RCTS stock.
+The coefficient of the GDP stable variable is -1.74 with a p-value 0.02. This figure suggests that when the GDP achieve a large growth, the return difference between the S0 and V1 strategy becomes smaller. Recalling the S0 is generated by the past 30 years top returns stocks, we can have a insight that the V1 strategy stocks (high market cap and low P/E ratio) catch up the performance of top return stocks when the economic development well. However, when the society does not have a strong economic increase, these return offered by the V1 not exceed these RCTS stock.
 
 The result unveil the fact that for investors who aiming at the high market cap and under valued stocks is possible to approaching the highest return on the exchange market when they are supported from fundamental economic condition. But when the economic condition becomes more complex, this simple "Vale growth investing "strategy may not grantee your return.
 
 # Conclusion
+
+Our comprehensive analysis of the Singapore Exchange (SGX) uncovers the dynamic interplay of diverse sectors and the unique investment opportunities they present. The analysis spans from the dividend-rich environment of SG banks to the thriving Real Estate Investment Trusts (REITs) market, highlighting SGX's appeal for those seeking steady income streams through dividends and risk diversification.
+
+Central to our investigation are two trading strategies: the "Value Growth" investing strategy, which emphasizes high market cap and low P/E ratio stocks along with REITs for diversification, and the Return Chasing Trading Strategy (RCTS), which adapts portfolio composition based on past performance to harness momentum. Each strategy reflects a distinct approach to capitalizing on SGX's market potential.
+
+A pivotal aspect of our analysis is the underscored importance of employing the add-back dividend approach for return calculation. This method, critical for achieving a genuine reflection of investment performance, reveals the profound impact dividends have on total returns. Particularly for markets like SGX, where dividend payouts constitute a significant portion of investor returns, the traditional adjusted close price method falls short of capturing the true investment outcome. Our empirical evidence strongly advocates for the add-back dividend approach, underscoring its necessity in accurately assessing and comparing the efficacy of investment strategies.
+
+The comparative analysis, illuminated by the Diebold-Mariano Test, showcases how economic conditions influence the performance of the "Value Growth" strategy relative to RCTS. It becomes evident that the "Value Growth" strategy, with its reliance on economic growth, stands to benefit significantly during periods of economic prosperity. This is in stark contrast to more volatile economic times, where RCTS's flexibility may offer a strategic advantage.
+
+In synthesizing our findings, it is clear that the SGX serves as a fertile ground for a variety of investment strategies. The critical takeaway, however, is the indispensable role of the add-back dividend approach in return calculation, ensuring investors receive a transparent and accurate measure of performance. As investors navigate the SGX, incorporating both the "Value Growth" strategy and RCTS—tempered by the nuanced understanding provided by the add-back dividend approach—can offer a balanced path to capitalizing on growth and income opportunities within this vibrant market.
 
 # Appendix
 
