@@ -6,6 +6,34 @@ import collections
 import pandas as pd
 import numpy as np
 
+
+def test_strategy(r1, r2):
+    returns_strategy_1 = np.array(r1)
+    returns_strategy_2 = np.array(r2)
+
+    # Compute the differences in returns
+    differences = returns_strategy_2 - returns_strategy_1
+
+    # Compute the mean difference
+    mean_difference = np.mean(differences)
+
+    # Standard error of differences
+    std_error = np.std(differences, ddof=1) / np.sqrt(len(differences))
+
+    # DM test statistic
+    dm_statistic = mean_difference / std_error
+
+    # Degrees of freedom
+    df = len(differences) - 1
+
+    # p-value from t-distribution
+    p_value = 2 * t.sf(np.abs(dm_statistic), df)
+
+    dm_return = collections.namedtuple('dm_return', 'DM p_value')
+
+    return dm_return(DM=dm_statistic, p_value=p_value)
+
+
 # Author   : John Tsang
 # Date     : December 7th, 2017
 # Purpose  : Implement the Diebold-Mariano Test (DM test) to compare
