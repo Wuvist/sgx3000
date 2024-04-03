@@ -146,7 +146,7 @@ This section we focused merely on dividend return of SG banks and its comparison
 A well-established REIT market is another advantage of SGX. Carrying on with the theme of dividends, Singapore also has a vibrant real estate investment trust (REIT) market which is now the second largest in Asia (after Japan). Specially, one-fifth the stock market of SG is taken by REITs.
 
 #figure(
-  image("Banks 2.png", width: 90%),
+  image("REITs market cap.png", width: 90%),
   caption: "REITs market cap"
 ) <REITs_analysis>
 
